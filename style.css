@@ -204,182 +204,189 @@ h1,
 @media (max-width: 575px) {
   h1,
   .heading-1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
 h2,
 .heading-2 {
-  font-size: 48px;
+  font-size: 64px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 @media (max-width: 1399px) {
   h2,
   .heading-2 {
-    font-size: 44px;
+    font-size: 56px;
   }
 }
 @media (max-width: 1199px) {
   h2,
   .heading-2 {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 @media (max-width: 991px) {
   h2,
   .heading-2 {
-    font-size: 36px;
+    font-size: 42px;
   }
 }
 @media (max-width: 767px) {
   h2,
   .heading-2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 @media (max-width: 575px) {
   h2,
   .heading-2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 h3,
 .heading-3 {
-  font-size: 44px;
+  font-size: 48px;
 }
 @media (max-width: 1399px) {
+  h3,
+  .heading-3 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 1199px) {
   h3,
   .heading-3 {
     font-size: 40px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   h3,
   .heading-3 {
     font-size: 36px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h3,
   .heading-3 {
     font-size: 32px;
   }
 }
-@media (max-width: 767px) {
-  h3,
-  .heading-3 {
-    font-size: 28px;
-  }
-}
 @media (max-width: 575px) {
   h3,
   .heading-3 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
 h4,
 .heading-4 {
-  font-size: 32px;
+  font-size: 44px;
 }
 @media (max-width: 1399px) {
   h4,
   .heading-4 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media (max-width: 1199px) {
+  h4,
+  .heading-4 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  h4,
+  .heading-4 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
   h4,
   .heading-4 {
     font-size: 28px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   h4,
   .heading-4 {
     font-size: 26px;
   }
 }
-@media (max-width: 767px) {
-  h4,
-  .heading-4 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 575px) {
-  h4,
-  .heading-4 {
-    font-size: 22px;
-  }
-}
 
 h5,
 .heading-5 {
-  font-size: 24px;
+  font-size: 32px;
 }
 @media (max-width: 1399px) {
   h5,
   .heading-5 {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media (max-width: 1199px) {
   h5,
   .heading-5 {
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 @media (max-width: 991px) {
   h5,
   .heading-5 {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 @media (max-width: 767px) {
   h5,
   .heading-5 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media (max-width: 575px) {
   h5,
   .heading-5 {
-    font-size: 18px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 350px) {
+  h5,
+  .heading-5 {
+    font-size: 24px;
   }
 }
 
 h6,
 .heading-6 {
-  font-size: 20px;
+  font-size: 24px;
 }
 @media (max-width: 1399px) {
   h6,
   .heading-6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (max-width: 1199px) {
   h6,
   .heading-6 {
-    font-size: 19px;
+    font-size: 22px;
   }
 }
 @media (max-width: 991px) {
   h6,
   .heading-6 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
   h6,
   .heading-6 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 575px) {
   h6,
   .heading-6 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -432,4 +439,57 @@ header {
 }
 .hero-section .hero-heading {
   max-width: 709px;
+}
+
+.step-section {
+  padding: 172px 0 96px 0;
+}
+@media (min-width: 350px) and (max-width: 991px) {
+  .step-section {
+    padding: 50px 0 50px 0;
+  }
+}
+.step-section .step-top-block .step-section-heading {
+  max-width: 781px;
+}
+.step-section .step-card {
+  padding: 44px;
+  border-radius: 32px;
+  box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 350px) and (max-width: 575px) {
+  .step-section .step-card {
+    padding: 24px 16px;
+  }
+}
+.step-section .step-card .step-card-icon {
+  padding: 46px;
+  border-radius: 100%;
+  background: linear-gradient(150deg, #FFDFE6 -3.71%, #FFF 88.62%);
+  max-width: 148px;
+}
+@media (min-width: 350px) and (max-width: 575px) {
+  .step-section .step-card .step-card-icon {
+    padding: 20px;
+    max-width: 100px;
+  }
+}
+.step-section .step-card .step-card-heading {
+  padding-bottom: 12px;
+}
+@media (min-width: 350px) and (max-width: 575px) {
+  .step-section .step-card .step-card-info {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.award-section {
+  padding-top: 90px;
+  background: #F2F2F2;
+}
+@media (min-width: 992px) {
+  .award-section .award-image-wrapper {
+    margin-left: calc(-30vw + 50%);
+  }
 }/*# sourceMappingURL=style.css.map */
