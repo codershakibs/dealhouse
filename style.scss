@@ -96,6 +96,14 @@ a {
     color: #6D6D6D;
 }
 
+.dark-6 {
+    color: #F2F2F2;
+}
+
+.text-red {
+    color: #DE0030;
+}
+
 .bg-red {
     background-color: #DE0030;
 }
@@ -631,9 +639,101 @@ header {
     padding-top: 90px;
     background: #F2F2F2;
 
-    .award-image-wrapper {
-        @media (min-width: 992px) {
-            margin-left: calc(-30vw + 50%);
+    .award-row {
+        @media (max-width: 575px) {
+            gap: 50px;
+        }
+
+
+
+        .award-left-block {
+            .award-image-wrapper {
+                @media (max-width: 350px) {
+                    z-index: 9;
+                }
+
+                @media (min-width: 992px) {
+                    margin-left: calc(-25vw + 35%);
+                }
+            }
+
+            .chris-voice {
+                padding: 24px;
+                border-radius: 24px;
+                box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+                width: 380px;
+                top: -25px;
+                right: 100px;
+
+                @media (max-width: 350px) {
+                    width: 190px;
+                    padding: 12px;
+                    right: 0px;
+                }
+
+                .chris-voice-text {
+                    @media (max-width: 350px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .award-right-block {
+            .award-section-heading {
+                @media (max-width: 350px) {
+                    font-size: 24px;
+                }
+            }
+
+            .award-info {
+                @media (max-width: 350px) {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .award-logo-wrap {
+                @media (max-width: 350px) {
+                    padding-bottom: 24px !important;
+                }
+
+                .award-logo {
+                    @media (max-width: 390px) {
+                        width: 85px;
+                    }
+                }
+            }
         }
     }
+
+
+}
+
+// client section 
+.client-section {
+    padding: 96px 0;
+
+    .client-section-wrapper {
+        .client-card {
+            padding: 16px;
+            border-radius: 16px;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        .client-bg {
+            top: 0;
+        }
+    }
+
+
+
+
 }

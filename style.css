@@ -91,6 +91,14 @@ a {
   color: #6D6D6D;
 }
 
+.dark-6 {
+  color: #F2F2F2;
+}
+
+.text-red {
+  color: #DE0030;
+}
+
 .bg-red {
   background-color: #DE0030;
 }
@@ -488,8 +496,76 @@ header {
   padding-top: 90px;
   background: #F2F2F2;
 }
-@media (min-width: 992px) {
-  .award-section .award-image-wrapper {
-    margin-left: calc(-30vw + 50%);
+@media (max-width: 575px) {
+  .award-section .award-row {
+    gap: 50px;
   }
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-left-block .award-image-wrapper {
+    z-index: 9;
+  }
+}
+@media (min-width: 992px) {
+  .award-section .award-row .award-left-block .award-image-wrapper {
+    margin-left: calc(-25vw + 35%);
+  }
+}
+.award-section .award-row .award-left-block .chris-voice {
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.1);
+  width: 380px;
+  top: -25px;
+  right: 100px;
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-left-block .chris-voice {
+    width: 190px;
+    padding: 12px;
+    right: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-left-block .chris-voice .chris-voice-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-right-block .award-section-heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-right-block .award-info {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 350px) {
+  .award-section .award-row .award-right-block .award-logo-wrap {
+    padding-bottom: 24px !important;
+  }
+}
+@media (max-width: 390px) {
+  .award-section .award-row .award-right-block .award-logo-wrap .award-logo {
+    width: 85px;
+  }
+}
+
+.client-section {
+  padding: 96px 0;
+}
+.client-section .client-section-wrapper .client-card {
+  padding: 16px;
+  border-radius: 16px;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.client-section .client-section-wrapper .client-bg {
+  top: 0;
 }/*# sourceMappingURL=style.css.map */
