@@ -25,6 +25,7 @@
 <body>
   <!-- header start  -->
   <header>
+    <!-- nav section  -->
     <nav class="navbar navbar-expand-lg px-3">
       <div class="container-fluid nav-wrap">
 
@@ -70,14 +71,11 @@
         </div>
       </div>
     </nav>
-
-    <!-- ================================
-      MOBILE OFFCANVAS MENU
-================================ -->
+    <!-- mobile offcanvas menu  -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
 
       <div class="offcanvas-header d-flex justify-content-between align-items-center">
-        <h5 class="offcanvas-title">Menu</h5>
+        <img src="assets/images/offcanvas-log.svg" alt="">
 
         <!-- Custom Animated Close Icon -->
         <button class="btn-close custom-close-btn" data-bs-dismiss="offcanvas">
@@ -89,27 +87,33 @@
       </div>
 
       <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Realtors</a></li>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Faq</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Review</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Realtors</a></li>
         </ul>
 
         <a href="tel:6313886640"
-          class="nav-btn mt-3 d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red p-2 rounded">
+          class="offcanvas-btn mt-3 d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red p-2 rounded">
           <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
         </a>
       </div>
     </div>
+
+    <!-- hero section -->
+
     <section class="hero-section">
       <div class="container">
         <div class="row hero-row-container">
           <div class="col-lg-4">
             <div class="hero-left-block">
+              <div class="hero-subheading d-inline-flex align-items-center mb-3">
+                <p class="fs-14 fs-semibold lh-157 text-red">Over 1,000 homes purchased</p>
+              </div>
               <h1 class="hero-heading lh-110 pb-4">We Buy Houses for Cash — Any Condition, Any Situation</h1>
               <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash offer within 24
                 hours and lets you
@@ -117,7 +121,7 @@
             </div>
           </div>
           <div class="col-lg-8">
-            <div class="hero-right-block">
+            <div class="hero-right-block bg-white">
               <img src="assets/images/hero-house1.png" alt="">
             </div>
           </div>
@@ -129,9 +133,6 @@
 
       </div>
     </section>
-
-
-
   </header>
 
   <!-- sell section start  -->
@@ -351,7 +352,7 @@
 
 
             </div>
-          </div> 
+          </div>
           <div class="col-lg-3 col-6 col-xl-3 col-xxl-2 col-sm-6 col-md-6">
             <div class="client-card d-flex align-items-center">
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -437,11 +438,13 @@
             </div>
           </div>
         </div>
-        <img class="client-bg position-absolute" src="./assets/images/client-bg.svg" alt="#">
 
 
       </div>
     </div>
+
+    <div class="client-overlay"></div>
+
   </section>
 
   <!-- contact section start  -->
@@ -562,7 +565,7 @@
 
       </div>
     </div>
-    <div class="map-location-wrapper">
+    <div class="map-location-wrapper text-center">
       <img src="assets/images/map.png" alt="">
     </div>
   </section>
@@ -590,8 +593,8 @@
         <div class="community-section-heading text-center pb-5">
           <h2 class="fs-normal lh-400 dark fs-secondary">Long Island Communities</h2>
         </div>
-        <div class="community-location-wrap row justify-content-between">
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+        <div class="community-location-wrap row justify-content-between gy-5 gy-md-5 gy-sm-5">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Amityville</p>
             </a>
@@ -633,7 +636,7 @@
             </a>
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Central Islip</p>
             </a>
@@ -673,7 +676,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">East Patchogue</p>
             </a>
@@ -713,7 +716,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Hempstead</p>
             </a>
@@ -753,7 +756,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Lake Ronkonkoma</p>
             </a>
@@ -794,7 +797,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-4">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Moriches</p>
             </a>
@@ -835,7 +838,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-6">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Port Washington</p>
             </a>
@@ -875,7 +878,7 @@
 
 
           </div>
-          <div class="community-location d-flex flex-column gap-3 col-lg-auto col-6">
+          <div class="community-location d-flex flex-column gap-3 col-6 col-lg-auto col-lg-auto col-md-3 col-sm-3">
             <a href="#">
               <p class="fs-normal dark fs-13">Suffolk County</p>
             </a>
@@ -916,7 +919,8 @@
 
           </div>
         </div>
-        <div class="community-bottom-block d-flex justify-content-between align-items-center">
+        <div
+          class="community-bottom-block d-flex justify-content-between align-items-center flex-column flex-lg-row flex-md-column flex-sm-column gap-4 gap-md-4 gap-sm-4">
           <h3 class="community-bottom-heading fs-bold lh-120 dark">We are buying across <span
               class="community-text-span text-red">Long Island.</span></h3>
           <img src="/assets/images/community-image.png" alt="">
@@ -924,7 +928,8 @@
         <div class="cta-form-wrapper text-center">
           <form class="cta-form bg-white d-inline-flex justify-content-between" action="#">
             <input class="bg-white" type="email" placeholder="Enter your address" name="email" id="homeemail">
-            <a class="cta-btn bg-red text-white fs-14 fs-semibold lh-157" href="#">Get an Offer</a>
+            <a class="cta-btn d-flex align-items-center bg-red text-white fs-14 fs-semibold lh-157" href="#">Get an
+              Offer</a>
           </form>
         </div>
       </div>
@@ -935,7 +940,8 @@
   <footer class="bg-dark">
     <div class="container">
       <div class="footer-section-wrapper">
-        <div class="footer-top-block d-flex justify-content-between align-items-center flex-lg-row">
+        <div
+          class="footer-top-block d-flex justify-content-between align-items-center flex-column flex-lg-row flex-sm-column flex-sm-column flex-md-row">
           <div class="footer-social d-flex">
             <a href=""><svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6022_764)">
@@ -982,9 +988,9 @@
 
 
         </div>
-        <div class="footer-middle-block d-flex justify-content-between flex-lg-row">
-          <div class="footer-link-Wrapper">
-            <p class="fs-20 fs-semibold lh-130 text-white pb-4">Sell Your Home</p>
+        <div class="footer-middle-block row d-none d-md-flex">
+          <div class="footer-link-Wrapper col-6 col-lg-2 col-md-4 col-sm-6">
+            <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Sell Your Home</p>
             <ul class="footer-link-container d-flex flex-column ">
               <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
                     class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
@@ -1011,8 +1017,8 @@
 
             </ul>
           </div>
-          <div class="footer-link-Wrapper">
-            <p class="fs-20 fs-semibold lh-130 text-white pb-4">Realtors</p>
+          <div class="footer-link-Wrapper col-6  col-lg-2 col-md-4 col-sm-6">
+            <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Realtors</p>
             <ul class="footer-link-container d-flex flex-column ">
               <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
                     class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
@@ -1026,8 +1032,8 @@
 
             </ul>
           </div>
-          <div class="footer-link-Wrapper">
-            <p class="fs-20 fs-semibold lh-130 text-white pb-4">Resources</p>
+          <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+            <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Resources</p>
             <ul class="footer-link-container d-flex flex-column ">
               <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
                     class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
@@ -1056,8 +1062,8 @@
 
             </ul>
           </div>
-          <div class="footer-link-Wrapper">
-            <p class="fs-20 fs-semibold lh-130 text-white pb-4">Company</p>
+          <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+            <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Company</p>
             <ul class="footer-link-container d-flex flex-column ">
               <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
                     class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
@@ -1093,8 +1099,8 @@
 
             </ul>
           </div>
-          <div class="footer-link-Wrapper">
-            <p class="fs-20 fs-semibold lh-130 text-white pb-4">Partners</p>
+          <div class="footer-link-Wrapper col-6  col-lg-2 col-md-2 col-sm-6">
+            <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Partners</p>
             <ul class="footer-link-container d-flex flex-column ">
               <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
                     class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
@@ -1110,6 +1116,109 @@
 
         </div>
 
+        <!-- footer dropdown link mobile version  -->
+        <div class="mobile-footer-wrapper d-block d-md-none">
+
+          <div class="accordion custom-accordion" id="footerAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fs-bold lh-120 fs-16" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Sell Your Home
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <ul class="mobile-accordion-link d-flex flex-column">
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Get an Offer</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Reviews</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Realtors
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <ul class="mobile-accordion-link d-flex flex-column">
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Join our Team</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Agent Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Resources
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <ul class="mobile-accordion-link d-flex flex-column">
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Blog</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Guides</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Company
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <ul class="mobile-accordion-link d-flex flex-column">
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">About Us</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Partners
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#footerAccordion">
+                <div class="accordion-body">
+                  <ul class="mobile-accordion-link d-flex flex-column">
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Partner Program</a></li>
+                    <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Affiliates</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
         <div class="footer-bottom-block bg-white text-center">
           <p class="fs-14 fs-normal lh-130 text-red">© Copyright 2025 MrCashBuyer . All Rights Reserved.</p>
         </div>
@@ -1117,12 +1226,11 @@
     </div>
   </footer>
 
-
-
   <!-- bootstrap cdn  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
