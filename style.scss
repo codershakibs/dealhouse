@@ -289,6 +289,14 @@ h4 {
 
 h5 {
     font-size: 32px;
+
+    @media (max-width: 1399px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 24px;
+    }
 }
 
 h6 {
@@ -1732,8 +1740,6 @@ header {
 
 }
 
-
-
 // footer section 
 footer {
     padding-top: 96px;
@@ -1873,7 +1879,6 @@ footer {
         }
     }
 }
-
 
 /* 1. Wrapper Styling */
 .mobile-footer-wrapper {
@@ -2292,7 +2297,8 @@ footer {
 }
 
 
-// blog section start 
+// blog page start 
+
 .blog-section {
     padding: 200px 0 96px 0;
     margin-top: -100px;
@@ -2456,3 +2462,299 @@ footer {
         }
     }
 }
+
+// contact page start 
+.main-contact-section {
+    padding: 200px 0 96px 0;
+    margin-top: -100px;
+
+    .main-contact-top-block {
+        .main-contact-heading {
+            max-width: 1022px;
+            margin: auto;
+        }
+
+    }
+
+    .contact-form-wrapper-block {
+        padding: 24px;
+        border-radius: 32px;
+        background: #FFF;
+        box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+
+        .form-submit-text {
+            @media (max-width: 1399px) {
+                font-size: 14px;
+            }
+
+            @media (max-width: 1199px) {
+                font-size: 12px;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+
+        .main-contact-block {
+            .contact-form-heading {
+                padding-bottom: 12px;
+            }
+
+            .contact-form-info {
+                padding-bottom: 32px;
+
+                @media (max-width: 1399px) {
+                    padding-bottom: 28px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                }
+            }
+
+            .main-contact-form {
+                .form-group {
+                    .input-label {
+                        padding-bottom: 12px;
+
+                        @media (max-width: 1399px) {
+                            font-size: 14px;
+                            padding-bottom: 10px;
+
+                        }
+
+                        @media (max-width: 991px) {
+                            font-size: 16px;
+
+                        }
+
+                        @media (max-width: 767px) {
+                            font-size: 12px;
+
+                        }
+                    }
+
+                    .input-wrapper {
+                        padding: 17px 10px 14px 20px;
+                        border-radius: 8px;
+                        border: 1px solid #CCC;
+                        gap: 12px;
+
+                        @media (max-width: 1399px) {
+                            padding: 10px;
+
+                        }
+
+                        .form-input {
+                            width: 100%;
+
+                            &::placeholder {
+                                color: #6D6D6D;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 130%;
+
+                                @media (max-width: 1399px) {
+                                    font-size: 12px;
+                                }
+
+                                @media (max-width: 991px) {
+                                    font-size: 16px;
+                                }
+
+                                @media (max-width: 767px) {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .input-message-wrapper {
+                        padding: 16px 0 0 20px;
+                        border-radius: 8px;
+                        border: 1px solid #CCC;
+
+                        textarea.form-message {
+                            height: 63px;
+                        }
+
+
+                        .form-message {
+                            &::placeholder {
+                                color: #6D6D6D;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 130%;
+
+                                @media (max-width: 1399px) {
+                                    font-size: 12px;
+                                }
+
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .form-check {
+                    gap: 12px;
+                    padding-bottom: 12px;
+
+                    .form-check-input {
+                        width: 24px;
+                        height: 24px;
+
+                        @media (max-width: 1399px) {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .form-check-label {
+                        @media (max-width: 1399px) {
+                            font-size: 14px;
+                        }
+
+                        @media (max-width: 767px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media (max-width: 1199px) {
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            .contact-submit-btn {
+                padding: 16px 40px;
+                border-radius: 100px;
+
+                @media (max-width: 767px) {
+                    padding: 10px 40px;
+                }
+            }
+
+            .g-recaptcha {
+                padding-bottom: 32px;
+            }
+        }
+    }
+
+    .contact-left-block {
+        padding: 24px;
+        border-radius: 32px;
+        box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+
+        .contact-info-heading {
+            padding-bottom: 32px;
+        }
+
+        .contact-block {
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid #CCC;
+            gap: 12px;
+            height: 100%;
+
+            .contact-block-icon {
+                padding: 18px;
+                border-radius: 50%;
+                background-color: #FCE5EA;
+                width: 60px;
+                height: 60px;
+
+                @media (max-width: 767px) {
+                    padding: 14px;
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+
+            .contact-block-heading {
+                @media (max-width: 1199px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+
+            .contact-block-subheading {
+                padding-bottom: 10px;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+
+
+        }
+    }
+
+    .contact-info-right-block {
+        border-radius: 32px;
+        box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+        padding: 24px;
+
+        img {
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
+
+        .contact-info-heading-2 {
+            padding-bottom: 24px;
+        }
+
+
+
+        .contact-social-wrapper {
+            gap: 12px;
+            padding-bottom: 24px;
+
+
+
+            .social-block {
+                padding: 12px;
+                border-radius: 16px;
+                background-color: #FCE5EA;
+
+                &:hover {
+                    background-color: var(--red);
+
+                    svg * {
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+
+
