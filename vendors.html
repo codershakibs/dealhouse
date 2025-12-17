@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dealhouse</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <!-- nav section  -->
+        <nav class="navbar navbar-expand-lg px-3">
+            <div class="container-fluid nav-wrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2 order-lg-1" href="#">
+                    <img class="site-logo" src="/assets/images/Logo.png" alt="Logo" height="50">
+                </a>
+
+                <!-- Custom Animated Hamburger -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <div class="toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <!-- mobile & tab version button  -->
+                <a href="tel:6313886640"
+                    class="nav-btn-mobile d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red d-lg-none">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse d-none d-lg-flex order-2" id="navbarContent">
+                    <ul class="navbar-nav d-flex mx-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="faq.html">Faq</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Review</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark"
+                                href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Realtors</a></li>
+                    </ul>
+
+                    <a href="tel:6313886640"
+                        class="nav-btn d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red">
+                        <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- mobile offcanvas menu  -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+            <div class="offcanvas-header d-flex justify-content-between align-items-center">
+                <img src="assets/images/offcanvas-log.svg" alt="">
+
+                <!-- Custom Animated Close Icon -->
+                <button class="btn-close custom-close-btn" data-bs-dismiss="offcanvas">
+                    <div class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="faq">Faq</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Review</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Realtors</a></li>
+                </ul>
+
+                <a href="tel:6313886640"
+                    class="offcanvas-btn mt-3 d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red p-2 rounded">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-left-block">
+                    <div class="hero-subheading d-inline-flex align-items-center mb-3">
+                        <p class="fs-14 fs-semibold lh-157 text-red">Over 1,000 homes purchased</p>
+                    </div>
+                    <h1 class="hero-heading lh-110 pb-4">We Buy Houses for Cash — Any Condition, Any Situation</h1>
+                    <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash offer
+                        within 24
+                        hours and lets you
+                        close on your schedule</p>
+                </div>
+                <div class="hero-mobile-bottom d-lg-none">
+                    <img class="vw-100" src="assets/images/hero-house1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- sell section start  -->
+    <section class="sell-section position-relative">
+        <div class="container">
+            <div
+                class="sell-section-wrapper bg-dark d-flex align-items-center justify-content-between position-relative">
+                <h5 class="sell-section-heading fs-bold lh-120 text-white">It's free with no obligation to sell.</h5>
+                <form action="#" class="bg-white d-flex align-items-center justify-content-between">
+                    <input class="border-0" type="email" name="email" placeholder="Enter your address" id="sellemail">
+                    <button type="submit" class="sell-form-btn fs-14 fs-semibold lh-157">Get an Offer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- < step section start -->
+    <section class="step-section gradient-2 position-relative">
+
+        <div class="container">
+
+            <div class="step-top-block text-center pb-5">
+                <h2 class="step-section-heading mx-auto lh-110 pb-4 ">Get It Sold Now, All Cash No Hassles.</h2>
+                <p class="step-sub-heading fs-20 fs-medium lh-130 dark-3">HIGHEST CASH OFFER!</p>
+            </div>
+            <div class="step-card-row row gap-4 gap-lg-0">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="step-card d-flex flex-column justify-content-center bg-white">
+                        <div class="step-card-icon d-flex align-items-center mb-5 mx-auto justify-content-center">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M52.2225 24.1352L32.2231 5.66504C29.8533 3.47754 26.1447 3.47754 23.779 5.66504L3.77751 24.1352C2.93694 24.911 2.88428 26.2235 3.66206 27.0661C4.43983 27.9066 5.75031 27.9593 6.5929 27.1815L8.36594 25.5442V45.4634C8.36594 49.0515 11.3112 51.9759 14.8993 51.9759H41.1154C44.7035 51.9759 47.649 49.0515 47.649 45.4634V25.5577L49.4071 27.1815C50.2493 27.9595 51.5591 27.9067 52.338 27.0661C53.1158 26.2235 53.0631 24.911 52.2225 24.1352ZM30.0814 42.3522C30.0814 43.493 29.148 44.4263 28.0074 44.4263C26.846 44.4263 25.9333 43.493 25.9333 42.3522V33.7863C25.9333 32.6456 26.846 31.7122 28.0074 31.7122C29.148 31.7122 30.0814 32.6456 30.0814 33.7863V42.3522ZM28.0074 28.4767C26.8286 28.4767 25.9333 27.5511 25.9333 26.4026C25.9333 25.2045 26.9167 24.3334 28.0074 24.3454C29.2072 24.3585 30.0814 25.3047 30.0814 26.4026C30.0814 27.5284 29.2032 28.4767 28.0074 28.4767Z"
+                                    fill="#DE0030" />
+                            </svg>
+
+
+                        </div>
+                        <div class="step-card-heading d-flex flex-column justify-content-center gap-2 text-center">
+                            <h5 class="dark-1 fs-bold lh-120">Tell Us About Your Home</h5>
+                            <p class="step-card-info fs-20 fs-medium lh-130 dark-4">Submit a few details — no cleaning,
+                                repairs, or
+                                staging.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="step-card d-flex flex-column justify-content-center bg-white">
+                        <div class="step-card-icon d-flex align-items-center mb-5 mx-auto justify-content-center">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M51.3497 19.6904H49.3293C48.7766 19.6904 48.7581 19.3285 48.739 19.1484C47.6796 9.16621 39.2093 1.36328 28.9509 1.36328H27.0491C16.8665 1.36328 8.4459 9.05096 7.28561 18.9272C7.25598 19.1802 7.24047 19.6904 6.77512 19.6904H4.65015C3.25547 19.6904 0 21.158 0 28.5694V32.459C0 37.9558 3.25547 39.2236 4.65015 39.2236H11.4108C12.8055 39.2236 13.9466 38.0825 13.9466 36.6878V22.2261C13.9466 20.8314 12.8055 19.6904 11.4108 19.6904C11.4108 19.6904 11.0925 19.6625 11.1737 19.0955C12.2893 11.2901 18.9496 5.2414 27.0491 5.2414H28.9509C36.9953 5.2414 43.6735 11.2008 44.804 18.9365C44.8405 19.1859 44.9763 19.6904 44.5892 19.6904C43.1945 19.6904 42.0534 20.8314 42.0534 22.2261V36.6878C42.0534 38.0825 43.1945 39.2236 44.5892 39.2236H45.8587C46.2077 39.2236 46.1484 39.5025 46.1172 39.643C45.0831 44.3127 42.7609 49.6103 37.5488 49.6103H33.688C33.294 49.6103 33.1968 49.3216 33.1219 49.1848C32.4964 48.042 31.2835 47.2669 29.889 47.2669H26.3317C24.2969 47.2669 22.6472 48.9165 22.6472 50.9515C22.6472 52.9865 24.2969 54.6358 26.3317 54.6358H29.889C31.3025 54.6358 32.5296 53.8398 33.1473 52.6717C33.2013 52.5696 33.2455 52.3574 33.6624 52.3574H37.5488C41.0891 52.3574 45.8267 50.5982 48.2922 42.2169C48.5549 41.3237 48.7681 40.4336 48.9416 39.5758C48.9655 39.4578 48.9804 39.2237 49.3488 39.2237H51.3499C52.7445 39.2237 56 37.9558 56 32.4591V28.5695C55.9998 21.2636 52.7444 19.6904 51.3497 19.6904Z"
+                                    fill="#BAEF2E" />
+                            </svg>
+
+
+                        </div>
+                        <div class="step-card-heading d-flex flex-column justify-content-center gap-2 text-center">
+                            <h5 class="dark-1 fs-bold lh-120">Get a Fair Cash Offer</h5>
+                            <p class="step-card-info fs-20 fs-medium lh-130 dark-4">We’ll assess the property and make a
+                                no-obligation offer within 24 hours.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="step-card d-flex flex-column justify-content-center bg-white">
+                        <div class="step-card-icon d-flex align-items-center mb-5 mx-auto justify-content-center">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4450_33493)">
+                                    <path
+                                        d="M31.809 37.1991C31.5999 36.97 31.3353 36.7988 31.0618 36.656C30.4665 36.3456 29.8154 36.1573 29.1689 35.9873V40.9967C30.2182 40.8781 31.4229 40.4973 31.9738 39.5177C32.2368 39.0498 32.2891 38.4749 32.182 37.954C32.1239 37.6717 32.0039 37.4127 31.809 37.1991Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9688 39.5272C31.9709 39.5236 31.972 39.5214 31.9743 39.5176C31.9724 39.5207 31.9706 39.5239 31.9688 39.5272Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M24.2476 29.1913C24.0672 29.4547 23.954 29.754 23.9227 30.072C23.8915 30.3908 23.909 30.7454 24.0301 31.0454C24.1454 31.3314 24.387 31.5425 24.6363 31.7125C24.916 31.9027 25.2237 32.0514 25.5371 32.1774C25.8 32.2832 26.0956 32.3844 26.4144 32.4821V27.9492C25.6091 28.121 24.7293 28.4879 24.2476 29.1913Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9953 39.4814C31.9887 39.4932 31.9816 39.5054 31.9746 39.5183C31.9828 39.5033 31.9892 39.4923 31.9953 39.4814Z"
+                                        fill="#DE0030" />
+                                    <path d="M32.0215 39.4345C32.0234 39.4309 32.0237 39.4305 32.0215 39.4345V39.4345Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M30.9339 12.1847C35.1939 8.60606 38.0404 0.543926 36.2886 0.191307C33.961 -0.277402 28.9066 1.77783 26.4635 2.13994C22.9985 2.55831 19.2246 -1.61751 17.1062 0.710089C15.3838 2.60258 18.3411 9.48498 22.9677 12.4833C9.16439 19.2674 -10.237 53.3241 23.6098 55.7952C70.4426 59.2145 46.9917 18.7956 30.9339 12.1847ZM34.9559 39.0434C34.8119 40.3712 34.1082 41.5718 33.0564 42.387C31.9459 43.2477 30.5529 43.648 29.1689 43.7602V45.2272C29.1689 45.6197 28.9975 45.9994 28.7036 46.2592C28.2998 46.6166 27.7063 46.7047 27.2161 46.4789C26.7321 46.2562 26.4141 45.7598 26.4141 45.2272V43.6238C26.1768 43.5787 25.9412 43.5251 25.7084 43.4612C24.4149 43.1058 23.2151 42.4131 22.3387 41.3882C21.9022 40.8773 21.5462 40.2976 21.3001 39.6718C21.2358 39.5083 21.1785 39.3418 21.1283 39.1734C21.0828 39.0209 21.0359 38.8659 21.0197 38.707C20.9924 38.4404 21.0453 38.1685 21.1695 37.931C21.4249 37.4425 21.963 37.1475 22.5125 37.1965C23.0533 37.2445 23.5273 37.6198 23.6975 38.1353C23.75 38.294 23.7856 38.4568 23.8445 38.6139C23.9028 38.7699 23.9733 38.9215 24.0562 39.066C24.2199 39.3503 24.4249 39.6125 24.661 39.8401C25.1478 40.3091 25.7678 40.6139 26.4141 40.7952V35.3449C25.1503 35.0177 23.8458 34.5951 22.8022 33.7837C22.295 33.3891 21.8646 32.899 21.5827 32.3188C21.2853 31.7064 21.1621 31.0242 21.1571 30.3467C21.152 29.6587 21.2827 28.9768 21.5697 28.35C21.8385 27.763 22.2255 27.2361 22.7 26.7993C23.7147 25.8654 25.0624 25.3445 26.4143 25.1532V25.0333V23.6303C26.4143 23.2379 26.5857 22.8581 26.8795 22.5983C27.2836 22.2411 27.8768 22.1528 28.3671 22.3786C28.851 22.6015 29.1691 23.0977 29.1691 23.6303V25.0333V25.1449C29.3492 25.1676 29.5288 25.1947 29.7075 25.2271C31.0349 25.4673 32.3333 26.0155 33.304 26.9726C33.7639 27.4258 34.1404 27.966 34.4051 28.555C34.479 28.7193 34.5437 28.8875 34.5997 29.0589C34.6519 29.2187 34.7044 29.3833 34.7293 29.5501C34.7691 29.8164 34.7285 30.0916 34.6145 30.3352C34.381 30.8344 33.8573 31.1522 33.3064 31.1286C32.7651 31.105 32.2746 30.7525 32.0808 30.2465C32.0231 30.0961 31.9942 29.9367 31.9353 29.7867C31.8759 29.6347 31.7989 29.4898 31.7103 29.3529C31.5379 29.0867 31.3146 28.8585 31.0596 28.6704C30.5075 28.2627 29.8378 28.0503 29.1687 27.9316V33.1473C29.9639 33.3377 30.7598 33.5454 31.5217 33.8459C32.6732 34.2999 33.7644 34.9962 34.393 36.0941C34.2955 35.9231 34.2006 35.7564 34.3963 36.0998C34.5884 36.4371 34.4967 36.2764 34.4002 36.1073C34.9003 36.9886 35.0646 38.0424 34.9559 39.0434Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9541 39.5537C31.9461 39.5681 31.9391 39.5807 31.9336 39.5903C31.9383 39.582 31.9455 39.5695 31.9541 39.5537Z"
+                                        fill="#DE0030" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4450_33493">
+                                        <rect width="56" height="56" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+                        </div>
+                        <div class="step-card-heading d-flex flex-column justify-content-center gap-2 text-center">
+                            <h5 class="dark-1 fs-bold lh-120">Close and Get Paid</h5>
+                            <p class="step-card-info fs-20 fs-medium lh-130 dark-4">Pick your closing date — get cash in
+                                hand fast.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- step section end  -->
+
+    <!-- agent section start  -->
+    <section class="agent-section">
+        <div class="container">
+            <h2 class="fs-400 lh-110 dark text-center pb-5">Certified Agents</h2>
+            <div class="agent-wrapper d-flex flex-md-column flex-lg-row">
+                <div class="agent-image">
+                    <img src="assets/images/pedro.png" alt="">
+                </div>
+                <div class="agent-info-wrapper bg-white">
+                    <h6 class="fs-bold lh-130 dark">Hi,</h6>
+                    <h6 class="fs-bold lh-130 dark pb-4">I am Pedro Velez,</h6>
+                    <p class="fs-20 fs-normal lh-130 dark-4">In order to become an approved MrcashBuyer® Vendor you must
+                        be licensed and insured. Please send
+                        me an email at <span class="fs-bold text-red">pedro@MrcashBuyer® .com</span> describing your
+                        business and I will be in touch shortly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- cta section  -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-section-wrapper">
+                <h2 class="cta-section-heading lh-110 dark-1 mx-auto text-center pb-5">Get a real offer. No Pressure, no
+                    surprises.</h2>
+                <div class="cta-form-wrapper text-center">
+                    <form class="cta-form bg-white d-inline-flex justify-content-between" action="#">
+                        <input class="bg-white" type="email" placeholder="Enter your address" name="email"
+                            id="homeemail">
+                        <a class="cta-btn bg-red text-white fs-14 fs-semibold lh-157" href="#">Get an Offer</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="footer-section-wrapper">
+                <div
+                    class="footer-top-block d-flex justify-content-between align-items-center flex-column flex-lg-row flex-sm-column flex-sm-column flex-md-row">
+                    <div class="footer-social d-flex">
+                        <a href=""><svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6022_764)">
+                                    <path
+                                        d="M14.6539 11.892L15.2095 8.27258H11.7364V5.92383C11.7364 4.93383 12.2214 3.9682 13.777 3.9682H15.3558V0.886953C15.3558 0.886953 13.9233 0.642578 12.5533 0.642578C9.69328 0.642578 7.82391 2.37633 7.82391 5.51445V8.2732H4.64453V11.8926H7.82391V20.6426H11.7364V11.8926L14.6539 11.892Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6022_764">
+                                        <rect width="20" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                        <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6022_767)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.22051 0.0296094C7.19801 -0.0153906 7.50968 -0.0253906 9.99967 -0.0253906C12.4897 -0.0253906 12.8013 -0.0145573 13.778 0.0296094C14.7547 0.073776 15.4213 0.229609 16.0047 0.455443C16.6155 0.686276 17.1697 1.04711 17.628 1.51378C18.0947 1.97128 18.4547 2.52461 18.6847 3.13628C18.9113 3.71961 19.0663 4.38628 19.1113 5.36128C19.1563 6.34044 19.1663 6.65211 19.1663 9.14128C19.1663 11.6313 19.1555 11.9429 19.1113 12.9204C19.0672 13.8954 18.9113 14.5621 18.6847 15.1454C18.4547 15.7572 18.0941 16.3114 17.628 16.7696C17.1697 17.2363 16.6155 17.5963 16.0047 17.8263C15.4213 18.0529 14.7547 18.2079 13.7797 18.2529C12.8013 18.2979 12.4897 18.3079 9.99967 18.3079C7.50968 18.3079 7.19801 18.2971 6.22051 18.2529C5.24551 18.2088 4.57884 18.0529 3.99551 17.8263C3.38377 17.5962 2.82952 17.2357 2.37134 16.7696C1.90499 16.3118 1.5441 15.7578 1.31384 15.1463C1.08801 14.5629 0.933008 13.8963 0.888008 12.9213C0.843008 11.9421 0.833008 11.6304 0.833008 9.14128C0.833008 6.65128 0.843841 6.33961 0.888008 5.36294C0.932174 4.38628 1.08801 3.71961 1.31384 3.13628C1.54444 2.52468 1.90561 1.9707 2.37217 1.51294C2.82971 1.04669 3.3834 0.685812 3.99467 0.455443C4.57801 0.229609 5.24467 0.0746094 6.21968 0.0296094H6.22051ZM13.7038 1.67961C12.7372 1.63544 12.4472 1.62628 9.99967 1.62628C7.55217 1.62628 7.26217 1.63544 6.29551 1.67961C5.40134 1.72044 4.91634 1.86961 4.59301 1.99544C4.16551 2.16211 3.85967 2.35961 3.53884 2.68044C3.23471 2.97632 3.00066 3.33651 2.85384 3.73461C2.72801 4.05794 2.57884 4.54294 2.53801 5.43711C2.49384 6.40378 2.48467 6.69378 2.48467 9.14128C2.48467 11.5888 2.49384 11.8788 2.53801 12.8454C2.57884 13.7396 2.72801 14.2246 2.85384 14.5479C3.00051 14.9454 3.23467 15.3063 3.53884 15.6021C3.83467 15.9063 4.19551 16.1404 4.59301 16.2871C4.91634 16.4129 5.40134 16.5621 6.29551 16.6029C7.26217 16.6471 7.55134 16.6563 9.99967 16.6563C12.448 16.6563 12.7372 16.6471 13.7038 16.6029C14.598 16.5621 15.083 16.4129 15.4063 16.2871C15.8338 16.1204 16.1397 15.9229 16.4605 15.6021C16.7647 15.3063 16.9988 14.9454 17.1455 14.5479C17.2713 14.2246 17.4205 13.7396 17.4613 12.8454C17.5055 11.8788 17.5147 11.5888 17.5147 9.14128C17.5147 6.69378 17.5055 6.40378 17.4613 5.43711C17.4205 4.54294 17.2713 4.05794 17.1455 3.73461C16.9788 3.30711 16.7813 3.00128 16.4605 2.68044C16.1646 2.37634 15.8044 2.14228 15.4063 1.99544C15.083 1.86961 14.598 1.72044 13.7038 1.67961ZM8.82884 11.9671C9.48272 12.2393 10.2108 12.276 10.8888 12.071C11.5667 11.866 12.1525 11.432 12.546 10.8431C12.9395 10.2542 13.1164 9.547 13.0464 8.8422C12.9764 8.13739 12.6638 7.47875 12.1622 6.97878C11.8424 6.65917 11.4557 6.41445 11.03 6.26223C10.6042 6.11001 10.15 6.05408 9.70009 6.09845C9.25014 6.14283 8.81564 6.28642 8.42784 6.51888C8.04005 6.75135 7.70863 7.0669 7.45743 7.44282C7.20623 7.81874 7.0415 8.24568 6.9751 8.69291C6.90871 9.14014 6.9423 9.59652 7.07346 10.0292C7.20461 10.4619 7.43008 10.8601 7.73361 11.1952C8.03714 11.5303 8.4112 11.7939 8.82884 11.9671ZM6.66801 5.80961C7.10553 5.37209 7.62494 5.02503 8.19659 4.78824C8.76824 4.55146 9.38093 4.42959 9.99967 4.42959C10.6184 4.42959 11.2311 4.55146 11.8028 4.78824C12.3744 5.02503 12.8938 5.37209 13.3313 5.80961C13.7689 6.24713 14.1159 6.76654 14.3527 7.33819C14.5895 7.90984 14.7114 8.52253 14.7114 9.14128C14.7114 9.76002 14.5895 10.3727 14.3527 10.9444C14.1159 11.516 13.7689 12.0354 13.3313 12.4729C12.4477 13.3566 11.2493 13.853 9.99967 13.853C8.75006 13.853 7.55162 13.3566 6.66801 12.4729C5.7844 11.5893 5.28799 10.3909 5.28799 9.14128C5.28799 7.89166 5.7844 6.69322 6.66801 5.80961ZM15.7563 5.13128C15.8648 5.029 15.9516 4.90601 16.0116 4.76959C16.0716 4.63316 16.1037 4.48608 16.1059 4.33705C16.108 4.18802 16.0803 4.04007 16.0242 3.90195C15.9682 3.76384 15.885 3.63837 15.7796 3.53297C15.6742 3.42758 15.5488 3.34441 15.4107 3.28837C15.2726 3.23234 15.1246 3.20459 14.9756 3.20676C14.8265 3.20893 14.6795 3.24099 14.543 3.30102C14.4066 3.36106 14.2836 3.44786 14.1813 3.55628C13.9824 3.76713 13.8735 4.04721 13.8778 4.33705C13.882 4.62689 13.999 4.90367 14.204 5.10864C14.4089 5.31361 14.6857 5.43063 14.9756 5.43486C15.2654 5.43908 15.5455 5.33018 15.7563 5.13128Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6022_767">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5002 17.1416H5.5002V6.0416H2.5002V17.1416ZM4.0002 1.1416C3.0002 1.1416 2.2002 1.9416 2.2002 2.9416C2.2002 3.9416 3.0002 4.7416 4.0002 4.7416C5.0002 4.7416 5.8002 3.9416 5.8002 2.9416C5.8002 1.9416 5.0002 1.1416 4.0002 1.1416ZM10.6002 7.7416V6.0416H7.6002V17.1416H10.6002V11.4416C10.6002 8.2416 14.7002 8.0416 14.7002 11.4416V17.1416H17.7002V10.3416C17.7002 4.9416 12.0002 5.1416 10.6002 7.7416Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="footer-logo">
+                        <img src="assets/images/footer-logo.png" alt="">
+                    </div>
+                    <div class="footer-btn">
+                        <a href="tel:6313886640"
+                            class="nav-btn d-flex align-items-center gap-2 text-white align-items-center fs-18 fs-bold lh-130 gap-2 bg-red">
+                            <img src="./assets/images/phone-icon.svg" alt="#">
+                            631-388-6640</a>
+                    </div>
+
+
+                </div>
+                <div class="footer-middle-block row d-none d-md-flex">
+                    <div class="footer-link-Wrapper col-6 col-lg-2 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Sell Your Home</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Get an Offer
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Reviews
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    FAQ </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-2 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Realtors</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Request an Offer
+                                </a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Resources</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Long Island iBuyer Guide
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Blog
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    FAQ
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Company</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    About
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Contact Us
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Communities
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Terms of Use & Privacy Policy
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-2 col-md-2 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Partners</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Vendors
+                                </a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+                <!-- footer dropdown link mobile version  -->
+                <div class="mobile-footer-wrapper d-block d-md-none">
+
+                    <div class="accordion custom-accordion" id="footerAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fs-bold lh-120 fs-16" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Sell Your Home
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Get an Offer</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Reviews</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Realtors
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Join our Team</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Agent Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Resources
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Blog</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Guides</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Company
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">About Us</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Partners
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Partner Program</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Affiliates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="footer-bottom-block bg-white text-center">
+                    <p class="fs-14 fs-normal lh-130 text-red">© Copyright 2025 MrCashBuyer . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
