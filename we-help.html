@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dealhouse</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <!-- nav section  -->
+        <nav class="navbar navbar-expand-lg px-3">
+            <div class="container-fluid nav-wrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2 order-lg-1" href="#">
+                    <img class="site-logo" src="/assets/images/Logo.png" alt="Logo" height="50">
+                </a>
+
+                <!-- Custom Animated Hamburger -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <div class="toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <!-- mobile & tab version button  -->
+                <a href="tel:6313886640"
+                    class="nav-btn-mobile d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red d-lg-none">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse d-none d-lg-flex order-2" id="navbarContent">
+                    <ul class="navbar-nav d-flex mx-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="faq.html">Faq</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Review</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark"
+                                href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Realtors</a></li>
+                    </ul>
+
+                    <a href="tel:6313886640"
+                        class="nav-btn d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red">
+                        <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- mobile offcanvas menu  -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+            <div class="offcanvas-header d-flex justify-content-between align-items-center">
+                <img src="assets/images/offcanvas-log.svg" alt="">
+
+                <!-- Custom Animated Close Icon -->
+                <button class="btn-close custom-close-btn" data-bs-dismiss="offcanvas">
+                    <div class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="faq">Faq</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Review</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Realtors</a></li>
+                </ul>
+
+                <a href="tel:6313886640"
+                    class="offcanvas-btn mt-3 d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red p-2 rounded">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-left-block">
+                    <div class="hero-subheading d-inline-flex align-items-center mb-3">
+                        <p class="fs-14 fs-semibold lh-157 text-red">Over 1,000 homes purchased</p>
+                    </div>
+                    <h1 class="hero-heading lh-110 pb-4">We Buy Houses for Cash — Any Condition, Any Situation</h1>
+                    <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash offer
+                        within 24
+                        hours and lets you
+                        close on your schedule</p>
+                </div>
+                <div class="hero-mobile-bottom d-lg-none">
+                    <img class="vw-100" src="assets/images/hero-house1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- sell section start  -->
+    <section class="sell-section position-relative">
+        <div class="container">
+            <div
+                class="sell-section-wrapper bg-dark d-flex align-items-center justify-content-between position-relative">
+                <h5 class="sell-section-heading fs-bold lh-120 text-white">It's free with no obligation to sell.</h5>
+                <form action="#" class="bg-white d-flex align-items-center justify-content-between">
+                    <input class="border-0" type="email" name="email" placeholder="Enter your address" id="sellemail">
+                    <button type="submit" class="sell-form-btn fs-14 fs-semibold lh-157">Get an Offer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- < step section start -->
+    <section class="help-section gradient-2 position-relative">
+        <div class="container">
+            <div class="help-top-block text-center pb-5">
+                <h2 class="ibuyer-section-heading mx-auto lh-110 pb-4 ">Who we help on Long Island</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <a href="">
+                        <div class="help-item position-relative">
+                            <img class="help-item-image" src="assets/images/help-image-1.png" alt="">
+                            <svg class="overlay-svg position-absolute" width="342" height="215" viewBox="0 0 342 215"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-1" width="343" height="215" fill="url(#paint0_linear_4614_85490)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_4614_85490" x1="171" y1="163.136" x2="171"
+                                        y2="114.101" gradientUnits="userSpaceOnUse">
+                                        <stop stop-opacity="0.8" />
+                                        <stop offset="1" stop-opacity="0.1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div
+                                class="help-item-btn d-flex align-items-center justify-content-between position-absolute">
+                                <p class="help-item-heading fs-20 fs-normal lh-130 text-white">Bankruptcy</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.75 12.75L3.25021 12.75L3.25021 11.25L20.75 11.25L20.75 12.75Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 11.2501C16.4723 11.2501 13.5898 14.3522 13.5898 17.6602L13.5898 18.4102L15.0898 18.4102L15.0898 17.6602C15.0898 15.1486 17.3325 12.7501 19.9999 12.7501L20.75 12.7501L20.75 11.2501L19.9999 11.2501Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9999 12.75C16.4723 12.75 13.5898 9.6479 13.5898 6.34L13.5898 5.59L15.0898 5.59L15.0898 6.34C15.0898 8.8515 17.3325 11.25 19.9999 11.25L20.75 11.25L20.75 12.75L19.9999 12.75Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- step section end  -->
+
+    <!-- cta section  -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-section-wrapper">
+                <h2 class="cta-section-heading lh-110 dark-1 mx-auto text-center pb-5">Get a real offer. No Pressure, no
+                    surprises.</h2>
+                <div class="cta-form-wrapper text-center">
+                    <form class="cta-form bg-white d-inline-flex justify-content-between" action="#">
+                        <input class="bg-white" type="email" placeholder="Enter your address" name="email"
+                            id="homeemail">
+                        <a class="cta-btn bg-red text-white fs-14 fs-semibold lh-157" href="#">Get an Offer</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="footer-section-wrapper">
+                <div
+                    class="footer-top-block d-flex justify-content-between align-items-center flex-column flex-lg-row flex-sm-column flex-sm-column flex-md-row">
+                    <div class="footer-social d-flex">
+                        <a href=""><svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6022_764)">
+                                    <path
+                                        d="M14.6539 11.892L15.2095 8.27258H11.7364V5.92383C11.7364 4.93383 12.2214 3.9682 13.777 3.9682H15.3558V0.886953C15.3558 0.886953 13.9233 0.642578 12.5533 0.642578C9.69328 0.642578 7.82391 2.37633 7.82391 5.51445V8.2732H4.64453V11.8926H7.82391V20.6426H11.7364V11.8926L14.6539 11.892Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6022_764">
+                                        <rect width="20" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                        <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6022_767)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.22051 0.0296094C7.19801 -0.0153906 7.50968 -0.0253906 9.99967 -0.0253906C12.4897 -0.0253906 12.8013 -0.0145573 13.778 0.0296094C14.7547 0.073776 15.4213 0.229609 16.0047 0.455443C16.6155 0.686276 17.1697 1.04711 17.628 1.51378C18.0947 1.97128 18.4547 2.52461 18.6847 3.13628C18.9113 3.71961 19.0663 4.38628 19.1113 5.36128C19.1563 6.34044 19.1663 6.65211 19.1663 9.14128C19.1663 11.6313 19.1555 11.9429 19.1113 12.9204C19.0672 13.8954 18.9113 14.5621 18.6847 15.1454C18.4547 15.7572 18.0941 16.3114 17.628 16.7696C17.1697 17.2363 16.6155 17.5963 16.0047 17.8263C15.4213 18.0529 14.7547 18.2079 13.7797 18.2529C12.8013 18.2979 12.4897 18.3079 9.99967 18.3079C7.50968 18.3079 7.19801 18.2971 6.22051 18.2529C5.24551 18.2088 4.57884 18.0529 3.99551 17.8263C3.38377 17.5962 2.82952 17.2357 2.37134 16.7696C1.90499 16.3118 1.5441 15.7578 1.31384 15.1463C1.08801 14.5629 0.933008 13.8963 0.888008 12.9213C0.843008 11.9421 0.833008 11.6304 0.833008 9.14128C0.833008 6.65128 0.843841 6.33961 0.888008 5.36294C0.932174 4.38628 1.08801 3.71961 1.31384 3.13628C1.54444 2.52468 1.90561 1.9707 2.37217 1.51294C2.82971 1.04669 3.3834 0.685812 3.99467 0.455443C4.57801 0.229609 5.24467 0.0746094 6.21968 0.0296094H6.22051ZM13.7038 1.67961C12.7372 1.63544 12.4472 1.62628 9.99967 1.62628C7.55217 1.62628 7.26217 1.63544 6.29551 1.67961C5.40134 1.72044 4.91634 1.86961 4.59301 1.99544C4.16551 2.16211 3.85967 2.35961 3.53884 2.68044C3.23471 2.97632 3.00066 3.33651 2.85384 3.73461C2.72801 4.05794 2.57884 4.54294 2.53801 5.43711C2.49384 6.40378 2.48467 6.69378 2.48467 9.14128C2.48467 11.5888 2.49384 11.8788 2.53801 12.8454C2.57884 13.7396 2.72801 14.2246 2.85384 14.5479C3.00051 14.9454 3.23467 15.3063 3.53884 15.6021C3.83467 15.9063 4.19551 16.1404 4.59301 16.2871C4.91634 16.4129 5.40134 16.5621 6.29551 16.6029C7.26217 16.6471 7.55134 16.6563 9.99967 16.6563C12.448 16.6563 12.7372 16.6471 13.7038 16.6029C14.598 16.5621 15.083 16.4129 15.4063 16.2871C15.8338 16.1204 16.1397 15.9229 16.4605 15.6021C16.7647 15.3063 16.9988 14.9454 17.1455 14.5479C17.2713 14.2246 17.4205 13.7396 17.4613 12.8454C17.5055 11.8788 17.5147 11.5888 17.5147 9.14128C17.5147 6.69378 17.5055 6.40378 17.4613 5.43711C17.4205 4.54294 17.2713 4.05794 17.1455 3.73461C16.9788 3.30711 16.7813 3.00128 16.4605 2.68044C16.1646 2.37634 15.8044 2.14228 15.4063 1.99544C15.083 1.86961 14.598 1.72044 13.7038 1.67961ZM8.82884 11.9671C9.48272 12.2393 10.2108 12.276 10.8888 12.071C11.5667 11.866 12.1525 11.432 12.546 10.8431C12.9395 10.2542 13.1164 9.547 13.0464 8.8422C12.9764 8.13739 12.6638 7.47875 12.1622 6.97878C11.8424 6.65917 11.4557 6.41445 11.03 6.26223C10.6042 6.11001 10.15 6.05408 9.70009 6.09845C9.25014 6.14283 8.81564 6.28642 8.42784 6.51888C8.04005 6.75135 7.70863 7.0669 7.45743 7.44282C7.20623 7.81874 7.0415 8.24568 6.9751 8.69291C6.90871 9.14014 6.9423 9.59652 7.07346 10.0292C7.20461 10.4619 7.43008 10.8601 7.73361 11.1952C8.03714 11.5303 8.4112 11.7939 8.82884 11.9671ZM6.66801 5.80961C7.10553 5.37209 7.62494 5.02503 8.19659 4.78824C8.76824 4.55146 9.38093 4.42959 9.99967 4.42959C10.6184 4.42959 11.2311 4.55146 11.8028 4.78824C12.3744 5.02503 12.8938 5.37209 13.3313 5.80961C13.7689 6.24713 14.1159 6.76654 14.3527 7.33819C14.5895 7.90984 14.7114 8.52253 14.7114 9.14128C14.7114 9.76002 14.5895 10.3727 14.3527 10.9444C14.1159 11.516 13.7689 12.0354 13.3313 12.4729C12.4477 13.3566 11.2493 13.853 9.99967 13.853C8.75006 13.853 7.55162 13.3566 6.66801 12.4729C5.7844 11.5893 5.28799 10.3909 5.28799 9.14128C5.28799 7.89166 5.7844 6.69322 6.66801 5.80961ZM15.7563 5.13128C15.8648 5.029 15.9516 4.90601 16.0116 4.76959C16.0716 4.63316 16.1037 4.48608 16.1059 4.33705C16.108 4.18802 16.0803 4.04007 16.0242 3.90195C15.9682 3.76384 15.885 3.63837 15.7796 3.53297C15.6742 3.42758 15.5488 3.34441 15.4107 3.28837C15.2726 3.23234 15.1246 3.20459 14.9756 3.20676C14.8265 3.20893 14.6795 3.24099 14.543 3.30102C14.4066 3.36106 14.2836 3.44786 14.1813 3.55628C13.9824 3.76713 13.8735 4.04721 13.8778 4.33705C13.882 4.62689 13.999 4.90367 14.204 5.10864C14.4089 5.31361 14.6857 5.43063 14.9756 5.43486C15.2654 5.43908 15.5455 5.33018 15.7563 5.13128Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6022_767">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5002 17.1416H5.5002V6.0416H2.5002V17.1416ZM4.0002 1.1416C3.0002 1.1416 2.2002 1.9416 2.2002 2.9416C2.2002 3.9416 3.0002 4.7416 4.0002 4.7416C5.0002 4.7416 5.8002 3.9416 5.8002 2.9416C5.8002 1.9416 5.0002 1.1416 4.0002 1.1416ZM10.6002 7.7416V6.0416H7.6002V17.1416H10.6002V11.4416C10.6002 8.2416 14.7002 8.0416 14.7002 11.4416V17.1416H17.7002V10.3416C17.7002 4.9416 12.0002 5.1416 10.6002 7.7416Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <div class="footer-logo">
+                        <img src="assets/images/footer-logo.png" alt="">
+                    </div>
+                    <div class="footer-btn">
+                        <a href="tel:6313886640"
+                            class="nav-btn d-flex align-items-center gap-2 text-white align-items-center fs-18 fs-bold lh-130 gap-2 bg-red">
+                            <img src="./assets/images/phone-icon.svg" alt="#">
+                            631-388-6640</a>
+                    </div>
+
+
+                </div>
+                <div class="footer-middle-block row d-none d-md-flex">
+                    <div class="footer-link-Wrapper col-6 col-lg-2 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Sell Your Home</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Get an Offer
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Reviews
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    FAQ </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-2 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Realtors</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Request an Offer
+                                </a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Resources</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Long Island iBuyer Guide
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Blog
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    FAQ
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-3 col-md-4 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Company</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    About
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Contact Us
+
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Communities
+                                </a></li>
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Terms of Use & Privacy Policy
+                                </a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-link-Wrapper col-6  col-lg-2 col-md-2 col-sm-6">
+                        <p class="footer-link-heading fs-20 fs-semibold lh-130 text-white pb-4">Partners</p>
+                        <ul class="footer-link-container d-flex flex-column ">
+                            <li><a class="footer-link fs-16 fs-normal lh-130 text-decoration-none gray-1" href="#"><svg
+                                        class="footer-hover-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 13V0L8 6.5L0 13Z" fill="#DE0030" />
+                                    </svg>
+                                    Vendors
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- footer dropdown link mobile version  -->
+                <div class="mobile-footer-wrapper d-block d-md-none">
+
+                    <div class="accordion custom-accordion" id="footerAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fs-bold lh-120 fs-16" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Sell Your Home
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Get an Offer</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Reviews</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Realtors
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Join our Team</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Agent Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Resources
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Blog</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Guides</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Company
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">About Us</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button fs-bold lh-120 fs-16 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Partners
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mobile-accordion-link d-flex flex-column">
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Partner Program</a></li>
+                                        <li><a class="fs-14 fs-normal lh-130 gray-1" href="#">Affiliates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom-block bg-white text-center">
+                    <p class="fs-14 fs-normal lh-130 text-red">© Copyright 2025 MrCashBuyer . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

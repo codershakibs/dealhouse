@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dealhouse</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <!-- nav section  -->
+        <nav class="navbar navbar-expand-lg px-3">
+            <div class="container-fluid nav-wrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2 order-lg-1" href="#">
+                    <img class="site-logo" src="/assets/images/Logo.png" alt="Logo" height="50">
+                </a>
+
+                <!-- Custom Animated Hamburger -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <div class="toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <!-- mobile & tab version button  -->
+                <a href="tel:6313886640"
+                    class="nav-btn-mobile d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red d-lg-none">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse d-none d-lg-flex order-2" id="navbarContent">
+                    <ul class="navbar-nav d-flex mx-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="faq.html">Faq</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Review</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark"
+                                href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Realtors</a></li>
+                    </ul>
+
+                    <a href="tel:6313886640"
+                        class="nav-btn d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red">
+                        <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- mobile offcanvas menu  -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+            <div class="offcanvas-header d-flex justify-content-between align-items-center">
+                <img src="assets/images/offcanvas-log.svg" alt="">
+
+                <!-- Custom Animated Close Icon -->
+                <button class="btn-close custom-close-btn" data-bs-dismiss="offcanvas">
+                    <div class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="faq">Faq</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Review</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Realtors</a></li>
+                </ul>
+
+                <a href="tel:6313886640"
+                    class="offcanvas-btn mt-3 d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red p-2 rounded">
+                    <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
+                </a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-left-block">
+                    <div class="hero-subheading d-inline-flex align-items-center mb-3">
+                        <p class="fs-14 fs-semibold lh-157 text-red">Over 1,000 homes purchased</p>
+                    </div>
+                    <h1 class="hero-heading lh-110 pb-4">We Buy Houses for Cash — Any Condition, Any Situation</h1>
+                    <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash offer
+                        within 24
+                        hours and lets you
+                        close on your schedule</p>
+                </div>
+                <div class="hero-mobile-bottom d-lg-none">
+                    <img class="vw-100" src="assets/images/hero-house1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- sell section start  -->
+    <section class="sell-section position-relative">
+        <div class="container">
+            <div
+                class="sell-section-wrapper bg-dark d-flex align-items-center justify-content-between position-relative">
+                <h5 class="sell-section-heading fs-bold lh-120 text-white">It's free with no obligation to sell.</h5>
+                <form action="#" class="bg-white d-flex align-items-center justify-content-between">
+                    <input class="border-0" type="email" name="email" placeholder="Enter your address" id="sellemail">
+                    <button type="submit" class="sell-form-btn fs-14 fs-semibold lh-157">Get an Offer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- < step section start -->
+    <section class="ibuyer-section gradient-3 position-relative">
+        <div class="container">
+            <div class="ibuyer-section-wrapper">
+                <img src="assets/images/ibuyer-img.png" alt="#">
+                <div class="ibuyer-info-wrapper gradient-2 position-relative">
+                    <h2 class="ibuyer-section-heading fs-secondary lh-110 dark text-center pb-4">Working With an iBuyer
+                        to Sell Your Long
+                        Island
+                        Home Fast</h2>
+                    <p class="ibuter-info-1 fs-20 lh-normal lh-130 dark-4 text-center pb-4">An iBuyer is a company who
+                        buys properties
+                        “as
+                        is” for
+                        cash, providing a fast, convenient
+                        solution for homeowners. Aided by technological developments and increased awareness, this
+                        method of home-selling has gained significant momentum in the last few years. However, some Long
+                        Island house owners may have lingering questions about what to expect when working with an
+                        iBuyer like MrCashBuyer®.</p>
+                    <p class="ibuter-info-2 fs-20 fs-bold lh-130 dark text-center">This guide will provide the pros and
+                        cons, as well
+                        as
+                        circumstances in which selling to an iBuyer is beneficial, and tips for choosing the best
+                        company for your needs.</p>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- step section end  -->
+
+    <!-- choose section start  -->
+    <section class="choose-section">
+        <div class="container">
+            <div class="choose-section-top-block">
+                <h2 class="choose-section-heading fs-secondary lh-110 dark text-center">Pros and Cons of Selling Your
+                    Long Island Home fast to an iBuyer.</h2>
+            </div>
+            <div class="choose-section-main">
+                <div class="pro-card d-flex align-items-start gap-4 pb-5">
+                    <div class="pro-card-icon d-flex align-items-center">
+                        <img src="assets/images/pro-icon.png" alt="">
+                    </div>
+                    <div class="pro-card-info-wrapper pb-4">
+                        <h5 class="pro-card-heading fs-bold lh-120 dark pb-4">Pro: You can sell your Long Island house
+                            fast
+                            in a
+                            matter of days
+                            rather than months</h5>
+                        <p class="pro-card-subheading fs-18 fs-normal lh-130 dark-4">The most obvious benefit of selling
+                            to a cash home buyer is
+                            the
+                            brevity of the whole timeline. With
+                            MrCashBuyer®, you apply online; we send you an offer; you choose whether or not to accept;
+                            we
+                            perform a brief inspection; and then we close at the date of your choosing.</p>
+                    </div>
+
+
+
+                </div>
+                <div class="checklist-wrapper d-flex flex-column">
+                    <div class="checklist-top-block gradient-4">
+                        <h5>What you get to skip:</h5>
+                    </div>
+                    <div class="checklist-item-wrapper d-flex flex-column">
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You vetting real estate agents</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You clearing out the house and staging it for
+                                showings</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2"> You dealing with strangers scrutinize your
+                                property</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You footing the bill for costly repairs at
+                                potential buyers' requests</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You putting up with buyer negotiations</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You completing lengthy paperwork in person</p>
+
+                        </div>
+                        <div class="checklist-item d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                    fill="#DE0030" />
+                            </svg>
+                            <p class="fs-18 fs-normal lh-130 dark-2">You waiting and crossing your fingers for months
+                                and months</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <p class="fs-20 fs-bold lh-130 dark pt-4">A Long Island iBuyer like MrCashBuyer® helps you avoid
+                    catering to potential buyers and putting your
+                    life on hold as you wait for traditional offers. Instead, you jump ahead to the closing.</p>
+                <div class="pro-card d-flex align-items-start gap-4 pb-5 pt-5">
+                    <div class="pro-card-icon d-flex align-items-center">
+                        <img src="assets/images/pro-icon.png" alt="">
+                    </div>
+                    <div class="pro-card-info-wrapper pb-4">
+                        <h5 class="pro-card-heading fs-bold lh-120 dark pb-4">Pro: You fully control the timeline,
+                            including the closing</h5>
+                        <p class="pro-card-subheading fs-18 fs-normal lh-130 dark-4">With traditional home-buying
+                            methods, you are at the mercy of the buyer. They dictate the closing date and can pull their
+                            offer well into the process, whether it is based on the results of the home inspection or
+                            otherwise. This can leave sellers feeling powerless and, to a certain extent, they are.</p>
+                        <p class="pro-card-subheading-2 fs-20 fs-bold lh-130 dark pt-4">However, with a cash home buyer
+                            like MrCashBuyer®, you
+                            dictate the closing date and can sleep
+                            easy knowing that you have a "sure thing."</p>
+                    </div>
+                </div>
+                <div class="pro-card d-flex align-items-start gap-4 pb-5">
+                    <div class="pro-card-icon d-flex align-items-center">
+                        <img src="assets/images/pro-icon.png" alt="">
+                    </div>
+                    <div class="pro-card-info-wrapper pb-4">
+                        <h5 class="pro-card-heading fs-bold lh-120 dark pb-4">Pro: The house is sold "as is"</h5>
+                        <p class="pro-card-subheading fs-18 fs-normal lh-130 dark-4">The online cash offer you’ll
+                            receive on your Long Island home is based on its current state. Alternatively, most
+                            traditional home buyers would expect you to make certain repairs to meet their standards.
+                        </p>
+                        <p class="pro-card-subheading-2 fs-20 fs-bold lh-130 dark pt-4">Selling to an iBuyer helps you
+                            avoid the added labor,
+                            costs, and stress of renovations.</p>
+                    </div>
+                </div>
+                <div class="pro-card pro-card-2 d-flex align-items-start gap-4 ">
+                    <div class="pro-card-icon pro-card-icon-2 bg-white d-flex align-items-center">
+                        <img src="assets/images/pro-icon.png" alt="">
+                    </div>
+                    <div class="pro-card-info-wrapper">
+                        <h5 class="pro-card-heading-2 fs-bold lh-120 dark pb-4">Pro: You can sell your Long Island house
+                            fast
+                            in a
+                            matter of days
+                            rather than months</h5>
+                        <p class="pro-card-subheading-2 fs-18 fs-normal lh-130 dark-4">The most obvious benefit of
+                            selling
+                            to a cash home buyer is
+                            the
+                            brevity of the whole timeline. With
+                            MrCashBuyer®, you apply online; we send you an offer; you choose whether or not to accept;
+                            we
+                            perform a brief inspection; and then we close at the date of your choosing.</p>
+                    </div>
+
+
+
+                </div>
+                <h2 class="choose-section-heading fs-secondary lh-110 dark text-center">Overview: Pros & Cons of Selling
+                    to an iBuyer</h2>
+
+                <div class="row pt-4 gap-3 gap-sm-3 gap-md-3 gap-lg-0">
+                    <div class="col-lg-6">
+                        <div class="pro-item-1">
+                            <div class="pro-card-icon-2-wrapper d-flex align-items-center">
+                                <div class="pro-card-icon-2  bg-white">
+                                    <img src="assets/images/pro-icon.png" alt="">
+                                </div>
+                                <h5 class="pro-item-1-heading fs-bold lh-120 dark">Pros</h5>
+
+                            </div>
+
+                            <div class="pro-card-checklist d-flex align-items-start">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05094 10.2212L10.0007 15.1709Z"
+                                        fill="#BAEF2E" />
+                                </svg>
+                                <p class="pro-checklist-heading fs-18 fs-normal lh-130 dark-2">You can sell your Long
+                                    Island house fast rather
+                                    than waiting indefinitely</p>
+
+                            </div>
+                            <div class="pro-card-checklist d-flex align-items-start">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05094 10.2212L10.0007 15.1709Z"
+                                        fill="#BAEF2E" />
+                                </svg>
+                                <p class="pro-checklist-heading fs-18 fs-normal lh-130 dark-2">You fully control the
+                                    timeline, including the
+                                    closing</p>
+
+                            </div>
+                            <div class="pro-card-checklist d-flex align-items-start">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05094 10.2212L10.0007 15.1709Z"
+                                        fill="#BAEF2E" />
+                                </svg>
+                                <p class="pro-checklist-heading fs-18 fs-normal lh-130 dark-2">The house is sold "as is"
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="pro-item-1 pro-item-2">
+                            <div class="pro-card-icon-2-wrapper d-flex align-items-center">
+                                <div class="pro-card-icon-2  bg-white">
+                                    <img src="assets/images/pro-icon.png" alt="">
+                                </div>
+                                <h5 class="pro-item-1-heading fs-bold lh-120 dark">Con</h5>
+
+                            </div>
+
+                            <div class="pro-card-checklist d-flex align-items-start">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.0007 10.5865L16.9505 5.63672L18.3647 7.05093L13.4149 12.0007L18.3647 16.9504L16.9505 18.3646L12.0007 13.4149L7.05094 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05094 5.63672L12.0007 10.5865Z"
+                                        fill="#DE0030" />
+                                </svg>
+
+                                <p class="pro-checklist-heading fs-18 fs-normal lh-130 dark-2">When compared to houses
+                                    that were sold through
+                                    traditional methods, the final offer was generally slightly lower.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- sell section start  -->
+    <section class="sell-section bg-dark-6">
+        <div class="container">
+            <div class="sell-top-block ">
+                <h2 class="sell-section-heading fs-secondary text-center lh-110 dark pb-4">Should I Sell My Long Island
+                    Home
+                    to an iBuyer
+                </h2>
+                <p class="sell-section-info fs-20 lh-normal lh-130 dark-3 text-center">Collaborating with a Long Island
+                    iBuyer may not be
+                    the best
+                    option for everyone. Partnering with a
+                    real estate agent makes more sense if you have ample time and flexibility to follow the traditional
+                    sales process of making repairs, conducting home showings, waiting for offers, and negotiating with
+                    buyers. However, not everyone is in a position to handle the uncertain timeline and added work.
+                    These include but are not limited to:</p>
+            </div>
+            <div class="sell-item-wrapper">
+                <div class="row align-items-center gap-5 gap-sm-5 gap-md-5 gap-lg-0">
+                    <div class="col-lg-6">
+                        <div class="sell-item-image position-relative">
+                            <img src="assets/images/sell-image-1.png" alt="">
+                            <img class="sell-item-logo position-absolute" src="assets/images/cash-logo-blur.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sell-item-info">
+                            <h2 class="sell-item-heading fs-secondary lh-110 dark pb-4">Individuals who place a premium
+                                on their time and
+                                peace
+                                of mind</h2>
+                            <p class="sell-item-info fs-20 fs-normal lh-120 dark-4 pb-4">There are infinite reasons for
+                                someone to
+                                value
+                                convenience: a busy professional life,
+                                the added stress of a soon-arriving baby, an upcoming out-of-state move, negative
+                                memories from previous home sales . . . the list can go on and on.</p>
+                            <p class="sell-item-info fs-20 fs-bold lh-130 dark">In today’s uncertain world, it’s hard to
+                                put a price on
+                                "a sure thing."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pick section  -->
+    <section class="pick-section gradient-2">
+        <div class="container">
+            <div class="pick-top-block">
+                <h2 class="pick-section-heading fs-secondary lh-110 dark text-center pb-4">How Do You Pick the Right
+                    iBuyer
+                    to Which to Sell Your Long Island Home Fast</h2>
+                <p class="pick-section-info fs-20 fs-normal lh-130 dark-3 text-center pb-5">There are numerous companies
+                    that will buy your house for fast
+                    cash. They range from giants like
+                    Zillow to locally-focused companies, like MrCashBuyer®. While there’s no denying the brand name
+                    recognition of these larger organizations, working with a smaller cash home buyer based in your
+                    local area has noteworthy benefits:</p>
+            </div>
+            <div class="row gy-4 gy-md-4 gy-sm-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="pick-item-box bg-white">
+                        <div class="pick-item-icon d-flex align-items-center mb-5">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 12.8165C0.109375 12.2489 0.526094 11.5686 1.19656 11.6725C3.66844 11.8737 6.14687 12.0728 8.5925 12.4972C9.77484 12.7061 10.9561 12.9587 12.0816 13.3842C12.7105 13.6204 13.3033 13.9693 13.7867 14.4386C14.0372 14.7032 14.0011 15.0981 13.9781 15.4328C13.8141 17.0439 13.5067 18.6364 13.16 20.2168C12.1702 24.6925 10.8063 29.0718 9.53203 33.472C9.39531 33.8712 9.41281 34.3634 9.06391 34.6565C8.77734 34.9343 8.36719 35.012 7.98109 35.0022C5.68422 34.9912 3.38516 35.0142 1.08828 34.9912C0.544688 35 0.0973438 34.569 0 34.0495V12.8165Z"
+                                    fill="#DE0030" />
+                                <path
+                                    d="M40.4798 16.3046C45.0571 14.6443 49.9549 14.0132 54.8068 14.0044C55.3843 13.9596 55.9027 14.3883 55.999 14.9538V36.3421C55.9257 36.8824 55.4641 37.3363 54.9041 37.3243C52.6094 37.3462 50.3137 37.3254 48.019 37.3352C47.3507 37.3833 46.7819 36.8157 46.6179 36.2054C46.2296 34.638 45.7221 33.1024 45.2048 31.5734C44.309 28.9002 43.3432 26.2501 42.3348 23.6185C41.6216 21.8357 40.9588 20.0266 40.0838 18.3149C39.8377 17.9332 39.6441 17.5165 39.6485 17.0516C39.9219 16.8012 40.1407 16.473 40.4798 16.3046Z"
+                                    fill="#DE0030" />
+                                <path
+                                    d="M26.1052 17.2495C26.9737 16.7639 27.9766 16.4938 28.9741 16.5813C30.151 16.6611 31.2622 17.0931 32.3374 17.5503C34.3794 18.3302 36.393 19.1986 38.4908 19.8242C39.1657 21.0963 39.6666 22.4514 40.2015 23.7869C41.4319 26.9675 42.5705 30.1831 43.7015 33.401C43.8349 33.7881 43.9924 34.1699 44.0865 34.5702C44.0274 34.5505 43.9082 34.51 43.848 34.4892C42.1746 32.4767 40.1905 30.7519 38.1901 29.0741C37.1029 28.1531 35.9522 27.3088 34.8891 26.3594C33.383 25.0502 31.8244 23.8 30.361 22.4427C29.8382 22.2513 29.2487 22.0391 28.6974 22.248C27.6616 22.6078 26.7166 23.3045 25.5901 23.3428C25.1515 23.3483 24.8058 23.6775 24.5794 24.0242C24.0993 24.7363 23.489 25.4067 22.684 25.7502C21.763 26.1472 20.6737 25.9394 19.849 25.4111C19.7516 24.8544 19.8566 24.2889 20.0754 23.7738C20.6551 22.3606 21.5651 21.0919 22.6676 20.0386C23.7252 19.0094 24.8058 17.9703 26.1052 17.2495Z"
+                                    fill="#DE0030" />
+                                <path
+                                    d="M15.8675 18.6681C17.4217 18.6648 18.977 18.667 20.5323 18.667C19.3927 19.8428 18.4433 21.2121 17.7903 22.716C17.4042 23.6337 17.1209 24.6334 17.2303 25.6374C17.3397 26.5015 17.8734 27.3054 18.6347 27.732C19.0142 27.9365 19.443 28.0196 19.852 28.1487C21.0169 28.4878 22.3009 28.4057 23.4045 27.896C24.4917 27.4104 25.3853 26.5857 26.1323 25.6746C26.7678 25.6812 27.3694 25.4646 27.9447 25.2142C28.1448 24.9724 28.4577 24.8871 28.7267 24.7471C30.3433 26.0881 32.0189 27.3579 33.6048 28.7382C35.8875 30.6031 38.2609 32.3717 40.3653 34.4443C41.0916 35.1892 41.8222 35.969 42.2608 36.926C42.4653 37.3603 42.4948 37.8874 42.2805 38.3239C42.0891 38.8281 41.505 39.0053 41.0194 39.061C40.6213 39.1015 40.3905 38.7417 40.1378 38.5021C38.1352 36.4962 36.1281 34.4935 34.1244 32.4876C33.7777 32.0753 33.2483 31.7001 32.685 31.9046C31.9008 32.1201 31.565 33.2149 32.1709 33.7924C34.353 35.992 36.5503 38.1795 38.7433 40.3703C38.4655 40.7728 38.0947 41.1457 37.6452 41.3459C37.0961 41.4596 36.4387 41.6073 35.9345 41.2901C33.9909 39.3717 32.0736 37.4248 30.1344 35.4998C29.9167 35.2832 29.6302 35.1224 29.3173 35.1203C28.6786 35.0929 28.0913 35.6814 28.1219 36.3201C28.1252 36.6548 28.3111 36.9534 28.5463 37.1787C30.3105 38.9353 32.0637 40.7028 33.8323 42.456C33.665 43.0423 33.338 43.6778 32.7003 43.8451C32.2322 43.9249 31.6514 44.031 31.2839 43.6438C29.8577 42.2253 28.4369 40.8001 27.015 39.3771C26.7022 39.0731 26.3992 38.6837 25.9355 38.6301C25.2584 38.5229 24.5891 39.1376 24.6219 39.8179C24.6241 40.157 24.8155 40.4578 25.0539 40.6853C26.268 41.8982 27.4864 43.109 28.6928 44.3307C27.202 44.4182 25.7025 43.8637 24.5563 42.9198C21.0103 40.2937 17.5059 37.6063 14.135 34.7604C13.4448 34.0878 12.8148 33.356 12.1367 32.6713C13.6855 28.0918 14.8809 23.3985 15.8675 18.6681Z"
+                                    fill="#DE0030" />
+                            </svg>
+
+                        </div>
+                        <h5 class="pick-item-box-heading fs-bold lh-120 dark text-center">You know the reviews you’re
+                            reading pertain to the
+                            team with which you’ll work directly.
+                        </h5>
+                        <p class="pick-item-info fs-20 fs-normal lh-130 dark-4 text-center">A review of Zillow from a
+                            home buyer based
+                            on the other
+                            side of the country gives no
+                            reflection of what your experience will be like. However, with reviews of local companies,
+                            you read about specific individuals with whom you’ll personally partner.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pick-item-box bg-white">
+                        <div class="pick-item-icon d-flex align-items-center mb-5">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.4512 6.25084C23.7995 3.84677 27.0491 2.34834 30.4036 2.12959C33.4278 1.91193 36.5198 2.7038 39.0464 4.3849C41.6616 6.09771 43.6697 8.72052 44.6125 11.7043C44.9187 12.6405 45.0948 13.6129 45.213 14.5896C45.6067 14.8794 45.9272 15.2721 46.0978 15.7326C46.345 16.3669 46.2356 17.0593 46.2597 17.7232C46.2345 18.4199 46.3548 19.1516 46.0672 19.8111C45.7095 20.6905 44.8116 21.314 43.8611 21.3304C42.8395 21.3446 41.818 21.3304 40.7964 21.3358C39.9072 23.5846 38.5345 25.666 36.6938 27.2476C38.0073 27.2563 39.322 27.2355 40.6367 27.2596C43.0594 27.3383 45.3694 28.7504 46.5747 30.8493C36.4466 30.8526 26.3184 30.8515 16.1914 30.8493C17.4602 28.629 19.9714 27.1961 22.5308 27.2497C23.7109 27.2476 24.8911 27.2508 26.0712 27.2487C24.2305 25.666 22.8556 23.5857 21.9697 21.3358C20.9525 21.3304 19.9353 21.3435 18.9181 21.3304C17.9447 21.3194 17.0227 20.6708 16.677 19.7619C16.4495 19.2183 16.5141 18.619 16.5053 18.0447C16.513 17.4968 16.4889 16.9488 16.5184 16.4019C16.5633 15.6746 16.9756 15.0052 17.5586 14.5797C17.8594 11.4669 19.2495 8.47334 21.4512 6.25084ZM23.9122 6.85677C21.6842 8.6549 20.153 11.2963 19.7286 14.1313C20.2022 14.1313 20.6769 14.1313 21.1516 14.1313C21.577 11.6332 22.9169 9.30568 24.8648 7.68474C26.7045 6.14255 29.0988 5.26537 31.5028 5.30802C33.733 5.32334 35.9434 6.11521 37.6891 7.50099C39.765 9.12521 41.1617 11.5468 41.6364 14.1313C42.1023 14.1313 42.5694 14.1313 43.0375 14.1302C42.6602 11.6583 41.4559 9.32646 39.6655 7.58193C37.6683 5.61427 34.9514 4.4013 32.1536 4.23287C29.2059 4.02943 26.197 4.98209 23.9122 6.85677ZM35.4862 13.2924C34.0873 14.0033 32.5452 14.536 30.9581 14.4901C30.2078 14.4769 29.475 14.2811 28.7892 13.9858C27.107 13.2858 25.1919 13.0911 23.4288 13.5943C22.72 15.9458 23.0973 18.4921 24.003 20.7343C24.0872 20.8907 24.1036 21.1269 24.2873 21.2024C25.5758 21.7712 26.9823 22.0096 28.3758 22.1474C28.775 21.291 29.5691 20.6282 30.4966 20.428C31.6822 20.1513 33.0177 20.6271 33.7187 21.6333C34.3575 22.5051 34.4166 23.7497 33.8653 24.6794C33.2594 25.7546 31.9556 26.3474 30.7448 26.1604C29.6784 26.0247 28.7334 25.2766 28.332 24.2824C27.4734 24.2026 26.6181 24.0822 25.7759 23.8941C26.7483 25.1869 27.9941 26.3408 29.5319 26.9107C30.8805 27.4269 32.427 27.3361 33.722 26.7072C35.402 25.899 36.6959 24.4629 37.6672 22.8999C38.7489 21.1346 39.4784 19.1341 39.6677 17.0658C39.8514 15.1124 39.4062 13.0999 38.3792 11.4243C37.4681 12.1232 36.5089 12.7663 35.4862 13.2924Z"
+                                    fill="#BAEF2E" />
+                                <path
+                                    d="M8.54621 18.7228C10.2787 18.5599 12.0943 19.1166 13.3543 20.335C14.5257 21.4331 15.1262 23.1405 14.7642 24.721C14.68 25.1771 14.4557 25.5872 14.3092 26.0225C14.4175 26.9227 14.7992 27.7627 15.1875 28.5731C15.2793 28.6902 15.1459 28.8816 15.0081 28.8564C13.9439 28.9002 12.9125 28.5939 11.9248 28.2385C11.3834 28.408 10.8617 28.6519 10.294 28.7317C8.35917 29.0905 6.23511 28.5228 4.83839 27.1119C3.8923 26.18 3.33339 24.8478 3.41871 23.5146C3.47667 22.3114 4.0498 21.1652 4.91714 20.3394C5.88949 19.3966 7.20527 18.8486 8.54621 18.7228Z"
+                                    fill="#BAEF2E" />
+                                <path
+                                    d="M11.7707 33.552C12.2695 33.1484 12.9159 32.9526 13.5546 32.9657C25.4448 32.9657 37.3349 32.9646 49.2251 32.9657C49.9109 32.9526 50.6032 33.191 51.1151 33.6526C51.7385 34.1995 52.0842 35.0416 52.0251 35.8707C51.7134 41.1787 51.3885 46.4856 51.079 51.7935C51.5526 51.8034 52.0295 51.764 52.5009 51.8165C53.0817 51.9073 53.4842 52.5482 53.3234 53.1115C53.2063 53.619 52.6857 53.9504 52.1771 53.9077C36.0235 53.9045 19.8688 53.911 3.71416 53.9045C3.13775 53.9252 2.61822 53.4057 2.64556 52.8293C2.6401 52.2616 3.16072 51.7673 3.72728 51.7957C6.37963 51.7891 9.03197 51.7946 11.6854 51.7935C11.3737 46.491 11.0521 41.1896 10.7382 35.8882C10.6671 35.0001 11.0663 34.0956 11.7707 33.552ZM30.9781 39.5118C29.8088 39.6387 28.7392 40.4076 28.2382 41.4696C27.7209 42.5284 27.7974 43.8485 28.4351 44.8384C29.239 46.1585 30.9737 46.8005 32.4404 46.3029C34.0876 45.8129 35.166 43.9863 34.8018 42.3063C34.501 40.5684 32.7281 39.2657 30.9781 39.5118Z"
+                                    fill="#BAEF2E" />
+                            </svg>
+
+
+                        </div>
+                        <h5 class="pick-item-box-heading fs-bold lh-120 dark text-center">For localized companies,
+                            customer service will naturally come first due to the power of word-of-mouth.
+                        </h5>
+                        <p class="pick-item-info fs-20 fs-normal lh-130 dark-4 text-center">MrCashBuyer® and other
+                            smaller iBuyer teams
+                            rely upon customer recommendations and positive buzz. This is one of the many reasons we
+                            work diligently to provide an overall positive selling experience to our Long Island
+                            customers. Alternatively, the national home buying giants services thousands of customers
+                            scattered across the country and rely upon expensive advertisements to find business.
+                            Therefore, customer service is a less integral part of their growth plan, and it’s easier
+                            for them to sweep bad reviews under the rug.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="pick-item-box bg-white">
+                        <div class="pick-item-icon d-flex align-items-center mb-5">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4614_94394)">
+                                    <path
+                                        d="M31.808 37.1991C31.5989 36.97 31.3343 36.7988 31.0609 36.656C30.4655 36.3456 29.8144 36.1573 29.168 35.9873V40.9967C30.2173 40.8781 31.4219 40.4973 31.9728 39.5177C32.2359 39.0498 32.2882 38.4749 32.181 37.954C32.1229 37.6717 32.0029 37.4127 31.808 37.1991Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9688 39.5272C31.9709 39.5236 31.972 39.5214 31.9743 39.5176C31.9724 39.5207 31.9706 39.5239 31.9688 39.5272Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M24.2446 29.1913C24.0642 29.4547 23.951 29.754 23.9198 30.072C23.8886 30.3908 23.9061 30.7454 24.0272 31.0454C24.1425 31.3314 24.384 31.5425 24.6334 31.7125C24.9131 31.9027 25.2208 32.0514 25.5341 32.1774C25.797 32.2832 26.0927 32.3844 26.4115 32.4821V27.9492C25.6062 28.121 24.7264 28.4879 24.2446 29.1913Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9933 39.4814C31.9868 39.4932 31.9796 39.5054 31.9727 39.5183C31.9808 39.5033 31.9873 39.4923 31.9933 39.4814Z"
+                                        fill="#DE0030" />
+                                    <path d="M32.0195 39.4345C32.0215 39.4309 32.0218 39.4305 32.0195 39.4345V39.4345Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M30.9319 12.1847C35.1919 8.60606 38.0385 0.543926 36.2867 0.191307C33.9591 -0.277402 28.9046 1.77783 26.4616 2.13994C22.9965 2.55831 19.2226 -1.61751 17.1043 0.710089C15.3819 2.60258 18.3391 9.48498 22.9657 12.4833C9.16244 19.2674 -10.239 53.3241 23.6078 55.7952C70.4407 59.2145 46.9898 18.7956 30.9319 12.1847ZM34.954 39.0434C34.8099 40.3712 34.1063 41.5718 33.0545 42.387C31.9439 43.2477 30.551 43.648 29.167 43.7602V45.2272C29.167 45.6197 28.9955 45.9994 28.7017 46.2592C28.2978 46.6166 27.7043 46.7047 27.2141 46.4789C26.7301 46.2562 26.4122 45.7598 26.4122 45.2272V43.6238C26.1749 43.5787 25.9392 43.5251 25.7064 43.4612C24.4129 43.1058 23.2132 42.4131 22.3368 41.3882C21.9002 40.8773 21.5443 40.2976 21.2981 39.6718C21.2338 39.5083 21.1765 39.3418 21.1263 39.1734C21.0809 39.0209 21.0339 38.8659 21.0177 38.707C20.9905 38.4404 21.0433 38.1685 21.1676 37.931C21.4229 37.4425 21.9611 37.1475 22.5106 37.1965C23.0514 37.2445 23.5253 37.6198 23.6956 38.1353C23.748 38.294 23.7836 38.4568 23.8425 38.6139C23.9009 38.7699 23.9714 38.9215 24.0543 39.066C24.2179 39.3503 24.423 39.6125 24.6591 39.8401C25.1459 40.3091 25.7658 40.6139 26.4122 40.7952V35.3449C25.1484 35.0177 23.8438 34.5951 22.8002 33.7837C22.293 33.3891 21.8627 32.899 21.5808 32.3188C21.2834 31.7064 21.1602 31.0242 21.1552 30.3467C21.15 29.6587 21.2808 28.9768 21.5677 28.35C21.8366 27.763 22.2236 27.2361 22.6981 26.7993C23.7127 25.8654 25.0605 25.3445 26.4123 25.1532V25.0333V23.6303C26.4123 23.2379 26.5837 22.8581 26.8776 22.5983C27.2816 22.2411 27.8748 22.1528 28.3652 22.3786C28.849 22.6015 29.1671 23.0977 29.1671 23.6303V25.0333V25.1449C29.3472 25.1676 29.5268 25.1947 29.7055 25.2271C31.033 25.4673 32.3313 26.0155 33.3021 26.9726C33.762 27.4258 34.1384 27.966 34.4032 28.555C34.4771 28.7193 34.5418 28.8875 34.5978 29.0589C34.65 29.2187 34.7024 29.3833 34.7273 29.5501C34.7671 29.8164 34.7265 30.0916 34.6125 30.3352C34.379 30.8344 33.8554 31.1522 33.3045 31.1286C32.7631 31.105 32.2727 30.7525 32.0788 30.2465C32.0211 30.0961 31.9923 29.9367 31.9334 29.7867C31.8739 29.6347 31.797 29.4898 31.7083 29.3529C31.536 29.0867 31.3126 28.8585 31.0576 28.6704C30.5055 28.2627 29.8358 28.0503 29.1667 27.9316V33.1473C29.962 33.3377 30.7578 33.5454 31.5197 33.8459C32.6713 34.2999 33.7625 34.9962 34.391 36.0941C34.2935 35.9231 34.1986 35.7564 34.3943 36.0998C34.5865 36.4371 34.4947 36.2764 34.3983 36.1073C34.8984 36.9886 35.0627 38.0424 34.954 39.0434Z"
+                                        fill="#DE0030" />
+                                    <path
+                                        d="M31.9502 39.5537C31.9422 39.5681 31.9352 39.5807 31.9297 39.5903C31.9344 39.582 31.9415 39.5695 31.9502 39.5537Z"
+                                        fill="#DE0030" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4614_94394">
+                                        <rect width="56" height="56" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+
+                        </div>
+                        <h5 class="pick-item-box-heading fs-bold lh-120 dark text-center">You’re supporting a local
+                            business invested in the community.
+                        </h5>
+                        <p class="pick-item-info fs-20 fs-normal lh-130 dark-4 text-center">The MrCashBuyer® team
+                            members have called
+                            Long Island home for many years. We live here, shop here, and raise families here. We work
+                            hard to serve our community with fair property value estimates and overall professionalism.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pick-subtext-wrapper pt-5">
+                <h6 class="pick-subtext-1 fs-bold lh-130 dark text-center">Regardless of whether you choose to sell your
+                    home for cash
+                    to a company based out of Long Island or
+                    with a national reach, there are three key steps to take to have the best experience possible:</h6>
+                <p class="pick-subtext-2 fs-16 fs-normal lh-130 dark-4 text-center pt-4 pb-3"><span class="fs-bold">Read
+                        online reviews from multiple
+                        resources.</span> Many
+                    websites offer testimonials from satisfied
+                    customers, but extend your research to review platforms like Facebook and Google My Business. Pay
+                    attention to the date of positive and negative reviews, as the most recent are more likely to
+                    reflect what you should expect from the company.</p>
+                <p class="pick-subtext-2 fs-16 fs-normal lh-130 dark-4 text-center pb-3">Test the waters by requesting
+                    an online cash
+                    offer for your Long Island home. Any reputable home buying company will provide this service for
+                    free and with no obligation to accept. For this reason, you can request a cash offer from multiple
+                    iBuyers to see who offers the best deal and if there are any suspicious outliers.</p>
+                <p class="pick-subtext-2 fs-16 fs-normal lh-130 dark-4 text-center ">Don’t choose based on the offer
+                    alone—follow up
+                    with them to gauge their customer service. One of the main benefits of selling your Long Island home
+                    for fast cash is peace of mind. Therefore, you certainly don’t want to work with a company who
+                    provides a subpar experience. See if the iBuyer provided the quote in the promised amount of time.
+                    What’s more, check to make sure that they are thorough when providing follow-up information. Don’t
+                    be afraid to ask questions! They should answer within a reasonable amount of time and leave you
+                    feeling confident in your choice rather than second-guessing their credentials.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- < step section start -->
+    <section class="main-contact-section contact-section-2 bg-dark-6">
+        <div class="container">
+            <div class="main-contact-top-block contact-top-block-2 ">
+                <h3 class="main-contact-heading contact-heading-2 fs-secondary lh-110 dark text-center pb-4">
+                    MrCashBuyer: Your Long Island
+                    Home Selling Solution for Fast Cash</h3>
+                <p class="contact-subheading-2 fs-20 fs-normal lh-130 dark-3 text-center">he MrCashBuyer® team guides
+                    Long Island residents through the home selling process, providing
+                    transparency and stellar customer service every step of the way. We pride ourselves on our real
+                    estate expertise and professionalism, enabling us to provide fair offers and make the experience as
+                    easy as possible.</p>
+            </div>
+            <div class="contact-form-wrapper-block mb-3">
+                <div class="row align-items-center gap-4 gap-sm-5 gap-md-5 gap-lg-0">
+                    <div class="col-lg-6">
+                        <div class="contact-map">
+                            <img src="assets/images/contact-img-2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="main-contact-block">
+                            <p class="fs-18 fs-bold lh-130 dark">Request a fast, no-obligation cash offer online for your Long Island home and we'll
+                                follow-up within the next 24-hours. Sell your house without repairs and without an agent
+                            </p>
+                            <h5 class="contact-form-heading contact-heading-2 fs-bold lh-120 dark">Contact Us</h5>
+                            <form class="main-contact-form" action="">
+                                <div class="row gy-4 gy-lg-2 gy-xl-4">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <legend class="input-label fs-16 fs-normal lh-130 dark-3 m-0">First name
+                                            </legend>
+                                            <div class="input-wrapper d-flex align-items-center">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99968 12.75C11.7465 12.75 14.1484 13.9313 15.455 15.6935L14.0735 16.347C13.0102 15.0868 11.1352 14.25 8.99968 14.25C6.86412 14.25 4.98915 15.0868 3.92585 16.347L2.54492 15.6928C3.85158 13.931 6.25323 12.75 8.99968 12.75ZM8.99968 1.5C11.0707 1.5 12.7497 3.17893 12.7497 5.25V7.5C12.7497 9.5166 11.158 11.1614 9.16236 11.2466L8.99968 11.25C6.92861 11.25 5.24968 9.57105 5.24968 7.5V5.25C5.24968 3.23344 6.84141 1.58864 8.83701 1.50347L8.99968 1.5ZM8.99968 3C7.80141 3 6.82193 3.93669 6.7535 5.1178L6.74968 5.25V7.5C6.74968 8.74268 7.75701 9.75 8.99968 9.75C10.198 9.75 11.1775 8.81333 11.2459 7.63223L11.2497 7.5V5.25C11.2497 4.00736 10.2423 3 8.99968 3Z"
+                                                        fill="#505050" />
+                                                </svg>
+                                                <input class="form-input border-0" type="text" placeholder="First Name"
+                                                    name="firstname" id="firstname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <legend class="input-label fs-16 fs-normal lh-130 dark-3 m-0">Last name
+                                            </legend>
+                                            <div class="input-wrapper d-flex align-items-center">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99968 12.75C11.7465 12.75 14.1484 13.9313 15.455 15.6935L14.0735 16.347C13.0102 15.0868 11.1352 14.25 8.99968 14.25C6.86412 14.25 4.98915 15.0868 3.92585 16.347L2.54492 15.6928C3.85158 13.931 6.25323 12.75 8.99968 12.75ZM8.99968 1.5C11.0707 1.5 12.7497 3.17893 12.7497 5.25V7.5C12.7497 9.5166 11.158 11.1614 9.16236 11.2466L8.99968 11.25C6.92861 11.25 5.24968 9.57105 5.24968 7.5V5.25C5.24968 3.23344 6.84141 1.58864 8.83701 1.50347L8.99968 1.5ZM8.99968 3C7.80141 3 6.82193 3.93669 6.7535 5.1178L6.74968 5.25V7.5C6.74968 8.74268 7.75701 9.75 8.99968 9.75C10.198 9.75 11.1775 8.81333 11.2459 7.63223L11.2497 7.5V5.25C11.2497 4.00736 10.2423 3 8.99968 3Z"
+                                                        fill="#505050" />
+                                                </svg>
+                                                <input class="form-input border-0" type="text" placeholder="Last name"
+                                                    name="firstname" id="firstname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <legend class="input-label fs-16 fs-normal lh-130 dark-3 m-0">Email address
+                                            </legend>
+                                            <div class="input-wrapper d-flex align-items-center">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.68212 5.14112L8.61713 0.98181C8.85465 0.839348 9.15143 0.8394 9.38888 0.981945L16.318 5.14111C16.4309 5.20889 16.5 5.33093 16.5 5.46263V15.0004C16.5 15.4146 16.1642 15.7504 15.75 15.7504H2.25C1.83579 15.7504 1.5 15.4146 1.5 15.0004V5.46272C1.5 5.33097 1.56914 5.20889 1.68212 5.14112ZM3 6.09982V14.2504H15V6.09947L9.00278 2.49964L3 6.09982ZM9.04478 10.2741L13.0167 6.92685L13.9833 8.07389L9.0555 12.2266L4.02301 8.07914L4.97699 6.92159L9.04478 10.2741Z"
+                                                        fill="#505050" />
+                                                </svg>
+
+                                                <input class="form-input border-0" type="text" placeholder="Email"
+                                                    name="firstname" id="firstname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <legend class="input-label fs-16 fs-normal lh-130 dark-3 m-0">Phone
+                                            </legend>
+                                            <div class="input-wrapper d-flex align-items-center">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7.02417 8.01158C7.7265 9.2466 8.7534 10.2735 9.98842 10.9758L10.6518 10.0471C10.8724 9.73838 11.2887 9.64298 11.6217 9.82485C12.6768 10.4012 13.8428 10.7515 15.0592 10.8478C15.4492 10.8787 15.75 11.2042 15.75 11.5954V14.9426C15.75 15.3271 15.4591 15.6493 15.0766 15.6886C14.6792 15.7295 14.2783 15.75 13.875 15.75C7.45469 15.75 2.25 10.5453 2.25 4.125C2.25 3.7217 2.27057 3.32078 2.31142 2.92332C2.35073 2.54081 2.67296 2.25 3.05749 2.25H6.40457C6.79583 2.25 7.12135 2.55078 7.15222 2.94082C7.2485 4.15716 7.59877 5.32323 8.17515 6.37833C8.35702 6.7113 8.26162 7.12766 7.95292 7.34818L7.02417 8.01158ZM5.13319 7.5189L6.55815 6.50107C6.1541 5.62885 5.87721 4.70387 5.73545 3.75H3.7568C3.75227 3.87474 3.75 3.99975 3.75 4.125C3.75 9.71685 8.28315 14.25 13.875 14.25C14.0002 14.25 14.1253 14.2478 14.25 14.2432V12.2645C13.2961 12.1228 12.3712 11.8459 11.4989 11.4419L10.4811 12.8668C10.0694 12.7069 9.6717 12.5186 9.29055 12.3046L9.24697 12.2797C7.77727 11.444 6.556 10.2227 5.72025 8.75303L5.69545 8.70945C5.48137 8.3283 5.29316 7.93065 5.13319 7.5189Z"
+                                                        fill="#505050" />
+                                                </svg>
+
+                                                <input class="form-input border-0" type="text"
+                                                    placeholder="Phone number" name="firstname" id="firstname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <legend class="input-label fs-16 fs-normal lh-130 dark-3 m-0">Message
+                                            </legend>
+                                            <div class="input-message-wrapper">
+                                                <textarea class="form-message border-0 w-100" type="text"
+                                                    placeholder="Message" name="firstname" id="firstname"></textarea>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check d-flex align-items-center pt-4">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label fs-18 fs-normal lh-130 dark-3"
+                                        for="privacyCheck">have
+                                        read and agree to the
+                                        <a class="fs-bold text-red" href="#" target="_blank" rel="noopener">Privacy
+                                            Policy</a> and
+                                        <a class="fs-bold text-red" href="#" target="_blank" rel="noopener">Terms and
+                                            Conditions</a>
+                                    </label>
+                                </div>
+                                <p class="form-submit-text fs-16 fs-normal lh-130 dark-3 pb-4">By submitting the contact
+                                    form and signing
+                                    up
+                                    for texts, you consent to receive marketing
+                                    text messages from MrCashBuyer® at the number provided. Consent is not a condition
+                                    of
+                                    purchase. Message frequency varies. Message and data rates may apply. You can
+                                    unsubscribe at any time by replying STOP. Text HELP to get help. Please read our
+                                    Privacy
+                                    Policy for more details.</p>
+                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                <input class="contact-submit-btn w-100 text-white bg-red border-0" type="button"
+                                    value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- step section end  -->
+    <!-- cta section  -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-section-wrapper">
+                <h2 class="cta-section-heading lh-110 dark-1 mx-auto text-center pb-5">Get a real offer. No Pressure, no
+                    surprises.</h2>
+                <div class="cta-form-wrapper text-center">
+                    <form class="cta-form bg-white d-inline-flex justify-content-between" action="#">
+                        <input class="bg-white" type="email" placeholder="Enter your address" name="email"
+                            id="homeemail">
+                        <a class="cta-btn bg-red text-white fs-14 fs-semibold lh-157" href="#">Get an Offer</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
