@@ -319,67 +319,10 @@ h6 {
 // main css atrat here 
 
 // homepage start 
-
 header {
     position: relative;
-    background-image: url(./assets/images/hero-house1.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
-    @media (max-width: 991px) {
-        background-image: none;
-    }
-
-
-
-    &::before {
-        position: absolute;
-        content: "";
-        background-image: url(./assets/images/hero-shade-2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 100%;
-        height: 100%;
-        z-index: 9;
-
-        @media (max-width: 991px) {
-            display: none;
-        }
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        background-image: url(./assets/images/bg-final-shade.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9;
-    }
-
-
-    // offcanvas 
-    .offcanvas {
-        background-color: #F0FFC7;
-
-        .offcanvas-btn {
-            padding: 20px 30px !important;
-            border-radius: 100px !important;
-            justify-content: center;
-        }
-
-        .btn-close {
-            margin-bottom: 10px;
-        }
-    }
-
-    /* ==========================
-        NAVBAR
-========================== */
+    // nav 
     .navbar {
         padding-top: 19px;
         z-index: 999;
@@ -552,6 +495,23 @@ header {
         }
     }
 
+    // offcanvas 
+    .offcanvas {
+        background-color: #F0FFC7;
+
+        .offcanvas-btn {
+            padding: 20px 30px !important;
+            border-radius: 100px !important;
+            justify-content: center;
+        }
+
+        .btn-close {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
     /* ====== Toggle animation (hamburger → X) ====== */
     .custom-toggler.active .toggler-icon span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
@@ -598,72 +558,75 @@ header {
         transform: rotate(-45deg);
     }
 
-
-
-
-
-
 }
 
+// header section end 
+
+// home hero start 
 .hero-section {
-    padding-top: 130px;
+    margin-top: -115px;
+    padding-top: 250px;
     padding-bottom: 200px;
     position: relative;
     overflow-x: hidden;
     margin-bottom: -90px;
-
-
-    @media (max-width: 1199px) {
-        padding-top: 100px;
-        z-index: 99;
-    }
+    background-image: url(./assets/images/hero-bg-image.webp);
+    background-position: right bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 
     @media (max-width: 991px) {
-        padding-top: 50px;
+        background-image: none;
         padding-bottom: 0;
+        padding-top: 150px;
     }
 
-    @media (max-width: 767px) {
-        padding-bottom: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-white-shade.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
 
-    @media (max-width: 575px) {
-        padding-top: 75px;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-yello-shade.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
     }
 
-    @media (max-width: 420px) {
-        margin-bottom: -130px;
-        padding-bottom: 100px;
-        padding-top: 50px;
+    .hero-subheading-wrapper {
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+
+        .hero-subheading {
+            padding: 9px 20px;
+            border-radius: 100px;
+            background: rgba(222, 0, 48, 0.10);
+
+        }
     }
-
-    .hero-subheading {
-        padding: 9px 20px;
-        border-radius: 100px;
-        background: rgba(222, 0, 48, 0.10);
-    }
-
-
 
     .hero-left-block {
         position: relative;
-        margin-right: -233px;
         z-index: 9;
-
-
-
-        @media (max-width: 1199px) {
-            margin-right: -255px;
-        }
-
-        @media (max-width: 991px) {
-            margin-right: 0;
-            text-align: center;
-            padding-bottom: 40px;
-        }
-
-
-
 
         &::after {
             position: absolute;
@@ -679,39 +642,40 @@ header {
 
             @media (max-width: 991px) {
                 right: 0;
-                bottom: -10%;
             }
+        }
 
-
-
-            @media (max-width: 575px) {
-                display: none;
-            }
-
-
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-cloud-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            width: 621px;
+            height: 277px;
+            top: -55%;
+            left: -15%;
+            z-index: 9;
+            pointer-events: none;
         }
 
         .hero-heading {
             max-width: 709px;
             position: relative;
 
-            @media (max-width: 575px) {
-                max-width: 358px;
-                text-align: center;
-            }
-
             @media (max-width: 991px) {
                 text-align: center;
-            }
-
-            @media (max-width: 575px) {
-                text-align: center;
+                font-size: 48px;
+                max-width: 538px;
                 margin: auto;
             }
 
+            @media (max-width: 767px) {
+                font-size: 36px;
+                max-width: 358px;
 
-
-
+            }
 
             &::before {
                 position: absolute;
@@ -726,32 +690,19 @@ header {
                 left: -10px;
                 top: -13px;
 
+                @media (max-width: 991px) {
+                    background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+                    top: -25px;
+                }
+
                 @media (max-width: 767px) {
-                    width: 335px;
-                    height: 65px;
+                    background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+                    top: -9px;
+                    left: 16px;
+                    width: 320px;
+                    height: 54px;
                 }
 
-                @media (max-width: 575px) {
-                    left: 10px;
-                }
-
-                @media (max-width: 420px) {
-                    left: 21px;
-                    height: 52px;
-                    top: -11px;
-                }
-
-
-
-                @media (max-width: 350px) {
-                    left: -10px;
-                }
-
-                @media (max-width: 330px) {
-                    left: 0px;
-                    width: 300px;
-                    height: 50px;
-                }
             }
 
             &::after {
@@ -766,9 +717,15 @@ header {
                 left: -44px;
                 top: 25px;
 
-                @media (max-width: 420px) {
-                    left: -5px;
+                @media (max-width: 991px) {
                     top: 0px;
+                }
+
+                @media (max-width: 767px) {
+                    width: 13px;
+                    height: 27px;
+                    left: 0px;
+                    top: 8px;
                 }
             }
         }
@@ -779,22 +736,23 @@ header {
             @media (max-width: 991px) {
                 text-align: center;
                 margin: auto;
-            }
-
-            @media (max-width: 575px) {
                 font-size: 14px;
-                max-width: 460px;
             }
 
-
+            @media (max-width: 767px) {
+                max-width: 358px;
+            }
         }
     }
 
     .hero-mobile-bottom {
         width: 100vw;
         margin-left: calc(-50vw + 50%);
-    }
 
+        @media (max-width: 991px) {
+            padding-top: 30px;
+        }
+    }
 
 }
 
