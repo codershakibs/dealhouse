@@ -24,7 +24,7 @@
 <body>
 
     <!-- header start  -->
-    <header class="about-page-header">
+    <header>
         <!-- nav section  -->
         <nav class="navbar navbar-expand-lg px-3">
             <div class="container-fluid nav-wrap">
@@ -52,7 +52,6 @@
 
                 <!-- Desktop Menu -->
                 <div class="collapse navbar-collapse d-none d-lg-flex order-2" id="navbarContent">
-
                     <ul class="navbar-nav d-flex mx-auto align-items-center">
                         <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="index.html">Home</a>
                         </li>
@@ -67,6 +66,7 @@
                                 href="contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link fs-16 fs-medium lh-137 dark" href="#">Realtors</a></li>
                     </ul>
+
                     <a href="tel:6313886640"
                         class="nav-btn d-flex align-items-center gap-2 text-white fs-18 fs-bold lh-130 bg-red">
                         <img src="./assets/images/phone-icon.svg" alt="#"> 631-388-6640
@@ -77,6 +77,7 @@
         </nav>
         <!-- mobile offcanvas menu  -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
             <div class="offcanvas-header d-flex justify-content-between align-items-center">
                 <img src="assets/images/offcanvas-log.svg" alt="">
 
@@ -93,7 +94,7 @@
                 <ul class="navbar-nav text-center">
                     <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="faq.html">Faq</a></li>
+                    <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="faq">Faq</a></li>
                     <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="#">Review</a></li>
                     <li class="nav-item"><a class="nav-link fs-20 fs-secondary" href="contact.html">Contact</a></li>
@@ -108,30 +109,21 @@
         </div>
 
         <!-- hero section -->
-
-        <section class="hero-section about-hero-section">
+        <section class="hero-section">
             <div class="container">
-                <div class="row hero-row-container">
-                    <div class="col-lg-5">
-                        <div class="hero-left-block about-hero-left-block">
-                            <h1 class="about-heading lh-110 pb-4">Get a cash offer on your home tomorrow.
-                            </h1>
-                            <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash
-                                offer within 24
-                                hours and lets you
-                                close on your schedule</p>
-                        </div>
+                <div class="hero-left-block">
+                    <div class="hero-subheading d-inline-flex align-items-center mb-3">
+                        <p class="fs-14 fs-semibold lh-157 text-red">Over 1,000 homes purchased</p>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="hero-right-block about-banner-right-block">
-                            <img class="position-relative" src="assets/images/about-banner-image.webp" alt="">
-                        </div>
-                    </div>
+                    <h1 class="hero-heading lh-110 pb-4">We Buy Houses for Cash — Any Condition, Any Situation</h1>
+                    <p class="hero-info-text fs-20 fs-semibold lh-130 dark">MrCashBuyer gives you a fair cash offer
+                        within 24
+                        hours and lets you
+                        close on your schedule</p>
                 </div>
-
-
-
-
+                <div class="hero-mobile-bottom d-lg-none">
+                    <img class="vw-100" src="assets/images/about-hero-png.webp" alt="">
+                </div>
 
             </div>
         </section>

@@ -310,37 +310,15 @@ h6 {
 
 header {
     position: relative;
-    background-image: url(./assets/images/bg-update.svg);
+    background-image: url(./assets/images/hero-house1.png);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
+    background-position: right bottom;
 
-    &::after {
-        position: absolute;
-        content: "";
-        background-image: url(./assets/images/hero-cloud-1.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-        width: 621px;
-        height: 277px;
-        top: 20px;
-        left: 0;
-        z-index: 9;
-
-        @media (max-width: 575px) {
-            display: none;
-        }
-
-        @media (max-width: 767px) {
-            display: none;
-        }
-
-
-
-
+    @media (max-width: 991px) {
+        background-image: none;
     }
+
+
 
     &::before {
         position: absolute;
@@ -356,6 +334,19 @@ header {
         @media (max-width: 991px) {
             display: none;
         }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/bg-final-shade.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
     }
 
 
@@ -595,11 +586,7 @@ header {
         transform: rotate(-45deg);
     }
 
-    // /* Close icon hover animation */
-    // .custom-close-btn:hover .close-icon span {
-    //     background: #ff0000;
-    //     transform: scale(1.1) rotate(45deg);
-    // }
+
 
 
 
@@ -608,6 +595,7 @@ header {
 
 .hero-section {
     padding-top: 130px;
+    padding-bottom: 200px;
     position: relative;
     overflow-x: hidden;
     margin-bottom: -90px;
@@ -615,6 +603,16 @@ header {
 
     @media (max-width: 1199px) {
         padding-top: 100px;
+        z-index: 99;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 0;
     }
 
     @media (max-width: 575px) {
@@ -627,21 +625,13 @@ header {
         padding-top: 50px;
     }
 
-    .hero-row-container {
-        @media (max-width: 991px) {
-            gap: 100px;
-        }
-
-        @media (max-width: 575px) {
-            gap: 48px;
-        }
-
-        .hero-subheading {
-            padding: 9px 20px;
-            border-radius: 100px;
-            background: rgba(222, 0, 48, 0.10);
-        }
+    .hero-subheading {
+        padding: 9px 20px;
+        border-radius: 100px;
+        background: rgba(222, 0, 48, 0.10);
     }
+
+
 
     .hero-left-block {
         position: relative;
@@ -657,6 +647,7 @@ header {
         @media (max-width: 991px) {
             margin-right: 0;
             text-align: center;
+            padding-bottom: 40px;
         }
 
 
@@ -669,10 +660,15 @@ header {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: right;
-            right: 44%;
+            right: 76%;
             bottom: -25%;
             width: 100px;
             height: 100px;
+
+            @media (max-width: 991px) {
+                right: 0;
+                bottom: -10%;
+            }
 
 
 
@@ -727,6 +723,14 @@ header {
                     left: 10px;
                 }
 
+                @media (max-width: 420px) {
+                    left: 21px;
+                    height: 52px;
+                    top: -11px;
+                }
+
+
+
                 @media (max-width: 350px) {
                     left: -10px;
                 }
@@ -749,6 +753,11 @@ header {
                 height: 42px;
                 left: -44px;
                 top: 25px;
+
+                @media (max-width: 420px) {
+                    left: -5px;
+                    top: 0px;
+                }
             }
         }
 
@@ -769,19 +778,21 @@ header {
         }
     }
 
-    .hero-right-block {
-        margin-right: -13vw;
-
-
-        @media (max-width: 991px) {
-            margin-right: 0;
-        }
+    .hero-mobile-bottom {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
     }
+
+
 }
 
 // sell section 
 .sell-section {
     z-index: 9;
+
+    @media (max-width: 991px) {
+        z-index: 99;
+    }
 
     .sell-section-wrapper {
         padding: 44px 60px;
@@ -2758,3 +2769,82 @@ footer {
 
 
 
+// we help us start 
+.help-section {
+    padding: 200px 0 96px 0;
+    margin-top: -100px;
+
+    .help-top-block {
+        padding-bottom: 35px;
+
+        .help-section-heading {
+            max-width: 781px;
+
+        }
+    }
+
+    .help-item {
+        width: fit-content;
+        overflow: hidden;
+        border-radius: 16px;
+
+        &:hover {
+            .help-item-image {
+                transform: scale(1.08);
+            }
+
+            .help-item-btn {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .help-item-image {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+
+        .overlay-svg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            border-radius: 16px;
+        }
+
+        .help-item-btn {
+            padding: 12px 16px;
+            border-radius: 50px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(3.5px);
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            transition:
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
+
+            @media (max-width: 767px) {
+                padding: 10px 16px;
+            }
+        }
+
+        .help-item-heading {
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+
+}
