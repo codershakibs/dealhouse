@@ -760,6 +760,8 @@ header {
 .sell-section {
     z-index: 9;
 
+    
+
     @media (max-width: 991px) {
         z-index: 99;
     }
@@ -768,6 +770,7 @@ header {
         padding: 44px 60px;
         border-radius: 16px;
         border: 10px solid #FFF;
+
 
         @media (max-width: 1199px) {
             padding: 20px 30px;
