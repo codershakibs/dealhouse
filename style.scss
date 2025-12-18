@@ -139,6 +139,10 @@ a {
     background-color: #DE0030;
 }
 
+.bg-secondary {
+    background-color: #BAEF2E;
+}
+
 .gradient-1 {
     background: linear-gradient(189deg, #F2FFD2 18.25%, rgba(255, 255, 255, 0.00) 38.85%);
 }
@@ -2322,25 +2326,34 @@ footer {
 
 // blog page start 
 
+
+
 .blog-section {
     padding: 200px 0 96px 0;
     margin-top: -100px;
 
     .blog-main-wrapper {
+
         .blog-card-wrapper {
             border-radius: 12px;
             border: 1px solid #F2F2F2;
             box-shadow: 4px 15px 60px 0 rgba(7, 35, 41, 0.07);
             overflow: hidden;
             height: 100%;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
 
+            /* ================= IMAGE ================= */
             .blog-card-image {
+                overflow: hidden;
+
                 img {
                     width: 100%;
+                    transition: transform 0.4s ease;
                 }
             }
 
-
+            /* ================= INFO ================= */
             .blog-info-wrapper {
                 padding: 16px 16px 24px 16px;
                 background-image: url(./assets/images/blog-bg-img.svg);
@@ -2351,9 +2364,6 @@ footer {
                 @media (max-width: 575px) {
                     padding: 14px 10px 18px 10px;
                 }
-
-
-
 
                 .blog-author-wrapper {
                     gap: 20px;
@@ -2369,6 +2379,10 @@ footer {
                     .author-info {
                         gap: 7px;
 
+                        .blog-author-img {
+                            border-radius: 50%;
+                        }
+
                         .author-name {
                             @media (max-width: 991px) {
                                 font-size: 9px;
@@ -2382,29 +2396,31 @@ footer {
                                 font-size: 10px;
                             }
                         }
-
-                        .blog-author-img {
-                            border-radius: 50%;
-                        }
-                    }
-
-                    .blog-date-text {
-                        @media (max-width: 991px) {
-                            font-size: 9px;
-                        }
-
-                        @media (max-width: 767px) {
-                            font-size: 10px;
-                        }
-
-                        @media (max-width: 575px) {
-                            font-size: 10px;
-                        }
                     }
                 }
 
                 .blog-date-wrapper {
                     gap: 8px;
+                }
+
+                .blog-date-text {
+                    @media (max-width: 991px) {
+                        font-size: 9px;
+                    }
+
+                    @media (max-width: 767px) {
+                        font-size: 10px;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 10px;
+                    }
+                }
+
+                .blog-divider {
+                    width: 100%;
+                    height: 1px;
+                    background: #FCE5EA;
                 }
 
                 .blog-heading {
@@ -2437,25 +2453,12 @@ footer {
                     }
                 }
 
-                .blog-divider {
-                    width: 100%;
-                    height: 1px;
-                    background: #FCE5EA;
-                }
-
+                /* ================= READ MORE ================= */
                 .blog-btn {
                     transition: color 0.3s ease;
 
                     svg {
                         transition: transform 0.3s ease;
-                    }
-
-                    &:hover {
-                        color: red;
-
-                        svg {
-                            transform: translateX(6px);
-                        }
                     }
 
                     @media (max-width: 991px) {
@@ -2477,15 +2480,30 @@ footer {
                             height: 20px;
                         }
                     }
-
-
-
                 }
             }
 
+            /* ================= CARD HOVER ================= */
+            &:hover {
+                box-shadow: none;
+
+                .blog-card-image img {
+                    transform: scale(1.08);
+                }
+
+                .blog-btn {
+                    color: red;
+
+                    svg {
+                        transform: translateX(6px);
+                    }
+                }
+            }
         }
     }
 }
+
+
 
 // contact page start 
 .main-contact-section {
@@ -3387,6 +3405,10 @@ footer {
     padding: 96px 0;
     background-color: #F2F2F2;
 
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+
     .agent-wrapper {
         border-radius: 32px;
         box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
@@ -3396,6 +3418,18 @@ footer {
         .agent-image {
             flex-shrink: 0;
 
+            img {
+                width: 296px;
+                border-radius: 0 32px 0 32px;
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                    border-radius: 0 32px 0 0px;
+
+                }
+            }
+
+
         }
 
         .agent-info-wrapper {
@@ -3404,6 +3438,23 @@ footer {
 
             @media (max-width: 991px) {
                 border-radius: 0px 0px 32px 32px;
+            }
+
+            .agent-heading {
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                    padding-bottom: 12px !important;
+                }
+            }
+
+            .agent-info-text {
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
             }
 
 
@@ -3435,6 +3486,226 @@ footer {
             font-size: 14px;
         }
     }
+
+
+}
+
+// realtors page start 
+// Opportunities-section start 
+.Opportunities-section {
+    padding: 96px 0;
+
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+
+    .Opportunities-top-block {
+        .Opportunities-heading {
+            max-width: 780px;
+        }
+
+        .Opportunities-subheading {
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .Opportunities-card {
+        padding: 44px;
+        border-radius: 32px;
+        box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+        height: 100%;
+
+        @media (max-width: 991px) {
+            padding: 24px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 24px 16px;
+        }
+
+        .Opportunities-card-icon {
+            padding: 46px;
+            width: 148px;
+            border-radius: 50%;
+
+            @media (max-width: 991px) {
+                width: 112px;
+                padding: 32px;
+            }
+
+            svg {
+                @media (max-width: 991px) {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+
+        .Opportunities-card-heading {
+            max-width: 350px;
+            padding-bottom: 12px;
+
+            @media (max-width: 991px) {
+                padding-top: 32px !important;
+                font-size: 24px;
+            }
+        }
+
+        .Opportunities-card-info {
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .Opportunities-contact-block {
+        .Opportunities-contact-heading {
+            @media (max-width: 991px) {
+                font-size: 20px;
+            }
+        }
+
+        .Opportunities-button {
+            padding: 15px 30px;
+            background-color: #BAEF2E !important;
+            border-radius: 100px;
+
+            @media (max-width: 991px) {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// terms page start 
+// terms section start 
+.terms-section {
+    margin-top: 0;
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+
+    .terms-section-heading {
+        max-width: 650px;
+
+        @media (max-width: 767px) {
+            padding-bottom: 24px !important;
+        }
+    }
+
+    .terms-top-info {
+        .terms-block-heading {
+            padding-bottom: 12px;
+        }
+    }
+
+    .terms-block-wrapper {
+        // @media (max-width: 991px) {
+        //     padding-bottom: 32px !important;
+        // }
+
+        .terms-top-info {
+            .terms-block-heading {
+                @media (max-width: 991px) {
+                    font-size: 20px;
+                }
+            }
+
+            .terms-info-text {
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+// we help us start 
+.help-section {
+    padding: 200px 0 96px 0;
+    margin-top: -100px;
+
+    .help-top-block {
+        padding-bottom: 35px;
+
+        .help-section-heading {
+            max-width: 781px;
+
+        }
+    }
+
+    .help-item {
+        width: fit-content;
+        overflow: hidden;
+        border-radius: 16px;
+
+        &:hover {
+            .help-item-image {
+                transform: scale(1.08);
+            }
+
+            .help-item-btn {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .help-item-image {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+
+        .overlay-svg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            border-radius: 16px;
+        }
+
+        .help-item-btn {
+            padding: 12px 16px;
+            border-radius: 50px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(3.5px);
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            transition:
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
+
+            @media (max-width: 767px) {
+                padding: 10px 16px;
+            }
+        }
+
+        .help-item-heading {
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+
 
 
 }
