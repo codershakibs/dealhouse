@@ -241,26 +241,18 @@ h1 {
     font-size: 64px;
     font-family: "Bowlby One SC", sans-serif;
 
+    @media (max-width: 991px) {
+        font-size: 48px;
+    }
+
     @media (max-width: 767px) {
         font-size: 36px;
-    }
-
-    @media (max-width: 575px) {
-        font-size: 36px;
-    }
-
-    @media (max-width: 330px) {
-        font-size: 32px;
     }
 }
 
 h2 {
     font-size: 64px;
     font-family: "Bowlby One SC", sans-serif;
-
-    @media (max-width: 1199px) {
-        font-size: 50px;
-    }
 
     @media (max-width: 991px) {
         font-size: 48px;
@@ -269,54 +261,59 @@ h2 {
     @media (max-width: 767px) {
         font-size: 36px;
     }
-
-    @media (max-width: 575px) {
-        font-size: 36px;
-    }
-
-    @media (max-width: 340px) {
-        font-size: 28px;
-    }
 }
 
 h3 {
     font-size: 48px;
 
-    @media (max-width: 350px) {
+    @media (max-width: 991px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 767px) {
         font-size: 24px;
     }
 
-    @media (max-width: 1399px) {
-        font-size: 36px;
-    }
+
+}
+
+h4 {
+    font-size: 44px;
 
     @media (max-width: 991px) {
         font-size: 32px;
     }
 
-    @media (max-width: 575px) {
-        font-size: 24px;
+    @media (max-width: 767px) {
+        font-size: 28px;
     }
-}
-
-h4 {
-    font-size: 44px;
 }
 
 h5 {
     font-size: 32px;
 
-    @media (max-width: 1399px) {
-        font-size: 26px;
+    @media (max-width: 991px) {
+        font-size: 32px;
     }
 
-    @media (max-width: 991px) {
-        font-size: 24px;
+    @media (max-width: 767px) {
+        font-size: 18px;
     }
+
+
 }
 
 h6 {
     font-size: 24px;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+
 }
 
 
@@ -674,14 +671,12 @@ header {
             position: relative;
 
             @media (max-width: 991px) {
-                text-align: center;
-                font-size: 48px;
                 max-width: 538px;
                 margin: auto;
+                text-align: center;
             }
 
-            @media (max-width: 767px) {
-                font-size: 36px;
+            @media (max-width: 991px) {
                 max-width: 358px;
 
             }
@@ -786,6 +781,12 @@ header {
         }
 
         @media (max-width: 991px) {
+            padding: 20px 30px;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        @media (max-width: 767px) {
             padding: 20px 30px;
             flex-direction: column;
             gap: 24px;
@@ -903,12 +904,13 @@ header {
                 max-width: 100%;
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 767px) {
                 flex-direction: column;
                 background-color: transparent !important;
                 gap: 24px;
                 padding: 0;
             }
+
 
             @media (max-width: 575px) {
                 flex-direction: column;
@@ -944,9 +946,23 @@ header {
         .step-section-heading {
             max-width: 781px;
 
-            @media (max-width: 575px) {
-                max-width: 400px;
+            @media (max-width: 1199px) {
+                font-size: 50px;
             }
+
+            @media (max-width: 575px) {
+                font-size: 36px;
+                max-width: 400px;
+
+            }
+
+            @media (max-width: 340px) {
+                font-size: 28px;
+            }
+
+
+
+
 
         }
 
@@ -1124,6 +1140,10 @@ header {
     background-size: cover;
     background-position: center center;
 
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
+
     .award-row {
         @media (max-width: 575px) {
             gap: 50px;
@@ -1213,23 +1233,32 @@ header {
 
                 @media (max-width: 575px) {
                     font-size: 16px;
-
                 }
             }
 
             .award-logo-wrap {
+                @media (max-width: 991px) {
+                    padding-bottom: 24px !important;
+                }
+
                 @media (max-width: 350px) {
                     padding-bottom: 24px !important;
                 }
 
                 .award-logo {
+                    @media (max-width: 991px) {
+                        width: 118px;
+                    }
+
+                    @media (max-width: 767px) {
+                        width: 85px;
+                    }
+
                     @media (max-width: 575px) {
                         width: 85px;
                     }
 
-                    @media (max-width: 767px) {
-                        width: 115px;
-                    }
+
                 }
             }
 
@@ -1248,16 +1277,17 @@ header {
     padding: 96px 0;
     position: relative;
 
-
-    @media (max-width: 575px) {
-        padding: 48px 0;
-    }
-
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
         padding: 50px 0;
     }
 
     .client-section-wrapper {
+        .client-section-heading {
+            @media (max-width: 991px) {
+                padding-bottom: 24px !important;
+            }
+        }
+
         .client-card {
             padding: 16px;
             border-radius: 16px;
@@ -1342,6 +1372,11 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
 
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+
+
     @media (max-width: 575px) {
         padding: 50px 0;
     }
@@ -1391,6 +1426,10 @@ header {
                 }
 
                 .contact-right-subheading {
+                    @media (max-width: 1199px) {
+                        font-size: 40px;
+                    }
+
                     @media (max-width: 575px) {
                         font-size: 28px;
                     }
@@ -1403,6 +1442,10 @@ header {
                 }
 
                 .contact-number {
+                    @media (max-width: 1199px) {
+                        font-size: 40px;
+                    }
+
                     @media (max-width: 575px) {
                         font-size: 40px;
                     }
@@ -1442,9 +1485,10 @@ header {
 
     .accordion-section-wrapper {
         .accordion-section-heading {
+
             @media (max-width: 575px) {
                 max-width: 340px;
-                text-align: start;
+                margin: auto;
 
             }
 
@@ -1452,9 +1496,7 @@ header {
                 text-align: center;
             }
 
-            @media (max-width: 575px) {
-                text-align: center;
-            }
+
 
 
         }
@@ -1563,6 +1605,7 @@ header {
 
     .purchase-section-heading {
         max-width: 780px;
+
     }
 }
 
@@ -2532,6 +2575,8 @@ footer {
 .main-contact-section {
     padding: 200px 0 96px 0;
     margin-top: -100px;
+
+
 
     .main-contact-top-block {
         .main-contact-heading {
