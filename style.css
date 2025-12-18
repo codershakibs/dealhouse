@@ -1397,9 +1397,9 @@ header .close-icon span:nth-child(2) {
 .accordion-section {
   padding: 96px 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .accordion-section {
-    padding: 48px 0;
+    padding: 50px 0;
   }
 }
 @media (max-width: 575px) {
@@ -1494,6 +1494,11 @@ header .close-icon span:nth-child(2) {
 .purchase-section {
   padding-top: 96px;
 }
+@media (max-width: 991px) {
+  .purchase-section {
+    padding: 50px 0;
+  }
+}
 .purchase-section .purchase-section-heading {
   max-width: 780px;
 }
@@ -1501,9 +1506,9 @@ header .close-icon span:nth-child(2) {
 .cta-section {
   padding: 96px 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cta-section {
-    padding: 48px 0;
+    padding: 50px 0;
   }
 }
 .cta-section .cta-section-wrapper {
@@ -1553,6 +1558,11 @@ header .close-icon span:nth-child(2) {
 }
 .cta-section .cta-section-wrapper .cta-section-heading {
   max-width: 884px;
+}
+@media (max-width: 991px) {
+  .cta-section .cta-section-wrapper .cta-section-heading {
+    padding-bottom: 32px !important;
+  }
 }
 @media (max-width: 575px) {
   .cta-section .cta-section-wrapper .cta-section-heading {
@@ -1607,9 +1617,9 @@ header .close-icon span:nth-child(2) {
   padding: 96px 0;
   background: linear-gradient(180deg, #D4FFCF -0.04%, #FFF 67.53%);
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .community-section {
-    padding: 48px 0;
+    padding: 50px 0;
   }
 }
 .community-section .community-section-wrapper .community-location-wrap {
