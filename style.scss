@@ -788,7 +788,7 @@ header {
         @media (max-width: 991px) {
             padding: 20px 30px;
             flex-direction: column;
-            gap: 30px;
+            gap: 24px;
         }
 
         @media (max-width: 575px) {
@@ -804,10 +804,17 @@ header {
             content: "";
             background-image: url(./assets/images/sell-section-element.svg);
             background-position: left;
+            background-size: contain;
+            background-repeat: no-repeat;
             width: 30px;
             height: 31px;
             top: 20px;
             left: 20px;
+
+            @media (max-width: 1199px) {
+                top: 10px;
+                width: 18px;
+            }
 
             @media (max-width: 575px) {
                 top: 8px;
@@ -894,6 +901,13 @@ header {
 
             @media (max-width: 991px) {
                 max-width: 100%;
+            }
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+                background-color: transparent !important;
+                gap: 24px;
+                padding: 0;
             }
 
             @media (max-width: 575px) {

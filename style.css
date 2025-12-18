@@ -749,7 +749,7 @@ header .close-icon span:nth-child(2) {
   .sell-section .sell-section-wrapper {
     padding: 20px 30px;
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
   }
 }
 @media (max-width: 575px) {
@@ -767,10 +767,18 @@ header .close-icon span:nth-child(2) {
   content: "";
   background-image: url(./assets/images/sell-section-element.svg);
   background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 30px;
   height: 31px;
   top: 20px;
   left: 20px;
+}
+@media (max-width: 1199px) {
+  .sell-section .sell-section-wrapper::before {
+    top: 10px;
+    width: 18px;
+  }
 }
 @media (max-width: 575px) {
   .sell-section .sell-section-wrapper::before {
@@ -861,6 +869,14 @@ header .close-icon span:nth-child(2) {
 @media (max-width: 991px) {
   .sell-section .sell-section-wrapper form {
     max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .sell-section .sell-section-wrapper form {
+    flex-direction: column;
+    background-color: transparent !important;
+    gap: 24px;
+    padding: 0;
   }
 }
 @media (max-width: 575px) {
