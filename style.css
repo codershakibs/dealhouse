@@ -1830,6 +1830,12 @@ footer .footer-section-wrapper .mobile-accordion-link {
   background-image: url(./assets/images/about-bg-image.webp);
   padding-top: 400px;
 }
+@media (max-width: 991px) {
+  .about-hero {
+    background-image: none;
+    padding-top: 200px;
+  }
+}
 .about-hero::after {
   position: absolute;
   content: "";
@@ -1838,6 +1844,21 @@ footer .footer-section-wrapper .mobile-accordion-link {
   background-size: cover;
   background-position: left;
   pointer-events: none;
+}
+@media (max-width: 1399px) {
+  .about-hero::after {
+    left: -250px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-hero::after {
+    left: -350px;
+  }
+}
+@media (max-width: 991px) {
+  .about-hero::after {
+    display: none;
+  }
 }
 .about-hero::before {
   position: absolute;
@@ -1860,7 +1881,7 @@ footer .footer-section-wrapper .mobile-accordion-link {
     text-align: center;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .about-hero .about-hero-heading {
     max-width: 358px;
   }
@@ -1910,7 +1931,7 @@ footer .footer-section-wrapper .mobile-accordion-link {
 }
 @media (max-width: 991px) {
   .about-hero .about-hero-heading::after {
-    top: 0px;
+    display: none;
   }
 }
 @media (max-width: 767px) {

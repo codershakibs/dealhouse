@@ -2240,6 +2240,11 @@ footer {
     background-image: url(./assets/images/about-bg-image.webp);
     padding-top: 400px;
 
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
     &::after {
         position: absolute;
         content: "";
@@ -2248,6 +2253,21 @@ footer {
         background-size: cover;
         background-position: left;
         pointer-events: none;
+
+        @media (max-width: 1399px) {
+            left: -250px;
+        }
+
+        @media (max-width: 1199px) {
+            left: -350px;
+        }
+
+        @media (max-width: 991px) {
+            display: none;
+
+        }
+
+
     }
 
     &::before {
@@ -2271,7 +2291,7 @@ footer {
             text-align: center;
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: 767px) {
             max-width: 358px;
 
         }
@@ -2320,7 +2340,7 @@ footer {
             pointer-events: none;
 
             @media (max-width: 991px) {
-                top: 0px;
+                display: none;
             }
 
             @media (max-width: 767px) {
