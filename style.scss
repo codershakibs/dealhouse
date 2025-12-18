@@ -2238,6 +2238,7 @@ footer {
 
 .about-hero {
     background-image: url(./assets/images/about-bg-image.webp);
+    padding-top: 400px;
 
     &::after {
         position: absolute;
@@ -2246,6 +2247,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
+        pointer-events: none;
     }
 
     &::before {
@@ -2256,8 +2258,103 @@ footer {
         background-size: cover;
         background-position: top;
         z-index: 9;
+        pointer-events: none;
+    }
+
+    .about-hero-heading {
+        max-width: 709px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 991px) {
+            max-width: 358px;
+
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-text-bg.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 561px;
+            height: 92px;
+            z-index: -9;
+            left: -10px;
+            top: -13px;
+            pointer-events: none;
+
+            @media (max-width: 991px) {
+                background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+                top: -25px;
+            }
+
+            @media (max-width: 767px) {
+                background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+                top: -9px;
+                left: 16px;
+                width: 320px;
+                height: 54px;
+            }
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-text-bg.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 635px;
+            height: 106px;
+            z-index: -9;
+            left: -10px;
+            top: -24px;
+            pointer-events: none;
+
+            @media (max-width: 991px) {
+                top: 0px;
+            }
+
+            @media (max-width: 767px) {
+                width: 13px;
+                height: 27px;
+                left: 0px;
+                top: 8px;
+            }
+        }
+    }
+
+    .about-hero-left {
+        &:before {
+            position: absolute;
+            content: "";
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-element-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            right: 76%;
+            bottom: -40%;
+            width: 100px;
+            height: 100px;
+        }
     }
 }
+
+// founder section start 
 
 .founder-section {
     padding-top: 120px;
