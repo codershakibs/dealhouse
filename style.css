@@ -2490,6 +2490,17 @@ footer .footer-section-wrapper .mobile-accordion-link {
   transform: translateX(6px);
 }
 
+.contact-hero {
+  background-image: url(./assets/images/contact-hero-bg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 991px) {
+  .contact-hero {
+    background-image: none;
+  }
+}
+
 .main-contact-section {
   padding: 200px 0 96px 0;
   margin-top: -100px;
