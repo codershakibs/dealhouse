@@ -2349,8 +2349,144 @@ footer {
 
 
 // faq section 
+.faq-hero {
+    background-image: url(./assets/images/faq-bg-image.webp);
+    background-size: contain;
+    padding-top: 400px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/about-banner-shade.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        pointer-events: none;
+
+        @media (max-width: 1399px) {
+            left: -250px;
+        }
+
+        @media (max-width: 1199px) {
+            left: -350px;
+        }
+
+        @media (max-width: 991px) {
+            display: none;
+
+        }
+
+
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-yello-shade.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        z-index: 9;
+        pointer-events: none;
+    }
+
+    .faq-hero-heading {
+        max-width: 709px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-text-bg.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 561px;
+            height: 92px;
+            z-index: -9;
+            left: -10px;
+            top: -13px;
+            pointer-events: none;
+            display: none;
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-text-bg.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 457px;
+            height: 107px;
+            z-index: -9;
+            left: -12px;
+            top: -24px;
+            pointer-events: none;
+
+            @media (max-width: 991px) {
+                width: 397px;
+                left: 93px;
+                top: -30px;
+            }
+
+            @media (max-width: 767px) {
+                width: 308px;
+                height: 48px;
+                left: 28px;
+                top: -5px;
+            }
+        }
+    }
+
+    .faq-hero-left {
+        &:before {
+            position: absolute;
+            content: "";
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-element-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            right: 76%;
+            bottom: -58%;
+            width: 100px;
+            height: 100px;
+
+            @media (max-width: 991px) {
+                right: 50%;
+                bottom: -80%;
+            }
+        }
+    }
+}
+
 .faq-section {
     padding: 176px 0 96px 0;
+    margin-top: -100px;
+
 
     .accordion-item-wrapper {
         gap: 32px;
