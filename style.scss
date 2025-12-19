@@ -2115,6 +2115,13 @@ footer {
                 top: -9px;
             }
 
+            @media (max-width: 363px) {
+                width: 289px;
+                height: 41px;
+                top: -4px;
+                left: 14px;
+            }
+
         }
 
         &::before {
@@ -2138,6 +2145,12 @@ footer {
                 left: -25px;
                 top: 0;
             }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
         }
     }
 
@@ -2163,6 +2176,10 @@ footer {
             @media (max-width: 767px) {
                 right: 0;
             }
+
+            @media (max-width: 480px) {
+                bottom: -100px;
+            }
         }
     }
 }
@@ -2179,6 +2196,10 @@ footer {
 
     @media (max-width: 991px) {
         padding: 80px 0 0 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0 0 0;
     }
 
 
@@ -2374,6 +2395,7 @@ footer {
 .faq-hero {
     background-image: url(./assets/images/faq-bg-image.webp);
     background-size: contain;
+    background-repeat: no-repeat;
     padding-top: 400px;
 
     @media (max-width: 991px) {
@@ -2388,6 +2410,8 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
+        left: 30px;
+        bottom: 0;
         pointer-events: none;
 
         @media (max-width: 1399px) {
@@ -2431,6 +2455,68 @@ footer {
             max-width: 358px;
         }
 
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -40px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+                left: 65px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: 30px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/faq-hero-text-bg.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            top: -16px;
+            left: -12px;
+            width: 440px;
+            height: 92px;
+            z-index: -9;
+
+            @media (max-width: 991px) {
+                width: 335px;
+                height: 100px;
+                top: -30px;
+                left: 100px;
+            }
+
+            @media (max-width: 767px) {
+                width: 250px;
+                height: 96px;
+                top: -30px;
+                left: 50px;
+            }
+
+            @media (max-width: 360px) {
+                left: 43px;
+            }
+
+        }
+
+
 
 
 
@@ -2458,6 +2544,10 @@ footer {
             @media (max-width: 991px) {
                 right: 50%;
                 bottom: -80%;
+            }
+
+            @media (max-width: 767px) {
+                left: 30px;
             }
         }
     }
