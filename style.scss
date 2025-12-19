@@ -847,9 +847,6 @@ header {
             box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.10);
             width: 728px;
 
-
-
-
             &::placeholder {
                 font-size: 16px;
                 font-weight: 400;
@@ -863,6 +860,12 @@ header {
                 border-radius: 100px;
                 border: 0;
                 color: white;
+
+                @media (max-width: 767px) {
+                    padding: 9px 40px;
+                    width: 100%;
+                    line-height: 157.143%;
+                }
 
                 @media (max-width: 575px) {
                     padding: 9px 40px;
@@ -885,6 +888,13 @@ header {
 
                     font-size: 14px;
 
+                }
+
+                @media (max-width: 767px) {
+                    padding: 8px 16px;
+                    width: 100%;
+                    border-radius: 100px;
+                    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.10);
                 }
 
                 @media (max-width: 575px) {
@@ -2082,7 +2092,7 @@ footer {
             max-width: 358px;
         }
 
-        &::before {
+        &::after {
             position: absolute;
             content: "";
             background-image: url(./assets/images/about-heading-bg.svg);
@@ -2105,6 +2115,29 @@ footer {
                 top: -9px;
             }
 
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -40px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
         }
     }
 
@@ -2258,7 +2291,6 @@ footer {
 
     @media (max-width: 991px) {
         padding-top: 184px;
-        padding-bottom: 50px;
     }
 
     @media (max-width: 767px) {
@@ -2267,6 +2299,16 @@ footer {
 
     @media (max-width: 575px) {
         padding-top: 130px;
+    }
+
+    .founder-heading {
+        @media (max-width: 991px) {
+            max-width: 620px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+        }
     }
 
     .founder-section-image {
@@ -2285,6 +2327,14 @@ footer {
 
     .founder-info-wrapper {
         padding-bottom: 96px;
+
+        @media (max-width: 991px) {
+            padding-bottom: 50px;
+        }
+
+        @media (max-width: 767px) {
+            padding-bottom: 40px;
+        }
 
         .founder-info-text-wrapper {
             p {
@@ -2379,53 +2429,11 @@ footer {
 
         @media (max-width: 767px) {
             max-width: 358px;
-
         }
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/hero-text-bg.png);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 561px;
-            height: 92px;
-            z-index: -9;
-            left: -10px;
-            top: -13px;
-            pointer-events: none;
-            display: none;
 
-        }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/hero-text-bg.png);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 457px;
-            height: 107px;
-            z-index: -9;
-            left: -12px;
-            top: -24px;
-            pointer-events: none;
 
-            @media (max-width: 991px) {
-                width: 397px;
-                left: 93px;
-                top: -30px;
-            }
-
-            @media (max-width: 767px) {
-                width: 308px;
-                height: 48px;
-                left: 28px;
-                top: -5px;
-            }
-        }
     }
 
     .faq-hero-left {

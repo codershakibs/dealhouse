@@ -826,6 +826,13 @@ header .close-icon span:nth-child(2) {
   border: 0;
   color: white;
 }
+@media (max-width: 767px) {
+  .sell-section .sell-section-wrapper form .sell-form-btn {
+    padding: 9px 40px;
+    width: 100%;
+    line-height: 157.143%;
+  }
+}
 @media (max-width: 575px) {
   .sell-section .sell-section-wrapper form .sell-form-btn {
     padding: 9px 40px;
@@ -847,6 +854,14 @@ header .close-icon span:nth-child(2) {
 }
 .sell-section .sell-section-wrapper form #sellemail::placeholder {
   font-size: 14px;
+}
+@media (max-width: 767px) {
+  .sell-section .sell-section-wrapper form #sellemail {
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 100px;
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 @media (max-width: 575px) {
   .sell-section .sell-section-wrapper form #sellemail {
@@ -1888,7 +1903,7 @@ footer .footer-section-wrapper .mobile-accordion-link {
     max-width: 358px;
   }
 }
-.about-hero .about-hero-heading::before {
+.about-hero .about-hero-heading::after {
   position: absolute;
   content: "";
   background-image: url(./assets/images/about-heading-bg.svg);
@@ -1901,16 +1916,40 @@ footer .footer-section-wrapper .mobile-accordion-link {
   z-index: -9;
 }
 @media (max-width: 991px) {
-  .about-hero .about-hero-heading::before {
+  .about-hero .about-hero-heading::after {
     width: 565px;
     height: 70px;
   }
 }
 @media (max-width: 767px) {
-  .about-hero .about-hero-heading::before {
+  .about-hero .about-hero-heading::after {
     width: 372px;
     height: 52px;
     top: -9px;
+  }
+}
+.about-hero .about-hero-heading::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/3dot.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 24px;
+  height: 42px;
+  left: -40px;
+  top: 16px;
+}
+@media (max-width: 991px) {
+  .about-hero .about-hero-heading::before {
+    top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .about-hero .about-hero-heading::before {
+    width: 15px;
+    left: -25px;
+    top: 0;
   }
 }
 .about-hero .about-hero-left:before {
@@ -2034,7 +2073,6 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 991px) {
   .founder-section {
     padding-top: 184px;
-    padding-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2045,6 +2083,16 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 575px) {
   .founder-section {
     padding-top: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .founder-section .founder-heading {
+    max-width: 620px;
+  }
+}
+@media (max-width: 767px) {
+  .founder-section .founder-heading {
+    max-width: 358px;
   }
 }
 .founder-section .founder-section-image {
@@ -2062,6 +2110,16 @@ footer .footer-section-wrapper .mobile-accordion-link {
 }
 .founder-section .founder-info-wrapper {
   padding-bottom: 96px;
+}
+@media (max-width: 991px) {
+  .founder-section .founder-info-wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .founder-section .founder-info-wrapper {
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 991px) {
   .founder-section .founder-info-wrapper .founder-info-text-wrapper p {
@@ -2148,50 +2206,6 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 767px) {
   .faq-hero .faq-hero-heading {
     max-width: 358px;
-  }
-}
-.faq-hero .faq-hero-heading::before {
-  position: absolute;
-  content: "";
-  background-image: url(./assets/images/hero-text-bg.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  width: 561px;
-  height: 92px;
-  z-index: -9;
-  left: -10px;
-  top: -13px;
-  pointer-events: none;
-  display: none;
-}
-.faq-hero .faq-hero-heading::after {
-  position: absolute;
-  content: "";
-  background-image: url(./assets/images/hero-text-bg.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  width: 457px;
-  height: 107px;
-  z-index: -9;
-  left: -12px;
-  top: -24px;
-  pointer-events: none;
-}
-@media (max-width: 991px) {
-  .faq-hero .faq-hero-heading::after {
-    width: 397px;
-    left: 93px;
-    top: -30px;
-  }
-}
-@media (max-width: 767px) {
-  .faq-hero .faq-hero-heading::after {
-    width: 308px;
-    height: 48px;
-    left: 28px;
-    top: -5px;
   }
 }
 .faq-hero .faq-hero-left:before {
