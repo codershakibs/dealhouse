@@ -1833,7 +1833,9 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 991px) {
   .about-hero {
     background-image: none;
+    background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0) 30.47%);
     padding-top: 200px;
+    padding-bottom: 0 !important;
   }
 }
 .about-hero::after {
@@ -1889,57 +1891,26 @@ footer .footer-section-wrapper .mobile-accordion-link {
 .about-hero .about-hero-heading::before {
   position: absolute;
   content: "";
-  background-image: url(./assets/images/hero-text-bg.png);
+  background-image: url(./assets/images/about-heading-bg.svg);
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  width: 561px;
+  background-size: cover;
+  width: 627px;
   height: 92px;
+  top: -15px;
+  left: -8px;
   z-index: -9;
-  left: -10px;
-  top: -13px;
-  pointer-events: none;
 }
 @media (max-width: 991px) {
   .about-hero .about-hero-heading::before {
-    background-image: url(./assets/images/hero-heading-shade-mobile.svg);
-    top: -25px;
+    width: 565px;
+    height: 70px;
   }
 }
 @media (max-width: 767px) {
   .about-hero .about-hero-heading::before {
-    background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+    width: 372px;
+    height: 52px;
     top: -9px;
-    left: 16px;
-    width: 320px;
-    height: 54px;
-  }
-}
-.about-hero .about-hero-heading::after {
-  position: absolute;
-  content: "";
-  background-image: url(./assets/images/hero-text-bg.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  width: 635px;
-  height: 106px;
-  z-index: -9;
-  left: -10px;
-  top: -24px;
-  pointer-events: none;
-}
-@media (max-width: 991px) {
-  .about-hero .about-hero-heading::after {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .about-hero .about-hero-heading::after {
-    width: 13px;
-    height: 27px;
-    left: 0px;
-    top: 8px;
   }
 }
 .about-hero .about-hero-left:before {
@@ -1958,6 +1929,11 @@ footer .footer-section-wrapper .mobile-accordion-link {
   bottom: -40%;
   width: 100px;
   height: 100px;
+}
+@media (max-width: 767px) {
+  .about-hero .about-hero-left::after {
+    right: 0;
+  }
 }
 
 .about-section {
@@ -2053,6 +2029,7 @@ footer .footer-section-wrapper .mobile-accordion-link {
 
 .founder-section {
   padding-top: 171px;
+  padding-bottom: 0;
 }
 @media (max-width: 991px) {
   .founder-section {

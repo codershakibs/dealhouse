@@ -2027,7 +2027,9 @@ footer {
 
     @media (max-width: 991px) {
         background-image: none;
+        background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0.00) 30.47%);
         padding-top: 200px;
+        padding-bottom: 0 !important;
     }
 
     &::after {
@@ -2078,62 +2080,31 @@ footer {
 
         @media (max-width: 767px) {
             max-width: 358px;
-
         }
 
         &::before {
             position: absolute;
             content: "";
-            background-image: url(./assets/images/hero-text-bg.png);
+            background-image: url(./assets/images/about-heading-bg.svg);
             background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 561px;
+            background-size: cover;
+            width: 627px;
             height: 92px;
+            top: -15px;
+            left: -8px;
             z-index: -9;
-            left: -10px;
-            top: -13px;
-            pointer-events: none;
 
             @media (max-width: 991px) {
-                background-image: url(./assets/images/hero-heading-shade-mobile.svg);
-                top: -25px;
+                width: 565px;
+                height: 70px;
             }
 
             @media (max-width: 767px) {
-                background-image: url(./assets/images/hero-heading-shade-mobile.svg);
+                width: 372px;
+                height: 52px;
                 top: -9px;
-                left: 16px;
-                width: 320px;
-                height: 54px;
             }
 
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/hero-text-bg.png);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 635px;
-            height: 106px;
-            z-index: -9;
-            left: -10px;
-            top: -24px;
-            pointer-events: none;
-
-            @media (max-width: 991px) {
-                display: none;
-            }
-
-            @media (max-width: 767px) {
-                width: 13px;
-                height: 27px;
-                left: 0px;
-                top: 8px;
-            }
         }
     }
 
@@ -2155,6 +2126,10 @@ footer {
             bottom: -40%;
             width: 100px;
             height: 100px;
+
+            @media (max-width: 767px) {
+                right: 0;
+            }
         }
     }
 }
@@ -2279,6 +2254,7 @@ footer {
 
 .founder-section {
     padding-top: 171px;
+    padding-bottom: 0;
 
     @media (max-width: 991px) {
         padding-top: 184px;
@@ -2329,9 +2305,6 @@ footer {
 
 }
 
-
-
-
 .accordion-button::after {
     background-image: none !important;
     content: "+";
@@ -2346,7 +2319,6 @@ footer {
 .accordion-button:not(.collapsed)::after {
     content: "–";
 }
-
 
 // faq section 
 .faq-hero {
@@ -2570,7 +2542,6 @@ footer {
     }
 
 }
-
 
 // blog page start 
 .blog-hero {
