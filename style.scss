@@ -2840,12 +2840,89 @@ footer {
     @media (max-width: 991px) {
         background-image: none;
     }
+
+    .contact-hero-heading {
+        max-width: 709px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/about-heading-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 655px;
+            height: 92px;
+            top: -15px;
+            left: -8px;
+            z-index: -9;
+
+            @media (max-width: 991px) {
+                width: 565px;
+                height: 70px;
+            }
+
+            @media (max-width: 767px) {
+                width: 372px;
+                height: 52px;
+                top: -9px;
+            }
+
+            @media (max-width: 363px) {
+                width: 289px;
+                height: 41px;
+                top: -4px;
+                left: 14px;
+            }
+
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -40px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
+        }
+    }
 }
+
+// main contact section 
 
 .main-contact-section {
     padding: 200px 0 96px 0;
     margin-top: -100px;
-
 
 
     .main-contact-top-block {
@@ -2853,7 +2930,6 @@ footer {
             max-width: 1022px;
             margin: auto;
         }
-
     }
 
     .contact-form-wrapper-block {
@@ -2885,6 +2961,7 @@ footer {
         }
 
         .main-contact-block {
+
             .contact-form-heading {
                 padding-bottom: 12px;
             }
@@ -3134,6 +3211,19 @@ footer {
             }
         }
 
+
+    }
+
+    .contact-block {
+        cursor: pointer;
+        transition:
+            transform 0.4s ease,
+            box-shadow 0.4s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
 
     }
 
@@ -3829,6 +3919,94 @@ footer {
 }
 
 // realtors page start 
+.realtor-hero {
+    background-image: url(./assets/images/realtor-bg-image.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 991px) {
+        background-image: none;
+    }
+
+    .realtor-hero-heading {
+        max-width: 750px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/about-heading-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 778px;
+            height: 92px;
+            top: -22px;
+            left: -11px;
+            z-index: -9;
+
+            @media (max-width: 991px) {
+                width: 565px;
+                height: 70px;
+            }
+
+            @media (max-width: 767px) {
+                width: 372px;
+                height: 52px;
+                top: -9px;
+            }
+
+            @media (max-width: 363px) {
+                width: 289px;
+                height: 41px;
+                top: -4px;
+                left: 14px;
+            }
+
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -40px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
+        }
+    }
+}
+
+
+
 // Opportunities-section start 
 .Opportunities-section {
     padding: 96px 0;

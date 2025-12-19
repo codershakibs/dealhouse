@@ -2586,6 +2586,84 @@ footer .footer-section-wrapper .mobile-accordion-link {
     background-image: none;
   }
 }
+.contact-hero .contact-hero-heading {
+  max-width: 709px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .contact-hero .contact-hero-heading {
+    max-width: 538px;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .contact-hero .contact-hero-heading {
+    max-width: 358px;
+  }
+}
+.contact-hero .contact-hero-heading::after {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/about-heading-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 655px;
+  height: 92px;
+  top: -15px;
+  left: -8px;
+  z-index: -9;
+}
+@media (max-width: 991px) {
+  .contact-hero .contact-hero-heading::after {
+    width: 565px;
+    height: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-hero .contact-hero-heading::after {
+    width: 372px;
+    height: 52px;
+    top: -9px;
+  }
+}
+@media (max-width: 363px) {
+  .contact-hero .contact-hero-heading::after {
+    width: 289px;
+    height: 41px;
+    top: -4px;
+    left: 14px;
+  }
+}
+.contact-hero .contact-hero-heading::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/3dot.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 24px;
+  height: 42px;
+  left: -40px;
+  top: 16px;
+}
+@media (max-width: 991px) {
+  .contact-hero .contact-hero-heading::before {
+    top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-hero .contact-hero-heading::before {
+    width: 15px;
+    left: -25px;
+    top: 0;
+  }
+}
+@media (max-width: 363px) {
+  .contact-hero .contact-hero-heading::before {
+    left: 0;
+  }
+}
 
 .main-contact-section {
   padding: 200px 0 96px 0;
@@ -2865,6 +2943,14 @@ footer .footer-section-wrapper .mobile-accordion-link {
 }
 .main-contact-section .contact-info-right-block .contact-social-wrapper .social-block:hover svg * {
   fill: white;
+}
+.main-contact-section .contact-block {
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.main-contact-section .contact-block:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .ibuyer-section {
@@ -3486,6 +3572,95 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 767px) {
   .sell-house .sell-house-subheading {
     font-size: 14px;
+  }
+}
+
+.realtor-hero {
+  background-image: url(./assets/images/realtor-bg-image.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 991px) {
+  .realtor-hero {
+    background-image: none;
+  }
+}
+.realtor-hero .realtor-hero-heading {
+  max-width: 750px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .realtor-hero .realtor-hero-heading {
+    max-width: 538px;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .realtor-hero .realtor-hero-heading {
+    max-width: 358px;
+  }
+}
+.realtor-hero .realtor-hero-heading::after {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/about-heading-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 778px;
+  height: 92px;
+  top: -22px;
+  left: -11px;
+  z-index: -9;
+}
+@media (max-width: 991px) {
+  .realtor-hero .realtor-hero-heading::after {
+    width: 565px;
+    height: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .realtor-hero .realtor-hero-heading::after {
+    width: 372px;
+    height: 52px;
+    top: -9px;
+  }
+}
+@media (max-width: 363px) {
+  .realtor-hero .realtor-hero-heading::after {
+    width: 289px;
+    height: 41px;
+    top: -4px;
+    left: 14px;
+  }
+}
+.realtor-hero .realtor-hero-heading::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/3dot.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 24px;
+  height: 42px;
+  left: -40px;
+  top: 16px;
+}
+@media (max-width: 991px) {
+  .realtor-hero .realtor-hero-heading::before {
+    top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .realtor-hero .realtor-hero-heading::before {
+    width: 15px;
+    left: -25px;
+    top: 0;
+  }
+}
+@media (max-width: 363px) {
+  .realtor-hero .realtor-hero-heading::before {
+    left: 0;
   }
 }
 
