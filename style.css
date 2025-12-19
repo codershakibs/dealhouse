@@ -1525,17 +1525,67 @@ header .close-icon span:nth-child(2) {
   box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.1);
   animation: showHide 4s ease-in-out infinite;
 }
+@media (max-width: 1399px) {
+  .purchase-section .map-location-wrapper .location-card {
+    width: 160px;
+    height: 175px;
+  }
+}
+@media (max-width: 1199px) {
+  .purchase-section .map-location-wrapper .location-card {
+    width: 120px;
+    height: 126px;
+  }
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .location-card {
+    width: 75px;
+    height: 95px;
+  }
+}
 .purchase-section .map-location-wrapper .location-card .location-card-info {
   padding: 12px 12px 0px 12px;
 }
+@media (max-width: 1199px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-info {
+    padding: 8px 8px 0 8px;
+  }
+}
 .purchase-section .map-location-wrapper .location-card .location-card-info .location-card-heading {
   padding-top: 6px;
+}
+@media (max-width: 1199px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-info .location-card-heading {
+    font-size: 16px;
+    padding-top: 4px;
+  }
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-info .location-card-heading {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-info .location-card-subheading {
+    font-size: 10px;
+  }
 }
 .purchase-section .map-location-wrapper .location-card .location-card-marker {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: -20px;
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-marker {
+    margin-bottom: -15px;
+  }
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .location-card .location-card-marker svg {
+    width: 18px;
+    height: 13px;
+  }
 }
 @keyframes showHide {
   0% {
@@ -1555,25 +1605,101 @@ header .close-icon span:nth-child(2) {
   top: 250px;
   left: 20px;
 }
+@media (max-width: 991px) {
+  .purchase-section .map-location-wrapper .card-1 {
+    top: 100px;
+  }
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .card-1 {
+    display: none;
+  }
+}
 .purchase-section .map-location-wrapper .card-2 {
   left: 13%;
   bottom: 15%;
   animation: showHide 3s ease-in-out infinite;
 }
+@media (max-width: 1499px) {
+  .purchase-section .map-location-wrapper .card-2 {
+    display: none;
+  }
+}
 .purchase-section .map-location-wrapper .card-3 {
   left: 13%;
   top: 10%;
-  animation: showHide 7s ease-in-out infinite;
+  animation: showHide 5s ease-in-out infinite;
 }
 .purchase-section .map-location-wrapper .card-4 {
   left: 27%;
   bottom: 20%;
-  animation: showHide 6s ease-in-out infinite;
+  animation: showHide 7s ease-in-out infinite;
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .card-4 {
+    display: none;
+  }
 }
 .purchase-section .map-location-wrapper .card-5 {
   left: 35%;
   top: 15%;
   animation: showHide 9s ease-in-out infinite;
+}
+@media (max-width: 1399px) {
+  .purchase-section .map-location-wrapper .card-5 {
+    display: none;
+  }
+}
+.purchase-section .map-location-wrapper .card-6 {
+  left: 42%;
+  bottom: 28%;
+  animation: showHide 11s ease-in-out infinite;
+  z-index: 9;
+}
+.purchase-section .map-location-wrapper .card-7 {
+  left: 47%;
+  bottom: 50%;
+  animation: showHide 9s ease-in-out infinite;
+}
+@media (max-width: 1499px) {
+  .purchase-section .map-location-wrapper .card-7 {
+    display: none;
+  }
+}
+.purchase-section .map-location-wrapper .card-8 {
+  left: 58%;
+  bottom: 60%;
+  animation: showHide 10s ease-in-out infinite;
+}
+@media (max-width: 767px) {
+  .purchase-section .map-location-wrapper .card-8 {
+    display: none;
+  }
+}
+.purchase-section .map-location-wrapper .card-9 {
+  left: 70%;
+  bottom: 45%;
+  animation: showHide 5s ease-in-out infinite;
+}
+@media (max-width: 575px) {
+  .purchase-section .map-location-wrapper .card-9 {
+    bottom: 30%;
+  }
+}
+.purchase-section .map-location-wrapper .card-10 {
+  left: 83%;
+  bottom: 64%;
+  animation: showHide 7.5s ease-in-out infinite;
+}
+@media (max-width: 991px) {
+  .purchase-section .map-location-wrapper .card-10 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .purchase-section .map-location-wrapper .card-10 {
+    display: none;
+  }
 }
 
 .cta-section {

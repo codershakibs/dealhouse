@@ -1630,11 +1630,47 @@ header {
             border-radius: 16px;
             box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
 
+            @media (max-width: 1399px) {
+                width: 160px;
+                height: 175px;
+            }
+
+            @media (max-width: 1199px) {
+                width: 120px;
+                height: 126px;
+            }
+
+            @media (max-width: 575px) {
+                width: 75px;
+                height: 95px
+            }
+
+
+
             .location-card-info {
                 padding: 12px 12px 0px 12px;
 
+                @media (max-width: 1199px) {
+                    padding: 8px 8px 0 8px;
+                }
+
                 .location-card-heading {
                     padding-top: 6px;
+
+                    @media (max-width: 1199px) {
+                        font-size: 16px;
+                        padding-top: 4px;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 10px;
+                    }
+                }
+
+                .location-card-subheading {
+                    @media (max-width: 1199px) {
+                        font-size: 10px;
+                    }
                 }
             }
 
@@ -1643,6 +1679,18 @@ header {
                 left: 50%;
                 transform: translateX(-50%);
                 margin-bottom: -20px;
+
+                @media (max-width: 575px) {
+                    margin-bottom: -15px;
+                }
+
+                svg {
+                    @media (max-width: 575px) {
+                        width: 18px;
+                        height: 13px;
+
+                    }
+                }
             }
 
             animation: showHide 4s ease-in-out infinite;
@@ -1672,31 +1720,109 @@ header {
         .card-1 {
             top: 250px;
             left: 20px;
+
+            @media (max-width: 991px) {
+                top: 100px;
+            }
+
+            @media (max-width: 575px) {
+                display: none;
+            }
+
+
         }
 
         .card-2 {
             left: 13%;
             bottom: 15%;
             animation: showHide 3s ease-in-out infinite;
+
+            @media (max-width: 1499px) {
+                display: none;
+            }
         }
 
         .card-3 {
             left: 13%;
             top: 10%;
-            animation: showHide 7s ease-in-out infinite;
+            animation: showHide 5s ease-in-out infinite;
         }
 
         .card-4 {
             left: 27%;
             bottom: 20%;
-            animation: showHide 6s ease-in-out infinite;
+            animation: showHide 7s ease-in-out infinite;
+
+            @media (max-width: 575px) {
+                display: none;
+            }
         }
 
         .card-5 {
             left: 35%;
             top: 15%;
             animation: showHide 9s ease-in-out infinite;
+
+            @media (max-width: 1399px) {
+                display: none;
+            }
         }
+
+        .card-6 {
+            left: 42%;
+            bottom: 28%;
+            animation: showHide 11s ease-in-out infinite;
+            z-index: 9;
+        }
+
+        .card-7 {
+            left: 47%;
+            bottom: 50%;
+            animation: showHide 9s ease-in-out infinite;
+
+            @media (max-width: 1499px) {
+                display: none;
+            }
+
+        }
+
+        .card-8 {
+            left: 58%;
+            bottom: 60%;
+            animation: showHide 10s ease-in-out infinite;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .card-9 {
+            left: 70%;
+            bottom: 45%;
+            animation: showHide 5s ease-in-out infinite;
+
+            @media (max-width: 575px) {
+                bottom: 30%;
+            }
+        }
+
+        .card-10 {
+            left: 83%;
+            bottom: 64%;
+            animation: showHide 7.5s ease-in-out infinite;
+
+            @media (max-width: 991px) {
+                display: none;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+
+
+
 
 
     }
