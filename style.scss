@@ -2573,6 +2573,15 @@ footer {
 
 
 // blog page start 
+.blog-hero {
+    background-image: url(./assets/images/blog-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 991px) {
+        background-image: none;
+    }
+}
 
 
 
