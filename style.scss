@@ -333,6 +333,10 @@ header {
                 order: 2;
             }
 
+            // @media (max-width: 407px) {
+            //     gap: 0 !important;
+            // }
+
             @media (max-width: 310px) {
                 margin-right: 0;
             }
@@ -347,6 +351,10 @@ header {
                 }
 
                 @media (max-width: 480px) {
+                    width: 150px;
+                }
+
+                @media (max-width: 370px) {
                     width: 150px;
                 }
             }
@@ -445,7 +453,9 @@ header {
             }
 
             @media (max-width: 480px) {
-                font-size: 14px;
+                font-size: 12px;
+                padding: 9px 10px;
+
             }
 
             @media (max-width: 310px) {
@@ -628,6 +638,7 @@ header {
     .hero-left-block {
         position: relative;
         z-index: 9;
+        padding-bottom: 60px;
 
         &::after {
             position: absolute;
@@ -1645,8 +1656,6 @@ header {
                 height: 95px
             }
 
-
-
             .location-card-info {
                 padding: 12px 12px 0px 12px;
 
@@ -1694,7 +1703,6 @@ header {
             }
 
             animation: showHide 4s ease-in-out infinite;
-
 
             @keyframes showHide {
                 0% {
@@ -2375,12 +2383,17 @@ footer {
             background-size: contain;
             background-position: right;
             right: 76%;
-            bottom: -40%;
-            width: 100px;
-            height: 100px;
+            bottom: -32%;
+            width: 162px;
+            height: 143px;
+
+            @media (max-width: 991px) {
+                right: 0;
+            }
 
             @media (max-width: 767px) {
                 right: 0;
+                height: 100px;
             }
 
             @media (max-width: 480px) {
@@ -2500,7 +2513,7 @@ footer {
         }
     }
 
-    .map-image {
+    .map {
         padding-top: 96px;
 
         @media (max-width: 991px) {
@@ -2743,13 +2756,14 @@ footer {
             background-size: contain;
             background-position: right;
             right: 76%;
-            bottom: -58%;
-            width: 100px;
-            height: 100px;
+            bottom: -40%;
+            width: 162px;
+            height: 143px;
 
             @media (max-width: 991px) {
                 right: 50%;
-                bottom: -80%;
+                bottom: -50%;
+                height: 100px;
             }
 
             @media (max-width: 767px) {
@@ -2762,6 +2776,18 @@ footer {
 .faq-section {
     padding: 176px 0 96px 0;
     margin-top: -100px;
+
+    .faq-top-block {
+        .faq-top-block-subheading {
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+    }
 
 
     .accordion-item-wrapper {
@@ -2809,17 +2835,19 @@ footer {
                 box-shadow: none;
             }
 
-            @media (max-width: 575px) {
-                font-size: 18px;
-                display: flex;
-                gap: 40px;
-            }
-
             @media (max-width: 991px) {
                 font-size: 18px;
                 display: flex;
                 gap: 40px;
             }
+
+            @media (max-width: 575px) {
+                font-size: 16px;
+                display: flex;
+                gap: 40px;
+            }
+
+
 
 
         }
@@ -4353,6 +4381,69 @@ footer {
 
 
 // we help us start 
+
+.help-hero-section {
+    background-image: url(./assets/images/help-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 400px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
+    .help-hero-heading {
+        max-width: 806px !important;
+
+        @media (max-width: 991px) {
+            text-align: center;
+            max-width: 538px !important;
+            margin: auto;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px !important;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/about-heading-bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 800px;
+            height: 85px;
+            top: -18px;
+            left: -8px;
+            z-index: -9;
+
+            @media (max-width: 991px) {
+                width: 556px;
+                height: 80px;
+                left: 50px;
+            }
+
+            @media (max-width: 767px) {
+                width: 359px;
+                height: 64px;
+                left: 70px;
+            }
+
+            @media (max-width: 450px) {
+                width: 324px;
+                left: 50px;
+            }
+
+            @media (max-width: 375px) {
+                width: 272px;
+                left: 38px;
+            }
+        }
+
+    }
+}
 
 
 .help-section {

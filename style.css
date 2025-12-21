@@ -344,6 +344,11 @@ header .navbar {
     width: 150px;
   }
 }
+@media (max-width: 370px) {
+  header .navbar .navbar-brand .site-logo {
+    width: 150px;
+  }
+}
 @media (max-width: 991px) {
   header .navbar .navbar-toggler {
     order: 1;
@@ -431,7 +436,8 @@ header .navbar .nav-btn-mobile {
 }
 @media (max-width: 480px) {
   header .navbar .nav-btn-mobile {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 9px 10px;
   }
 }
 @media (max-width: 310px) {
@@ -583,6 +589,7 @@ header .close-icon span:nth-child(2) {
 .hero-section .hero-left-block {
   position: relative;
   z-index: 9;
+  padding-bottom: 60px;
 }
 .hero-section .hero-left-block::after {
   position: absolute;
@@ -2162,13 +2169,19 @@ footer .footer-section-wrapper .mobile-accordion-link {
   background-size: contain;
   background-position: right;
   right: 76%;
-  bottom: -40%;
-  width: 100px;
-  height: 100px;
+  bottom: -32%;
+  width: 162px;
+  height: 143px;
+}
+@media (max-width: 991px) {
+  .about-hero .about-hero-left::after {
+    right: 0;
+  }
 }
 @media (max-width: 767px) {
   .about-hero .about-hero-left::after {
     right: 0;
+    height: 100px;
   }
 }
 @media (max-width: 480px) {
@@ -2264,11 +2277,11 @@ footer .footer-section-wrapper .mobile-accordion-link {
     font-size: 16px;
   }
 }
-.about-section .map-image {
+.about-section .map {
   padding-top: 96px;
 }
 @media (max-width: 991px) {
-  .about-section .map-image {
+  .about-section .map {
     padding-top: 50px;
   }
 }
@@ -2495,14 +2508,15 @@ footer .footer-section-wrapper .mobile-accordion-link {
   background-size: contain;
   background-position: right;
   right: 76%;
-  bottom: -58%;
-  width: 100px;
-  height: 100px;
+  bottom: -40%;
+  width: 162px;
+  height: 143px;
 }
 @media (max-width: 991px) {
   .faq-hero .faq-hero-left::after {
     right: 50%;
-    bottom: -80%;
+    bottom: -50%;
+    height: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -2514,6 +2528,16 @@ footer .footer-section-wrapper .mobile-accordion-link {
 .faq-section {
   padding: 176px 0 96px 0;
   margin-top: -100px;
+}
+@media (max-width: 991px) {
+  .faq-section .faq-top-block .faq-top-block-subheading {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .faq-section .faq-top-block .faq-top-block-subheading {
+    font-size: 14px;
+  }
 }
 .faq-section .accordion-item-wrapper {
   gap: 32px;
@@ -2556,16 +2580,16 @@ footer .footer-section-wrapper .mobile-accordion-link {
   border-color: transparent;
   box-shadow: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .faq-section .accordion-item .accordion-button {
     font-size: 18px;
     display: flex;
     gap: 40px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .faq-section .accordion-item .accordion-button {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     gap: 40px;
   }
@@ -3961,6 +3985,73 @@ footer .footer-section-wrapper .mobile-accordion-link {
 @media (max-width: 767px) {
   .terms-section .terms-block-wrapper .terms-top-info .terms-info-text {
     font-size: 12px;
+  }
+}
+
+.help-hero-section {
+  background-image: url(./assets/images/help-hero-bg.webp);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  padding-top: 400px;
+}
+@media (max-width: 991px) {
+  .help-hero-section {
+    background-image: none;
+    padding-top: 200px;
+  }
+}
+.help-hero-section .help-hero-heading {
+  max-width: 806px !important;
+}
+@media (max-width: 991px) {
+  .help-hero-section .help-hero-heading {
+    text-align: center;
+    max-width: 538px !important;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .help-hero-section .help-hero-heading {
+    max-width: 358px !important;
+  }
+}
+.help-hero-section .help-hero-heading::after {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/about-heading-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 85px;
+  top: -18px;
+  left: -8px;
+  z-index: -9;
+}
+@media (max-width: 991px) {
+  .help-hero-section .help-hero-heading::after {
+    width: 556px;
+    height: 80px;
+    left: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .help-hero-section .help-hero-heading::after {
+    width: 359px;
+    height: 64px;
+    left: 70px;
+  }
+}
+@media (max-width: 450px) {
+  .help-hero-section .help-hero-heading::after {
+    width: 324px;
+    left: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .help-hero-section .help-hero-heading::after {
+    width: 272px;
+    left: 38px;
   }
 }
 
