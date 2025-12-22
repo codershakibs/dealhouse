@@ -1956,6 +1956,7 @@ header {
     }
 }
 
+// community page start 
 // community section 
 .community-section {
     padding: 96px 0;
@@ -2063,6 +2064,31 @@ header {
 
     }
 
+}
+
+// why section 
+.why-section {
+    .why-section-heading {
+        max-width: 858px;
+        margin: auto;
+    }
+
+    .why-card {
+        padding: 24px;
+        border-radius: 32px;
+        box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+
+        .why-card-icon {
+            padding: 46px;
+            border-radius: 50%;
+            width: 148px;
+
+        }
+
+        .why-card-heading {
+            padding-bottom: 12px;
+        }
+    }
 }
 
 // footer section 

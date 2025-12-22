@@ -1907,6 +1907,24 @@ header .close-icon span:nth-child(2) {
   }
 }
 
+.why-section .why-section-heading {
+  max-width: 858px;
+  margin: auto;
+}
+.why-section .why-card {
+  padding: 24px;
+  border-radius: 32px;
+  box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.1);
+}
+.why-section .why-card .why-card-icon {
+  padding: 46px;
+  border-radius: 50%;
+  width: 148px;
+}
+.why-section .why-card .why-card-heading {
+  padding-bottom: 12px;
+}
+
 footer {
   padding-top: 96px;
 }
