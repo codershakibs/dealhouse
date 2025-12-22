@@ -1917,13 +1917,62 @@ header .close-icon span:nth-child(2) {
   box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.1);
   height: 100%;
 }
+@media (max-width: 1399px) {
+  .why-section .why-card {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .why-section .why-card {
+    padding: 24px;
+  }
+}
 .why-section .why-card .why-card-icon {
   padding: 46px;
   border-radius: 50%;
   width: 148px;
+  height: 148px;
+}
+@media (max-width: 991px) {
+  .why-section .why-card .why-card-icon {
+    width: 112px;
+    height: 112px;
+    padding: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .why-section .why-card .why-card-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 1399px) {
+  .why-section .why-card .why-card-info {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .why-section .why-card .why-card-info {
+    font-size: 18px;
+  }
 }
 .why-section .why-card .why-card-heading {
   padding-bottom: 12px;
+}
+@media (max-width: 1399px) {
+  .why-section .why-card .why-card-heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .why-section .why-card .why-card-heading {
+    font-size: 24px;
+  }
+}
+.why-section .why-section-bottom .why-section-btn {
+  padding: 15px 30px;
+  background-color: #BAEF2E;
+  border-radius: 100px;
 }
 
 footer {
@@ -3135,6 +3184,93 @@ footer .footer-section-wrapper .mobile-accordion-link {
 .main-contact-section .contact-block:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.guide-hero {
+  background-image: url(./assets/images/guide-bg-image.webp);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  padding-top: 400px;
+}
+@media (max-width: 991px) {
+  .guide-hero {
+    background-image: none;
+    padding-top: 200px;
+  }
+}
+.guide-hero .guide-hero-heading {
+  max-width: 806px !important;
+}
+@media (max-width: 991px) {
+  .guide-hero .guide-hero-heading {
+    text-align: center;
+    max-width: 538px !important;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .guide-hero .guide-hero-heading {
+    max-width: 358px !important;
+  }
+}
+.guide-hero .guide-hero-heading::before {
+  position: absolute;
+  content: "";
+  background-image: url(./assets/images/3dot.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 24px;
+  height: 42px;
+  left: -53px;
+  top: 16px;
+}
+@media (max-width: 991px) {
+  .guide-hero .guide-hero-heading::before {
+    top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .guide-hero .guide-hero-heading::before {
+    width: 15px;
+    left: -25px;
+    top: 0;
+  }
+}
+@media (max-width: 363px) {
+  .guide-hero .guide-hero-heading::before {
+    left: 0;
+  }
+}
+.guide-hero .guide-hero-heading .guide-heading-highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.guide-hero .guide-hero-heading .guide-heading-highlight::before {
+  content: "";
+  position: absolute;
+  left: -0.35em;
+  top: 0;
+  width: 60%;
+  height: 1em;
+  background: #BAEF2E;
+  transform: skew(8deg);
+  z-index: -1;
+  border-radius: 0;
+}
+.guide-hero .guide-hero-heading .guide-heading-highlight::after {
+  content: "";
+  position: absolute;
+  right: -0.35em;
+  top: 0;
+  width: 60%;
+  height: 1em;
+  background: #BAEF2E;
+  transform: skew(-8deg);
+  z-index: -1;
+  border-radius: 0;
 }
 
 .ibuyer-section {
