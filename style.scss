@@ -1958,6 +1958,142 @@ header {
 
 // community page start 
 // community section 
+
+.communities-hero {
+    background-image: url(./assets/images/faq-bg-image.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/about-banner-shade.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        left: 30px;
+        bottom: 0;
+        pointer-events: none;
+
+        @media (max-width: 1399px) {
+            left: -250px;
+        }
+
+        @media (max-width: 1199px) {
+            left: -350px;
+        }
+
+        @media (max-width: 991px) {
+            display: none;
+
+        }
+
+
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-yello-shade.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        z-index: 9;
+        pointer-events: none;
+    }
+
+    .communities-hero-heading {
+        max-width: 709px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+        }
+
+        .faq-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+    .communities-hero-left {
+        &:before {
+            position: absolute;
+            content: "";
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-element-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            right: 76%;
+            bottom: -40%;
+            width: 162px;
+            height: 143px;
+
+            @media (max-width: 991px) {
+                right: 50%;
+                bottom: -50%;
+                height: 100px;
+            }
+
+            @media (max-width: 767px) {
+                left: 30px;
+            }
+        }
+    }
+}
+
 .community-section {
     padding: 96px 0;
     background: linear-gradient(180deg, #D4FFCF -0.04%, #FFF 67.53%);
@@ -2553,9 +2689,11 @@ header {
 // estate section 
 .estate-section {
     padding: 96px 0;
+
     @media (max-width: 991px) {
         padding: 50px 0;
     }
+
     .estate-heading {
         max-width: 900px;
         margin: auto;
@@ -4965,7 +5103,6 @@ footer {
         }
     }
 }
-
 
 
 // Opportunities-section start 
