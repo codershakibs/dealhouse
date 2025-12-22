@@ -2077,6 +2077,7 @@ header {
         padding: 24px;
         border-radius: 32px;
         box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
+        height: 100%;
 
         .why-card-icon {
             padding: 46px;
@@ -2270,7 +2271,6 @@ footer {
 
 
 // about us page start 
-
 .about-hero {
     background-image: url(./assets/images/about-bg-image.webp);
     padding-top: 400px;
@@ -2332,65 +2332,36 @@ footer {
             max-width: 358px;
         }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/about-heading-bg.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 627px;
-            height: 92px;
-            top: -15px;
-            left: -8px;
-            z-index: -9;
+        .about-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
 
-            @media (max-width: 991px) {
-                width: 565px;
-                height: 70px;
-            }
-
-            @media (max-width: 767px) {
-                width: 372px;
-                height: 52px;
-                top: -9px;
-            }
-
-            @media (max-width: 363px) {
-                width: 289px;
-                height: 41px;
-                top: -4px;
-                left: 14px;
-            }
-
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/3dot.svg);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 24px;
-            height: 42px;
-            left: -40px;
-            top: 16px;
-
-            @media (max-width: 991px) {
-                top: 8px;
-            }
-
-            @media (max-width: 767px) {
-                width: 15px;
-                left: -25px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
                 top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
             }
 
-            @media (max-width: 363px) {
-                left: 0;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
             }
-
-
         }
     }
 
@@ -2428,8 +2399,6 @@ footer {
         }
     }
 }
-
-
 
 .about-section {
     background-color: var(--dark-6);
@@ -2700,66 +2669,39 @@ footer {
             max-width: 358px;
         }
 
-        &::before {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/3dot.svg);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            width: 24px;
-            height: 42px;
-            left: -40px;
-            top: 16px;
+        .faq-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
 
-            @media (max-width: 991px) {
-                top: 8px;
-                left: 65px;
-            }
-
-            @media (max-width: 767px) {
-                width: 15px;
-                left: 30px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
                 top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
             }
 
-            @media (max-width: 363px) {
-                left: 0;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
             }
         }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/faq-hero-text-bg.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: left;
-            top: -16px;
-            left: -12px;
-            width: 440px;
-            height: 92px;
-            z-index: -9;
 
-            @media (max-width: 991px) {
-                width: 335px;
-                height: 100px;
-                top: -30px;
-                left: 100px;
-            }
-
-            @media (max-width: 767px) {
-                width: 250px;
-                height: 96px;
-                top: -30px;
-                left: 50px;
-            }
-
-            @media (max-width: 360px) {
-                left: 43px;
-            }
-
-        }
 
 
 
@@ -2910,9 +2852,43 @@ footer {
     @media (max-width: 991px) {
         background-image: none;
     }
+
+    .blog-hero-heading {
+        .blog-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+
+        }
+    }
 }
-
-
 
 .blog-section {
     padding: 200px 0 96px 0;
@@ -3115,37 +3091,6 @@ footer {
             max-width: 358px;
         }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/about-heading-bg.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 655px;
-            height: 92px;
-            top: -15px;
-            left: -8px;
-            z-index: -9;
-
-            @media (max-width: 991px) {
-                width: 565px;
-                height: 70px;
-            }
-
-            @media (max-width: 767px) {
-                width: 372px;
-                height: 52px;
-                top: -9px;
-            }
-
-            @media (max-width: 363px) {
-                width: 289px;
-                height: 41px;
-                top: -4px;
-                left: 14px;
-            }
-
-        }
 
         &::before {
             position: absolute;
@@ -3156,7 +3101,7 @@ footer {
             background-size: contain;
             width: 24px;
             height: 42px;
-            left: -40px;
+            left: -55px;
             top: 16px;
 
             @media (max-width: 991px) {
@@ -3174,6 +3119,38 @@ footer {
             }
 
 
+        }
+
+        .contact-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
         }
     }
 }
@@ -4202,38 +4179,6 @@ footer {
             max-width: 358px;
         }
 
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/about-heading-bg.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 778px;
-            height: 92px;
-            top: -22px;
-            left: -11px;
-            z-index: -9;
-
-            @media (max-width: 991px) {
-                width: 565px;
-                height: 70px;
-            }
-
-            @media (max-width: 767px) {
-                width: 372px;
-                height: 52px;
-                top: -9px;
-            }
-
-            @media (max-width: 363px) {
-                width: 289px;
-                height: 41px;
-                top: -4px;
-                left: 14px;
-            }
-
-        }
-
         &::before {
             position: absolute;
             content: "";
@@ -4243,7 +4188,7 @@ footer {
             background-size: contain;
             width: 24px;
             height: 42px;
-            left: -40px;
+            left: -53px;
             top: 16px;
 
             @media (max-width: 991px) {
@@ -4261,6 +4206,38 @@ footer {
             }
 
 
+        }
+
+        .realtor-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
         }
     }
 }
@@ -4359,6 +4336,98 @@ footer {
 
 // terms page start 
 // terms section start 
+
+.term-hero-section {
+    background-image: url(./assets/images/help-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 400px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
+    .term-hero-heading {
+        max-width: 806px !important;
+
+        @media (max-width: 991px) {
+            text-align: center;
+            max-width: 538px !important;
+            margin: auto;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px !important;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -53px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
+        }
+
+
+        .term-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+        }
+
+    }
+}
+
+
 .terms-section {
     margin-top: 0;
 
@@ -4407,6 +4476,165 @@ footer {
 
 
 // we help us start 
+
+.help-hero {
+    background-image: url(./assets/images/about-bg-image.webp);
+    padding-top: 400px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0.00) 30.47%);
+        padding-top: 200px;
+        padding-bottom: 0 !important;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/about-banner-shade.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        pointer-events: none;
+
+        @media (max-width: 1399px) {
+            left: -250px;
+        }
+
+        @media (max-width: 1199px) {
+            left: -350px;
+        }
+
+        @media (max-width: 991px) {
+            display: none;
+
+        }
+
+
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-yello-shade.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        z-index: 9;
+        pointer-events: none;
+    }
+
+    .help-hero-heading {
+        max-width: 806px;
+        position: relative;
+
+        @media (max-width: 991px) {
+            max-width: 538px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 358px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -53px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
+        }
+
+
+        .help-heading-highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -0.35em;
+                top: 0;
+                width: 60%;
+                height: 1em;
+                background: #BAEF2E;
+                transform: skew(-8deg);
+                z-index: -1;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .about-hero-left {
+        &:before {
+            position: absolute;
+            content: "";
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/hero-element-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            right: 76%;
+            bottom: -32%;
+            width: 162px;
+            height: 143px;
+
+            @media (max-width: 991px) {
+                right: 0;
+            }
+
+            @media (max-width: 767px) {
+                right: 0;
+                height: 100px;
+            }
+
+            @media (max-width: 480px) {
+                bottom: -100px;
+            }
+        }
+    }
+}
 
 .help-hero-section {
     background-image: url(./assets/images/help-hero-bg.webp);
