@@ -427,6 +427,12 @@ header {
         .nav-btn {
             padding: 15px 30px;
             border-radius: 100px;
+            transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
 
             @media (max-width: 1280px) {
                 font-size: 16px;
@@ -871,6 +877,12 @@ header {
                 border-radius: 100px;
                 border: 0;
                 color: white;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
 
                 @media (max-width: 767px) {
                     padding: 9px 40px;
@@ -1137,6 +1149,13 @@ header {
             .cta-btn {
                 padding: 16px 40px;
                 border-radius: 100px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
+
             }
 
 
@@ -1944,6 +1963,12 @@ header {
             .cta-btn {
                 padding: 16px 40px;
                 border-radius: 100px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
 
 
             }
@@ -1960,14 +1985,16 @@ header {
 // community section 
 
 .communities-hero {
-    background-image: url(./assets/images/faq-bg-image.webp);
-    background-size: contain;
+    background-image: url(./assets/images/community-hero-bg.webp);
     background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 400px;
 
     @media (max-width: 991px) {
         background-image: none;
+        background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0.00) 30.47%);
         padding-top: 200px;
+        padding-bottom: 0 !important;
     }
 
     &::after {
@@ -1977,8 +2004,6 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
-        left: 30px;
-        bottom: 0;
         pointer-events: none;
 
         @media (max-width: 1399px) {
@@ -2011,6 +2036,7 @@ header {
     .communities-hero-heading {
         max-width: 709px;
         position: relative;
+        z-index: 9;
 
         @media (max-width: 991px) {
             max-width: 538px;
@@ -2022,7 +2048,7 @@ header {
             max-width: 358px;
         }
 
-        .faq-heading-highlight {
+        .communities-heading-highlight {
             position: relative;
             display: inline-block;
             z-index: 1;
@@ -2053,13 +2079,6 @@ header {
                 border-radius: 0;
             }
         }
-
-
-
-
-
-
-
     }
 
     .communities-hero-left {
@@ -2077,22 +2096,27 @@ header {
             background-size: contain;
             background-position: right;
             right: 76%;
-            bottom: -40%;
+            bottom: -42%;
             width: 162px;
             height: 143px;
 
             @media (max-width: 991px) {
-                right: 50%;
-                bottom: -50%;
-                height: 100px;
+                right: 0;
             }
 
             @media (max-width: 767px) {
-                left: 30px;
+                right: 0;
+                height: 100px;
+            }
+
+            @media (max-width: 480px) {
+                bottom: -100px;
             }
         }
     }
 }
+
+
 
 .community-section {
     padding: 96px 0;
@@ -2181,6 +2205,12 @@ header {
             .cta-btn {
                 padding: 16px 40px;
                 border-radius: 100px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
 
                 @media (max-width: 991px) {
                     padding: 10px 24px;
@@ -2889,6 +2919,12 @@ footer {
             .nav-btn {
                 padding: 15px 30px;
                 border-radius: 100px;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: #000;
+                    color: white;
+                }
 
                 @media (max-width: 991px) {
                     padding: 10px 24px;

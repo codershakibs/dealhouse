@@ -412,6 +412,11 @@ header .navbar .nav-link:hover::before {
 header .navbar .nav-btn {
   padding: 15px 30px;
   border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+header .navbar .nav-btn:hover {
+  background-color: #000;
+  color: white;
 }
 @media (max-width: 1280px) {
   header .navbar .nav-btn {
@@ -832,6 +837,11 @@ header .close-icon span:nth-child(2) {
   border-radius: 100px;
   border: 0;
   color: white;
+  transition: all 0.5s ease-in-out;
+}
+.sell-section .sell-section-wrapper form .sell-form-btn:hover {
+  background-color: #000;
+  color: white;
 }
 @media (max-width: 767px) {
   .sell-section .sell-section-wrapper form .sell-form-btn {
@@ -1087,6 +1097,11 @@ header .close-icon span:nth-child(2) {
 .step-section .hero-cta .cta-form .cta-btn {
   padding: 16px 40px;
   border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.step-section .hero-cta .cta-form .cta-btn:hover {
+  background-color: #000;
+  color: white;
 }
 @media (max-width: 1199px) {
   .step-section .step-card-row {
@@ -1817,18 +1832,25 @@ header .close-icon span:nth-child(2) {
 .cta-section .cta-section-wrapper .cta-form .cta-btn {
   padding: 16px 40px;
   border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.cta-section .cta-section-wrapper .cta-form .cta-btn:hover {
+  background-color: #000;
+  color: white;
 }
 
 .communities-hero {
-  background-image: url(./assets/images/faq-bg-image.webp);
-  background-size: contain;
+  background-image: url(./assets/images/community-hero-bg.webp);
   background-repeat: no-repeat;
+  background-size: contain;
   padding-top: 400px;
 }
 @media (max-width: 991px) {
   .communities-hero {
     background-image: none;
+    background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0) 30.47%);
     padding-top: 200px;
+    padding-bottom: 0 !important;
   }
 }
 .communities-hero::after {
@@ -1838,8 +1860,6 @@ header .close-icon span:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  left: 30px;
-  bottom: 0;
   pointer-events: none;
 }
 @media (max-width: 1399px) {
@@ -1870,6 +1890,7 @@ header .close-icon span:nth-child(2) {
 .communities-hero .communities-hero-heading {
   max-width: 709px;
   position: relative;
+  z-index: 9;
 }
 @media (max-width: 991px) {
   .communities-hero .communities-hero-heading {
@@ -1883,12 +1904,12 @@ header .close-icon span:nth-child(2) {
     max-width: 358px;
   }
 }
-.communities-hero .communities-hero-heading .faq-heading-highlight {
+.communities-hero .communities-hero-heading .communities-heading-highlight {
   position: relative;
   display: inline-block;
   z-index: 1;
 }
-.communities-hero .communities-hero-heading .faq-heading-highlight::before {
+.communities-hero .communities-hero-heading .communities-heading-highlight::before {
   content: "";
   position: absolute;
   left: -0.35em;
@@ -1900,7 +1921,7 @@ header .close-icon span:nth-child(2) {
   z-index: -1;
   border-radius: 0;
 }
-.communities-hero .communities-hero-heading .faq-heading-highlight::after {
+.communities-hero .communities-hero-heading .communities-heading-highlight::after {
   content: "";
   position: absolute;
   right: -0.35em;
@@ -1925,20 +1946,24 @@ header .close-icon span:nth-child(2) {
   background-size: contain;
   background-position: right;
   right: 76%;
-  bottom: -40%;
+  bottom: -42%;
   width: 162px;
   height: 143px;
 }
 @media (max-width: 991px) {
   .communities-hero .communities-hero-left::after {
-    right: 50%;
-    bottom: -50%;
-    height: 100px;
+    right: 0;
   }
 }
 @media (max-width: 767px) {
   .communities-hero .communities-hero-left::after {
-    left: 30px;
+    right: 0;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .communities-hero .communities-hero-left::after {
+    bottom: -100px;
   }
 }
 
@@ -2017,6 +2042,11 @@ header .close-icon span:nth-child(2) {
 .community-section .community-section-wrapper .cta-form .cta-btn {
   padding: 16px 40px;
   border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.community-section .community-section-wrapper .cta-form .cta-btn:hover {
+  background-color: #000;
+  color: white;
 }
 @media (max-width: 991px) {
   .community-section .community-section-wrapper .cta-form .cta-btn {
@@ -2659,6 +2689,11 @@ footer .footer-section-wrapper .footer-top-block .footer-social {
 footer .footer-section-wrapper .footer-top-block .nav-btn {
   padding: 15px 30px;
   border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+footer .footer-section-wrapper .footer-top-block .nav-btn:hover {
+  background-color: #000;
+  color: white;
 }
 @media (max-width: 991px) {
   footer .footer-section-wrapper .footer-top-block .nav-btn {
