@@ -659,7 +659,7 @@ header {
             background-size: contain;
             background-position: right;
             right: 76%;
-            bottom: -25%;
+            bottom: -15%;
             width: 100px;
             height: 100px;
 
@@ -2137,10 +2137,41 @@ header {
 
             .community-location {
                 a {
+                    transition: color 0.3s ease;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: red;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: transform 0.35s ease;
+                    }
+
+                    &:hover {
+                        &::after {
+                            transform: scaleX(1);
+                        }
+                    }
+
                     @media (max-width: 575px) {
                         font-size: 12px;
                     }
+
+                    p {
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
                 }
+
+
 
             }
         }
@@ -3209,12 +3240,17 @@ footer {
 
 // simple section 
 .simple-section {
-    padding: 96px 0;
+    padding: 96px 0 0 0;
     background-color: #F2F2F2;
     background-image: url(./assets/images/simple-section-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+    }
 
     .simple-info-text {
         @media (max-width: 991px) {
@@ -3222,8 +3258,21 @@ footer {
         }
     }
 
+    .map-wrapper {
+        padding-top: 126px;
 
+        @media (max-width: 991px) {
+            padding-top: 80px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 50px;
+    }
 }
+
+
+
 
 
 

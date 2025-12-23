@@ -609,7 +609,7 @@ header .close-icon span:nth-child(2) {
   background-size: contain;
   background-position: right;
   right: 76%;
-  bottom: -25%;
+  bottom: -15%;
   width: 100px;
   height: 100px;
 }
@@ -1984,10 +1984,32 @@ header .close-icon span:nth-child(2) {
 .community-section .community-section-wrapper .community-location-wrap {
   padding-bottom: 85px;
 }
+.community-section .community-section-wrapper .community-location-wrap .community-location a {
+  transition: color 0.3s ease;
+  position: relative;
+}
+.community-section .community-section-wrapper .community-location-wrap .community-location a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.community-section .community-section-wrapper .community-location-wrap .community-location a:hover::after {
+  transform: scaleX(1);
+}
 @media (max-width: 575px) {
   .community-section .community-section-wrapper .community-location-wrap .community-location a {
     font-size: 12px;
   }
+}
+.community-section .community-section-wrapper .community-location-wrap .community-location a p:hover {
+  color: red;
 }
 .community-section .community-section-wrapper .community-bottom-heading {
   max-width: 581px;
@@ -2918,7 +2940,7 @@ footer .footer-section-wrapper .mobile-accordion-link {
 }
 
 .simple-section {
-  padding: 96px 0;
+  padding: 96px 0 0 0;
   background-color: #F2F2F2;
   background-image: url(./assets/images/simple-section-bg.svg);
   background-repeat: no-repeat;
@@ -2926,8 +2948,26 @@ footer .footer-section-wrapper .mobile-accordion-link {
   background-position: center center;
 }
 @media (max-width: 991px) {
+  .simple-section {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 991px) {
   .simple-section .simple-info-text {
     font-size: 16px;
+  }
+}
+.simple-section .map-wrapper {
+  padding-top: 126px;
+}
+@media (max-width: 991px) {
+  .simple-section .map-wrapper {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .simple-section {
+    padding-top: 50px;
   }
 }
 
