@@ -95,6 +95,11 @@ a {
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 // colors 
 .yellow {
@@ -429,10 +434,10 @@ header {
             border-radius: 100px;
             transition: all 0.5s ease-in-out;
 
-                &:hover {
-                    background-color: #000;
-                    color: white;
-                }
+            &:hover {
+                background-color: #000;
+                color: white;
+            }
 
             @media (max-width: 1280px) {
                 font-size: 16px;
@@ -3081,253 +3086,146 @@ footer {
 
 
 
-// about us page start 
-.about-hero {
-    background-image: url(./assets/images/about-bg-image.webp);
-    padding-top: 400px;
-
-    @media (max-width: 991px) {
-        background-image: none;
-        background: linear-gradient(188deg, #F2FFD2 15.51%, rgba(255, 255, 255, 0.00) 30.47%);
-        padding-top: 200px;
-        padding-bottom: 0 !important;
-    }
+// // about us page start 
+// behind section 
+.behind-section {
+    padding: 120px 0 96px 0;
+    position: relative;
+    z-index: 9;
 
     &::after {
         position: absolute;
         content: "";
-        background-image: url(./assets/images/about-banner-shade.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-        pointer-events: none;
-
-        @media (max-width: 1399px) {
-            left: -250px;
-        }
-
-        @media (max-width: 1199px) {
-            left: -350px;
-        }
-
-        @media (max-width: 991px) {
-            display: none;
-
-        }
-
-
-    }
-
-    &::before {
-        position: absolute;
-        content: "";
         background-image: url(./assets/images/hero-yello-shade.png);
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: top;
-        z-index: 9;
-        pointer-events: none;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: -120px;
+        left: 0;
+        z-index: -9;
     }
-
-    .about-hero-heading {
-        max-width: 709px;
-        position: relative;
-
-        @media (max-width: 991px) {
-            max-width: 538px;
-            margin: auto;
-            text-align: center;
-        }
-
-        @media (max-width: 767px) {
-            max-width: 358px;
-        }
-
-        .about-heading-highlight {
-            position: relative;
-            display: inline-block;
-            z-index: 1;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: -0.35em;
-                top: 0;
-                width: 60%;
-                height: 1em;
-                background: #BAEF2E;
-                transform: skew(8deg);
-                z-index: -1;
-                border-radius: 0;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                right: -0.35em;
-                top: 0;
-                width: 60%;
-                height: 1em;
-                background: #BAEF2E;
-                transform: skew(-8deg);
-                z-index: -1;
-                border-radius: 0;
-            }
-        }
-    }
-
-    .about-hero-left {
-        &:before {
-            position: absolute;
-            content: "";
-            display: none;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(./assets/images/hero-element-1.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-            right: 76%;
-            bottom: -32%;
-            width: 162px;
-            height: 143px;
-
-            @media (max-width: 991px) {
-                right: 0;
-            }
-
-            @media (max-width: 767px) {
-                right: 0;
-                height: 100px;
-            }
-
-            @media (max-width: 480px) {
-                bottom: -100px;
-            }
-        }
-    }
-}
-
-.about-section {
-    background-color: var(--dark-6);
-    padding: 96px 0 0 0;
-    background-image: url(./assets/images/about-bg-element.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 
     @media (max-width: 991px) {
-        padding: 80px 0 0 0;
+        padding: 80px;
     }
 
     @media (max-width: 767px) {
-        padding: 50px 0 0 0;
+        padding: 50px;
     }
 
+    .row {
+        --bs-gutter-x: 94px;
 
-    .about-section-wrapper {
-
-
-        .about-left-block {
-            .about-subheading {
-                padding: 9px 20px;
-                border-radius: 100px;
-                background: rgba(222, 0, 48, 0.10);
-                margin-bottom: 33px;
-
-                p {
-                    @media (max-width: 991px) {
-                        font-size: 12px;
-                    }
-                }
-            }
-
-            .about-section-heading {
-                padding-bottom: 32px;
-
-                @media (max-width: 991px) {
-                    font-size: 32px;
-                }
-            }
-
-
-        }
-
-        .about-inner-card-wrap {
-            max-width: 273px;
-            padding: 4px 25px 4px 4px;
-            gap: 12px;
-            border-radius: 16px;
-            box-shadow: 24px 24px 80px 0 rgba(0, 0, 0, 0.10);
-            bottom: 24px;
-            right: 24px;
-
-            .about-mini-card-info {
-                gap: 6px;
-
-                .mini-location-wrap {
-                    gap: 5px;
-                }
-
-                .about-mini-card-heading {
-                    @media (max-width: 991px) {
-                        font-size: 15px;
-                    }
-
-                    @media (max-width: 767px) {
-                        font-size: 9px;
-                    }
-                }
-
-                .about-mini-card-price {
-                    @media (max-width: 991px) {
-                        font-size: 22px;
-                    }
-
-                    @media (max-width: 767px) {
-                        font-size: 13px;
-                    }
-
-                }
-
-                .about-mini-card-location {
-                    @media (max-width: 767px) {
-                        font-size: 8px;
-                    }
-                }
-
-
-
-            }
-        }
-
-
-    }
-
-    .about-info-wrap {
-        p {
+        .behind-info-text {
             @media (max-width: 991px) {
-                font-size: 18px;
-            }
-
-            @media (max-width: 767px) {
                 font-size: 16px;
             }
         }
-    }
 
-    .map {
-        padding-top: 96px;
+        .behind-img {
+            img {
+                @media (max-width: 991px) {
+                    width: 400px;
+                }
+            }
 
-        @media (max-width: 991px) {
-            padding-top: 50px;
+            .behind-experiance {
+                padding: 40px 50px;
+                border-radius: 24px;
+                background: #BAEF2E;
+                width: 232px;
+                height: 232px;
+                bottom: 0;
+                left: -15px;
+
+                @media (max-width: 1399px) {
+                    bottom: 0;
+                    width: 200px;
+                    height: auto;
+                    padding: 30px 30px;
+                    left: -28px;
+                }
+
+                @media (max-width: 1199px) {
+                    left: -60px;
+                }
+
+                @media (max-width: 991px) {
+                    left: 0;
+                    padding: 25px 20px;
+                    width: 135px;
+                }
+
+                @media (max-width: 500px) {
+                    left: 0;
+                    padding: 20px 15px;
+                    width: 100px;
+                }
+
+                .behind-experiance-subheading {
+                    padding-bottom: 12px;
+
+                    @media (max-width: 1399px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 500px) {
+                        font-size: 12px;
+                    }
+                }
+
+                .years-text {
+                    font-size: 88px;
+
+                    @media (max-width: 1399px) {
+                        font-size: 50px;
+                    }
+
+                    @media (max-width: 991px) {
+                        font-size: 40px;
+                    }
+
+                    @media (max-width: 500px) {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .behind-quote-wrapper {
+
+            .behind-quote {
+                padding: 12px 16px;
+                border-radius: 16px;
+                background: #F2F2F2;
+            }
         }
     }
 
+
 }
+
+// simple section 
+.simple-section {
+    padding: 96px 0;
+    background-color: #F2F2F2;
+    background-image: url(./assets/images/simple-section-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .simple-info-text {
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+
 
 // founder section start 
 
@@ -3660,13 +3558,51 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
 
+
+
     @media (max-width: 991px) {
         background-image: none;
     }
 
     .blog-hero-heading {
+
+        max-width: 709px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(./assets/images/3dot.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            width: 24px;
+            height: 42px;
+            left: -53px;
+            top: 16px;
+
+            @media (max-width: 991px) {
+                top: 8px;
+            }
+
+            @media (max-width: 767px) {
+                width: 15px;
+                left: -25px;
+                top: 0;
+            }
+
+            @media (max-width: 363px) {
+                left: 0;
+            }
+
+
+        }
+
         .blog-heading-highlight {
-            position: relative;
             display: inline-block;
             z-index: 1;
 
@@ -4796,6 +4732,8 @@ footer {
     }
 
     .sell-item-wrapper-2 {
+        gap: 96px;
+
         .sell-item-logo-2 {
             bottom: 32px;
             right: 32px;
@@ -5235,7 +5173,7 @@ footer {
 // terms section start 
 
 .term-hero-section {
-    background-image: url(./assets/images/help-hero-bg.webp);
+    background-image: url(./assets/images/terms-banner-bg.webp);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
@@ -5327,6 +5265,8 @@ footer {
 
 .terms-section {
     margin-top: 0;
+    padding-top: 100px;
+
 
     @media (max-width: 767px) {
         padding: 50px 0;
@@ -5375,7 +5315,9 @@ footer {
 // we help us start 
 
 .help-hero {
-    background-image: url(./assets/images/about-bg-image.webp);
+    background-image: url(./assets/images/help-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
     padding-top: 400px;
 
     @media (max-width: 991px) {
@@ -5594,6 +5536,8 @@ footer {
         }
 
     }
+
+
 }
 
 
