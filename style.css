@@ -3500,6 +3500,16 @@ footer .footer-section-wrapper .mobile-accordion-link {
   transform: translateX(6px);
 }
 
+.blog-detail {
+  padding: 120px 0;
+}
+.blog-detail .blog-details-heading {
+  padding-bottom: 40px;
+}
+.blog-detail .blog-main-img {
+  padding-bottom: 40px;
+}
+
 .contact-hero {
   background-image: url(./assets/images/contact-hero-bg.webp);
   background-repeat: no-repeat;
