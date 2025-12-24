@@ -4965,6 +4965,190 @@ footer {
 
 
 // vendors page 
+.vendor-hero-section {
+    background-image: url(./assets/images/vendor-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 400px;
+    margin-top: -115px;
+    padding-bottom: 200px;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: -90px;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-top: 200px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-white-shade.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 270px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/images/hero-yello-shade.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: -50px;
+    }
+
+    .vendor-left-block {
+        padding-bottom: 70px;
+        position: relative;
+        z-index: 9;
+
+        .vendor-hero-heading {
+            max-width: 806px;
+            position: relative;
+
+            @media (max-width: 991px) {
+                text-align: center;
+                max-width: 538px !important;
+                margin: auto;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 358px !important;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url(./assets/images/3dot.svg);
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: contain;
+                width: 24px;
+                height: 42px;
+                left: -53px;
+                top: 16px;
+                pointer-events: none;
+
+                @media (max-width: 991px) {
+                    top: 8px;
+                }
+
+                @media (max-width: 767px) {
+                    width: 15px;
+                    left: -25px;
+                    top: 0;
+                }
+
+                @media (max-width: 363px) {
+                    left: 0;
+                }
+
+
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url(./assets/images/hero-element-1.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                right: 76%;
+                bottom: -220px;
+                width: 162px;
+                height: 143px;
+                pointer-events: none;
+
+
+                @media (max-width: 991px) {
+                    right: 0;
+                }
+
+                @media (max-width: 767px) {
+                    right: 0;
+                    height: 100px;
+                }
+
+                @media (max-width: 480px) {
+                    bottom: -100px;
+                }
+            }
+
+
+
+
+
+
+
+
+            .vendor-heading-highlight {
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -0.35em;
+                    top: 0;
+                    width: 60%;
+                    height: 1em;
+                    background: #BAEF2E;
+                    transform: skew(8deg);
+                    z-index: -1;
+                    border-radius: 0;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -0.35em;
+                    top: 0;
+                    width: 60%;
+                    height: 1em;
+                    background: #BAEF2E;
+                    transform: skew(-8deg);
+                    z-index: -1;
+                    border-radius: 0;
+                }
+            }
+
+        }
+
+        .hero-info-text {
+            max-width: 551px;
+
+            @media (max-width: 991px) {
+                text-align: center;
+                margin: auto;
+                font-size: 14px;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 358px;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+
+
 .agent-section {
     padding: 96px 0;
     background-color: #F2F2F2;
